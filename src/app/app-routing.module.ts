@@ -1,15 +1,33 @@
-import { HomeComponent } from './home/home.component';
+import { HomeComponent } from './views/home/home.component';
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { LoginComponent } from './component/login/login.component';
-import { HeaderComponent } from './layouts/header/header.component';
+import { DefaultLayoutComponent } from './containers';
+import { ProductDetailsComponent } from './views/product-details/product-details.component';
 
 const routes: Routes = [
-  {path:'header', component:HeaderComponent},
-  {path:'home', component:HomeComponent},
-  {path:'login', component:LoginComponent},
-  {path:'admin', loadChildren:()=>import('./modules/admin/admin.module').then((m)=>m.AdminModule)},
-  {path:'',redirectTo:'/home',pathMatch:'full'}
+  {
+    path: '',
+    redirectTo: 'home',
+    pathMatch: 'full',
+  },
+  {
+    path: '',
+    component: DefaultLayoutComponent,
+    children: [
+      {
+        path: 'home',
+        component: HomeComponent
+        // loadChildren: () => import('./views/home/home.module').then(m => m.HomeModule)
+      },
+      {
+        path: 'product-details',
+        component: ProductDetailsComponent
+        // loadChildren: () => import('./views/product-details/product-details.module').then(m => m.ProductDetailsModule)
+
+      },
+
+    ]
+  }
 ];
 
 @NgModule({
