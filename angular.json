@@ -23,14 +23,12 @@
               "src/assets"
             ],
             "styles": [
-              "src/assets/css/style.css"
+              "src/assets/css/style.css",
+              "src/styles.css",
+              "node_modules/font-awesome/css/font-awesome.css",
+              "node_modules/bootstrap/dist/css/bootstrap.min.css"
             ],
-
-
-   "scripts": [
-           
-          ]
-
+            "scripts": []
           },
           "configurations": {
             "production": {
@@ -95,7 +93,10 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.css"
+              "src/assets/css/style.css",
+              "src/styles.css",
+              "node_modules/font-awesome/css/font-awesome.css",
+              "node_modules/bootstrap/dist/css/bootstrap.min.css"
             ],
             "scripts": []
           }
@@ -103,7 +104,7 @@
       }
     }
   },
-    "cli": {
+  "cli": {
     "analytics": "51fc5c14-23c5-4588-b641-c011c40e4d50"
   }
 }
