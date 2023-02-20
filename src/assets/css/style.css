@@ -4,7 +4,7 @@ body {
     font-family: 'Nunito', sans-serif;
     font-weight: 400;
     font-style: normal;
-    color: #454545;
+    color: #454545 !important;
     background: white;
     line-height: 1.65;
     margin: 0;
@@ -582,7 +582,7 @@ ul.main-nav>li ul.sub-menu-lists>li>a:hover {
     margin: 50px 0 0 0;
     font-size: 12px;
     line-height: 16px;
-    color: #fff;
+    color: #fff !important;
     display: flex;
     text-decoration: none;
     font-weight: 700;
@@ -855,7 +855,7 @@ ul.main-nav>li ul.sub-menu-lists>li>a:hover {
     /** Visually place the image above all other content (like the heading) in the parent flex container (.card). */
     order: -1;
     position: relative;
-    height: 260px;
+    /* height: 260px; */
     padding: 2px;
     overflow: hidden;
     display: flex;
@@ -1208,7 +1208,7 @@ button.tdcart {
 
 .btn {
     border-radius: 0 !important;
-    border: #454545 !important;
+    border: 1px solid #e3e3e3 !important;
     color: #454545 !important;
     border-style: solid !important;
     border-width: thin !important;
@@ -1244,6 +1244,7 @@ a {
 }
 
 .accordion-item {
+    border-radius: 0 !important;
     border: 0 !important;
     border-bottom: var(--bs-accordion-border-width) solid var(--bs-accordion-border-color) !important;
 }
@@ -1282,10 +1283,95 @@ a {
 
 .accordion-body {
     padding-left: 0 !important;
+    font-size: 14px !important;
+}
+
+.reviews .accordion-item {
+    border-top: var(--bs-accordion-border-width) solid var(--bs-accordion-border-color) !important;
+    border-bottom: var(--bs-accordion-border-width) solid var(--bs-accordion-border-color) !important;
+}
+
+.reviews .accordion-button {
+    padding: 34px 0;
+}
+
+.reviews .stars {
+    font-size: 26px;
+}
+
+.reviews .btn {
+    font-size: 13px !important;
+    text-decoration: none !important;
+    text-align: center !important;
+    width: auto !important;
+    line-height: 30px !important;
+    background: 0 0 !important;
+    color: #000 !important;
+    border: 1px solid #ccd6e0 !important;
+    padding: 3px 20px !important;
+    border-radius: 3px !important;
+    font-weight: 700 !important;
+    box-shadow: 2px 3px 5px 0 #8888886b !important;
+}
+
+.reviews .btn:hover {
+    box-shadow: none !important;
+    text-decoration: none !important;
+    opacity: .9 !important;
+    color: unset !important;
+    border: 1px solid #ccd6e0 !important;
+    background-color: unset !important;
+}
+
+.ratingNum {
+    font-size: 37px;
+    line-height: 30px;
+    font-weight: 700;
+    margin-right: 5px;
+    margin-top: 0;
+}
+
+.review-no {
+    font-size: 15px !important;
+    margin-top: 10px !important;
+}
+
+.starts-review {
+    font-size: 17px !important;
+    line-height: 28px !important;
 }
 
 @media screen and (min-width: 1008px) {
     .popover {
         min-width: 375px !important;
     }
+}
+
+.form-control {
+    color: #454545 !important;
+    border: 1px solid #e3e3e3 !important;
+    border-radius: 0 !important;
+}
+
+.form-control:focus {
+    color: #454545 !important;
+    box-shadow: unset !important;
+}
+
+.progress {
+    height: 15px !important;
+    border-radius: 0 !important;
+    margin-top: 13px !important;
+}
+
+.progress-bar {
+    height: 15px !important;
+}
+
+.nav-tabs .nav-link {
+    border: 0 !important;
+    font-weight: 700 !important;
+    border-bottom: 3px solid #000 !important;
+    padding: 6px 10px 10px !important;
+    font-size: 14px !important;
 }
