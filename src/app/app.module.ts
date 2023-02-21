@@ -12,7 +12,7 @@ import { BreadcrumbComponent } from './layouts/breadcrumb/breadcrumb.component';
 import { ProductDetailsComponent } from './views/product-details/product-details.component';
 import { NgxGalleryModule } from '@kolkov/ngx-gallery';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { NgbAccordionModule, NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { NgbAccordionModule, NgbDropdownModule, NgbModule } from '@ng-bootstrap/ng-bootstrap';
 const APP_CONTAINERS = [
   DefaultLayoutComponent
 ];
@@ -32,7 +32,8 @@ const APP_CONTAINERS = [
     FontAwesomeModule,
     NgxGalleryModule,
     NgbModule,
-    NgbAccordionModule
+    NgbAccordionModule,
+    NgbDropdownModule
   ],
   providers: [],
   bootstrap: [AppComponent]

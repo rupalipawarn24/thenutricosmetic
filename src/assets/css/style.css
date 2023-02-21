@@ -596,7 +596,7 @@ ul.main-nav>li ul.sub-menu-lists>li>a:hover {
 }
 
 .shop-now-btn:hover {
-    color: #000;
+    color: #000 !important;
 }
 
 .shop-now-btn:before {
@@ -1286,13 +1286,13 @@ a {
     font-size: 14px !important;
 }
 
-.reviews .accordion-item {
+.reviewsTemp .accordion-item {
     border-top: var(--bs-accordion-border-width) solid var(--bs-accordion-border-color) !important;
     border-bottom: var(--bs-accordion-border-width) solid var(--bs-accordion-border-color) !important;
 }
 
-.reviews .accordion-button {
-    padding: 34px 0;
+.reviewsTemp .accordion-button {
+    padding: 34px 0 !important;
 }
 
 .reviews .stars {
@@ -1374,4 +1374,25 @@ a {
     border-bottom: 3px solid #000 !important;
     padding: 6px 10px 10px !important;
     font-size: 14px !important;
+}
+
+.reviewsLis {
+    color: #454545 !important;
+    margin-top: 50px !important;
+}
+
+.reviewtitle {
+    color: #454545 !important;
+    border: 0 !important;
+    font-weight: 700 !important;
+    font-size: 14px !important;
+}
+
+.reviewShare {
+    color: #454545 !important;
+    font-size: 12px !important;
+}
+
+.reviewShare .fa {
+    color: #000 !important;
 }
