@@ -13,6 +13,7 @@ import { ProductDetailsComponent } from './views/product-details/product-details
 import { NgxGalleryModule } from '@kolkov/ngx-gallery';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NgbAccordionModule, NgbDropdownModule, NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { ProductCatalogComponent } from './views/product-catalog/product-catalog.component';
 const APP_CONTAINERS = [
   DefaultLayoutComponent
 ];
@@ -23,7 +24,8 @@ const APP_CONTAINERS = [
     HeaderComponent,
     FooterComponent,
     BreadcrumbComponent,
-    ProductDetailsComponent
+    ProductDetailsComponent,
+    ProductCatalogComponent
   ],
   imports: [
     BrowserModule,
@@ -33,7 +35,7 @@ const APP_CONTAINERS = [
     NgxGalleryModule,
     NgbModule,
     NgbAccordionModule,
-    NgbDropdownModule
+    NgbDropdownModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -3,6 +3,7 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { DefaultLayoutComponent } from './containers';
 import { ProductDetailsComponent } from './views/product-details/product-details.component';
+import { ProductCatalogComponent } from './views/product-catalog/product-catalog.component';
 const routes: Routes = [
   {
     path: '',
@@ -21,6 +22,12 @@ const routes: Routes = [
       {
         path: 'product-details',
         component: ProductDetailsComponent
+        // loadChildren: () => import('./views/product-details/product-details.module').then(m => m.ProductDetailsModule)
+
+      },
+      {
+        path: 'product-catalog',
+        component: ProductCatalogComponent
         // loadChildren: () => import('./views/product-details/product-details.module').then(m => m.ProductDetailsModule)
 
       },

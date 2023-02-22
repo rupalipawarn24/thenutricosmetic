@@ -1396,3 +1396,57 @@ a {
 .reviewShare .fa {
     color: #000 !important;
 }
+
+.btn-product-sort {
+    color: #9d9d9d !important;
+    border-bottom: 0 !important;
+    border-top: 0 !important;
+    border-right: 0 !important;
+}
+
+.btn-product-layout {
+    color: #9d9d9d !important;
+    border-right: var(--bs-border-width) var(--bs-border-style) var(--bs-border-color) !important;
+    padding: 9px !important;
+    font-size: 25px !important;
+}
+
+.fa-th-large:hover {
+    cursor: pointer;
+    color: #000 !important;
+}
+
+.fa-th:hover {
+    cursor: pointer;
+    color: #000 !important;
+}
+
+label {
+    color: #000;
+}
+
+.filters-catalog .accordion-button {
+    font-weight: 400 !important;
+    letter-spacing: 0 !important;
+    text-transform: capitalize !important;
+    font-size: 15px !important;
+}
+
+.form-check-input {
+    width: 17px !important;
+    height: 17px !important;
+}
+
+.form-check-input[type=checkbox] {
+    border-radius: 0 !important;
+}
+
+.form-check-input:checked {
+    background-color: #454545 !important;
+    border-color: #454545 !important;
+}
+
+.form-check-input:focus {
+    box-shadow: unset !important;
+    border-color: #454545 !important;
+}
