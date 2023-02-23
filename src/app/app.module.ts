@@ -1,4 +1,5 @@
 import { NgModule } from '@angular/core';
+import { LocationStrategy, HashLocationStrategy, CommonModule } from '@angular/common';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
@@ -14,6 +15,8 @@ import { NgxGalleryModule } from '@kolkov/ngx-gallery';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NgbAccordionModule, NgbDropdownModule, NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { ProductCatalogComponent } from './views/product-catalog/product-catalog.component';
+import { NgxSliderModule } from '@angular-slider/ngx-slider';
+import { ReactiveFormsModule } from '@angular/forms';
 const APP_CONTAINERS = [
   DefaultLayoutComponent
 ];
@@ -36,8 +39,15 @@ const APP_CONTAINERS = [
     NgbModule,
     NgbAccordionModule,
     NgbDropdownModule,
+    NgxSliderModule,
+    ReactiveFormsModule
   ],
-  providers: [],
+  providers: [
+    {
+      provide: LocationStrategy,
+      useClass: HashLocationStrategy
+    }
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

@@ -976,7 +976,7 @@ ul.main-nav>li ul.sub-menu-lists>li>a:hover {
     -webkit-transform: translate3d(0, 50px, 0);
     transform: translate3d(0, 50px, 0);
     position: absolute;
-    bottom: 42%;
+    bottom: 32%;
     left: 0;
     width: 100%;
     display: flex;
@@ -1423,6 +1423,7 @@ a {
 
 label {
     color: #000;
+    white-space: break-spaces !important;
 }
 
 .filters-catalog .accordion-button {
@@ -1449,4 +1450,97 @@ label {
 .form-check-input:focus {
     box-shadow: unset !important;
     border-color: #454545 !important;
+}
+
+.custom-slider .ngx-slider .ngx-slider-bar {
+    background: #ccc;
+    height: 2px;
+}
+
+.custom-slider .ngx-slider .ngx-slider-selection {
+    background: rgb(0, 0, 0);
+}
+
+.custom-slider .ngx-slider .ngx-slider-pointer {
+    width: 20px;
+    height: 20px;
+    top: -9px;
+    bottom: 0;
+    background-color: #fff;
+    border: 1px solid;
+}
+
+.custom-slider .ngx-slider .ngx-slider-pointer:after {
+    display: none;
+}
+
+.custom-slider .ngx-slider .ngx-slider-bubble {
+    bottom: -30px;
+}
+
+.custom-slider .ngx-slider .ngx-slider-limit {
+    color: rgb(0, 0, 0);
+}
+
+.custom-slider .ngx-slider .ngx-slider-tick {
+    width: 1px;
+    height: 10px;
+    margin-left: 4px;
+    border-radius: 0;
+    background: #ccc;
+    top: -1px;
+}
+
+.custom-slider .ngx-slider .ngx-slider-tick.ngx-slider-selected {
+    background: rgb(0, 0, 0);
+}
+
+.ngx-slider {
+    margin: 0 0 40px !important;
+}
+
+.ngx-slider .ngx-slider-bubble {
+    font-size: 12px !important;
+    color: #000 !important;
+}
+
+.product-catalog {
+    .slick-track {
+        width: 100% !important;
+
+    }
+
+    .slick-slide {
+        width: 100% !important;
+    }
+
+    .card-slider .card .popup_btn_addtocart {
+        bottom: 37% !important;
+    }
+}
+
+.modal-dialog {
+    margin: 0 0 0 auto !important;
+    height: 100% !important;
+    left: 100px !important;
+}
+
+.modal-content {
+    border-radius: 0 !important;
+    min-height: 100vh !important;
+    width: 400px !important;
+}
+
+.btn-close:focus {
+    box-shadow: unset !important;
+}
+
+.modal-title {
+    font-size: 17px !important;
+    font-weight: 700 !important;
+    font-style: normal !important;
+    color: #454545 !important;
+    transition: color .2s ease-in-out !important;
+    letter-spacing: .2em !important;
+    text-transform: uppercase;
 }
