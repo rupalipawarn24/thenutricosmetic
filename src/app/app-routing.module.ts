@@ -3,6 +3,8 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { DefaultLayoutComponent } from './containers';
 import { ProductDetailsComponent } from './views/product-details/product-details.component';
+import { ProductCatalogComponent } from './views/product-catalog/product-catalog.component';
+import { FooterPagesComponent } from './views/footer-pages/footer-pages.component';
 import { BrandsDetailComponent } from './views/brands-detail/brands-detail.component';
 const routes: Routes = [
   {
@@ -26,6 +28,18 @@ const routes: Routes = [
 
       },
       {
+        path: 'product-catalog',
+        component: ProductCatalogComponent
+        // loadChildren: () => import('./views/product-details/product-details.module').then(m => m.ProductDetailsModule)
+
+      },
+      {
+        path: 'pages',
+        component: FooterPagesComponent
+        // loadChildren: () => import('./views/product-details/product-details.module').then(m => m.ProductDetailsModule)
+
+      },
+      {
         path: 'brands-detail',
         component: BrandsDetailComponent
         // loadChildren: () => import('./views/brands-detail/product-details.module').then(m => m.ProductDetailsModule)
@@ -36,7 +50,7 @@ const routes: Routes = [
   }
 ];
 @NgModule({
-  imports: [RouterModule.forRoot(routes)],
+  imports: [RouterModule.forRoot(routes, { relativeLinkResolution: 'legacy' })],
   exports: [RouterModule]
 })
 export class AppRoutingModule { }

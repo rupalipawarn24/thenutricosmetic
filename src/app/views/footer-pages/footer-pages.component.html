@@ -1,0 +1,82 @@
+<div class="container">
+    <div class="container-fliud">
+        <div class="wrapper row">
+            <div class="col-md-8">
+                <app-contact-us *ngIf="activeTab=='Contact Us'"></app-contact-us>
+                <app-how-to-shop *ngIf="activeTab=='How To Shop'"></app-how-to-shop>
+                <app-orders-shipping *ngIf="activeTab=='Orders & Shipping'"></app-orders-shipping>
+                <app-payment-pricing *ngIf="activeTab=='Payment & Pricing'"></app-payment-pricing>
+                <app-return-exchanges *ngIf="activeTab=='Returns & Exchanges'"></app-return-exchanges>
+                <app-faq *ngIf="activeTab=='FAQs'"></app-faq>
+                <app-term-conditions *ngIf="activeTab=='Terms & Conditions'"></app-term-conditions>
+                <app-privacy-policy *ngIf="activeTab=='Privacy Policy'"></app-privacy-policy>
+                <app-cookie-policy *ngIf="activeTab=='Cookie Policy'"></app-cookie-policy>
+                <app-disclaimer *ngIf="activeTab=='Disclaimer'"></app-disclaimer>
+                <app-gift-cards-faq *ngIf="activeTab=='E-Gift Cards FAQs'"></app-gift-cards-faq>
+                <app-refer-friend-terms-conditions
+                    *ngIf="activeTab=='Refer A Friend Terms & Conditions'"></app-refer-friend-terms-conditions>
+                <app-covid-information
+                    *ngIf="activeTab=='Latest Coronavirus (COVID-19) Information'"></app-covid-information>
+
+            </div>
+            <div class="col-md-4">
+                <div class="row mt-4">
+                    <div class="col-12 mt-3 text-start link-section">
+                        <h2 class="quick_menu_title">QUICK LINKS</h2>
+                        <a class="quick-links" (click)="openPage('Contact Us')">
+                            Contact Us
+                        </a>
+                        <br>
+                        <a class="quick-links" (click)="openPage('How To Shop')">
+                            How To Shop
+                        </a>
+                        <br>
+                        <a class="quick-links" (click)="openPage('Orders & Shipping')">
+                            Orders & Shipping
+                        </a>
+                        <br>
+                        <a class="quick-links" (click)="openPage('Payment & Pricing')">
+                            Payment & Pricing
+                        </a>
+                        <br>
+                        <a class="quick-links" (click)="openPage('Returns & Exchanges')">
+                            Returns & Exchanges
+                        </a>
+                        <br>
+                        <a class="quick-links" (click)="openPage('FAQs')">
+                            FAQs
+                        </a>
+                        <br>
+                        <a class="quick-links" (click)="openPage('Terms & Conditions')">
+                            Terms & Conditions
+                        </a>
+                        <br>
+                        <a class="quick-links" (click)="openPage('Privacy Policy')">
+                            Privacy Policy
+                        </a>
+                        <br>
+                        <a class="quick-links" (click)="openPage('Cookie Policy')">
+                            Cookie Policy
+                        </a>
+                        <br>
+                        <a class="quick-links" (click)="openPage('Disclaimer')">
+                            Disclaimer
+                        </a>
+                        <br>
+                        <a class="quick-links" (click)="openPage('E-Gift Cards FAQs')">
+                            E-Gift Cards FAQs
+                        </a>
+                        <br>
+                        <a class="quick-links" (click)="openPage('Refer A Friend Terms & Conditions')">
+                            Refer A Friend Terms & Conditions
+                        </a>
+                        <br>
+                        <a class="quick-links" (click)="openPage('Latest Coronavirus (COVID-19) Information')">
+                            Latest Coronavirus (COVID-19) Information
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

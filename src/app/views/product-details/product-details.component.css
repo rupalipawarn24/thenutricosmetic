@@ -112,7 +112,16 @@ img {
     font-size: 14px;
 }
 
-.fa-star {
+.review-sec .stars .fa-star-o {
+    padding-right: 0.25rem !important;
+    padding-left: 0.25rem !important;
+    margin: 0 !important;
+    border-bottom: 2px solid gold;
+    font-size: 23px !important;
+    color: gold !important;
+}
+
+.fa-star-o {
     margin-right: 0.25rem !important;
     margin-left: 0.25rem !important;
 }
@@ -223,7 +232,7 @@ img {
     }
 }
 
-/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=style.scss.map */
 
 .rating_circle {
     width: 100px;
