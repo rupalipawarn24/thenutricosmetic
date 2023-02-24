@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { NavigationEnd, NavigationStart, Router } from '@angular/router';
 
 @Component({
   selector: 'app-header',
@@ -6,10 +7,26 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./header.component.css']
 })
 export class HeaderComponent implements OnInit {
-
-  constructor() { }
+  is_pages: boolean = false;
+  constructor(
+    private router: Router
+  ) { }
 
   ngOnInit(): void {
+    if (this.router.url == '/pages') {
+      this.is_pages = true;
+    } else {
+      this.is_pages = false;
+    }
+    this.router.events.subscribe((evt) => {
+      if ((evt instanceof NavigationStart)) {
+        if (evt.url == '/pages') {
+          this.is_pages = true;
+        } else {
+          this.is_pages = false;
+        }
+      }
+    });
   }
 
 }

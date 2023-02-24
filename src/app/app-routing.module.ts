@@ -4,6 +4,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { DefaultLayoutComponent } from './containers';
 import { ProductDetailsComponent } from './views/product-details/product-details.component';
 import { ProductCatalogComponent } from './views/product-catalog/product-catalog.component';
+import { FooterPagesComponent } from './views/footer-pages/footer-pages.component';
 const routes: Routes = [
   {
     path: '',
@@ -28,6 +29,12 @@ const routes: Routes = [
       {
         path: 'product-catalog',
         component: ProductCatalogComponent
+        // loadChildren: () => import('./views/product-details/product-details.module').then(m => m.ProductDetailsModule)
+
+      },
+      {
+        path: 'pages',
+        component: FooterPagesComponent
         // loadChildren: () => import('./views/product-details/product-details.module').then(m => m.ProductDetailsModule)
 
       },
