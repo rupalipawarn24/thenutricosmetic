@@ -12,12 +12,9 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
     CommonModule,
     BrowserAnimationsModule,
     ProductDetailsRoutingModule,
-    NgxGalleryModule,
-    NgbModule
-
   ],
   declarations: [
-     ProductDetailsComponent
+    //  ProductDetailsComponent
   ]
 })
 export class ProductDetailsModule { }
