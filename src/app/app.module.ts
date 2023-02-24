@@ -8,33 +8,29 @@ import { HomeComponent } from './views/home/home.component';
 import { HeaderComponent } from './layouts/header/header.component';
 import { DefaultLayoutComponent } from './containers/default-layout/default-layout.component';
 import { FooterComponent } from './layouts/footer/footer.component';
+import { ProductDetailsModule } from './views/product-details/product-details.module';
 import { BreadcrumbComponent } from './layouts/breadcrumb/breadcrumb.component';
-import { ProductDetailsComponent } from './views/product-details/product-details.component';
-import { NgxGalleryModule } from '@kolkov/ngx-gallery';
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { NgbAccordionModule, NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { BrandsDetailComponent } from './views/brands-detail/brands-detail.component';
 const APP_CONTAINERS = [
   DefaultLayoutComponent
 ];
 @NgModule({
-  declarations: [
-    AppComponent,
-    ...APP_CONTAINERS,
-    HeaderComponent,
-    FooterComponent,
-    BreadcrumbComponent,
-    ProductDetailsComponent
-  ],
-  imports: [
-    BrowserModule,
-    BrowserAnimationsModule,
-    AppRoutingModule,
-    FontAwesomeModule,
-    NgxGalleryModule,
-    NgbModule,
-    NgbAccordionModule
-  ],
-  providers: [],
-  bootstrap: [AppComponent]
+    declarations: [
+        AppComponent,
+        ...APP_CONTAINERS,
+        HeaderComponent,
+        FooterComponent,
+        BreadcrumbComponent,
+        BrandsDetailComponent
+    ],
+    providers: [],
+    bootstrap: [AppComponent],
+    imports: [
+        BrowserModule,
+        AppRoutingModule,
+        FontAwesomeModule,
+        ProductDetailsModule,
+      
+    ]
 })
 export class AppModule { }

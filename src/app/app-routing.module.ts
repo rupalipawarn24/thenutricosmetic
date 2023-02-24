@@ -3,6 +3,7 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { DefaultLayoutComponent } from './containers';
 import { ProductDetailsComponent } from './views/product-details/product-details.component';
+import { BrandsDetailComponent } from './views/brands-detail/brands-detail.component';
 const routes: Routes = [
   {
     path: '',
@@ -22,6 +23,12 @@ const routes: Routes = [
         path: 'product-details',
         component: ProductDetailsComponent
         // loadChildren: () => import('./views/product-details/product-details.module').then(m => m.ProductDetailsModule)
+
+      },
+      {
+        path: 'brands-detail',
+        component: BrandsDetailComponent
+        // loadChildren: () => import('./views/brands-detail/product-details.module').then(m => m.ProductDetailsModule)
 
       },
 
