@@ -59,6 +59,7 @@ const APP_CONTAINERS = [
     GiftCardsFaqComponent,
     ReferFriendTermsConditionsComponent,
     COVIDInformationComponent,
+    BrandsDetailComponent
   ],
   imports: [
     BrowserModule,
@@ -70,7 +71,8 @@ const APP_CONTAINERS = [
     NgbAccordionModule,
     NgbDropdownModule,
     NgxSliderModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    // ProductDetailsModule,
   ],
   providers: [
     {
@@ -79,22 +81,6 @@ const APP_CONTAINERS = [
     }
   ],
   bootstrap: [AppComponent]
-    declarations: [
-        AppComponent,
-        ...APP_CONTAINERS,
-        HeaderComponent,
-        FooterComponent,
-        BreadcrumbComponent,
-        BrandsDetailComponent
-    ],
-    providers: [],
-    bootstrap: [AppComponent],
-    imports: [
-        BrowserModule,
-        AppRoutingModule,
-        FontAwesomeModule,
-        ProductDetailsModule,
-      
-    ]
+  
 })
 export class AppModule { }
