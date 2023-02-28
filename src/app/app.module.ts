@@ -71,7 +71,8 @@ const APP_CONTAINERS = [
     NgbAccordionModule,
     NgbDropdownModule,
     NgxSliderModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    // ProductDetailsModule,
   ],
   providers: [
     {

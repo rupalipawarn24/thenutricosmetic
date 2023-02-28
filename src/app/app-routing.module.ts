@@ -6,6 +6,10 @@ import { ProductDetailsComponent } from './views/product-details/product-details
 import { ProductCatalogComponent } from './views/product-catalog/product-catalog.component';
 import { FooterPagesComponent } from './views/footer-pages/footer-pages.component';
 import { BrandsDetailComponent } from './views/brands-detail/brands-detail.component';
+import { FaqComponent } from './views/footer-pages/faq/faq.component';
+import { HowToShopComponent } from './views/footer-pages/how-to-shop/how-to-shop.component';
+import { DisclaimerComponent } from './views/footer-pages/disclaimer/disclaimer.component';
+import { PrivacyPolicyComponent } from './views/footer-pages/privacy-policy/privacy-policy.component';
 const routes: Routes = [
   {
     path: '',
@@ -42,6 +46,12 @@ const routes: Routes = [
       {
         path: 'brands-detail',
         component: BrandsDetailComponent
+        // loadChildren: () => import('./views/brands-detail/product-details.module').then(m => m.ProductDetailsModule)
+
+      },
+      {
+        path: 'privacy',
+        component: PrivacyPolicyComponent
         // loadChildren: () => import('./views/brands-detail/product-details.module').then(m => m.ProductDetailsModule)
 
       },
