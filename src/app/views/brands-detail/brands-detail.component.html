@@ -61,10 +61,10 @@
                     </div> -->
                     <div class="brands-alphabetical" *ngFor="let brand of brands; let i=index">
                         <div class="brand-alphabet">{{brand[1].alphaate}}</div>
-
-                        <div class="brand-names" *ngFor="let brand1 of brand[1].record; let i=index">
-
-                            <a href="/collections/{{ brand1.ID }}">{{brand1.name}}</a>
+                  
+                        <div class="brand-names">
+                          
+                            <a href="/collections/{{ brand1.ID }}"  *ngFor="let brand1 of brand[1].record; let i=index">{{brand1.name}}</a>
                              </div>
                            
                     </div>
