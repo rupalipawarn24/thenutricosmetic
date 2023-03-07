@@ -1,0 +1,199 @@
+<div class="PageContainer  collection_inner ">
+  <main id="main" class="alyssa_inner_page" role="main">
+        <div id="shopify-section-brand_all" class="shopify-section">
+            <header class="brands-header">
+                <h1>BRANDS</h1>
+                <h4>Discover Global Brands You're Sure To Love!</h4>
+            </header>
+        </div>
+        <div class="brands-container">
+            <div class="brands-all-alphabets">
+                <div class="brands-all-alphabets-wrapper">
+                    <span>a</span>
+                    <span>b</span>
+                    <span>c</span>
+                    <span>d</span>
+                    <span>e</span>
+                    <span>f</span>
+                    <span style="opacity: 0.5;">g</span>
+                    <span>h</span>
+                    <span>i</span>
+                    <span>j</span>
+                    <span>k</span>
+                    <span>l</span>
+                    <span>m</span>
+                    <span>n</span>
+                    <span>o</span>
+                    <span>p</span>
+                    <span style="opacity: 0.5;">q</span>
+                    <span>r</span>
+                    <span>s</span>
+                    <span>t</span>
+                    <span style="opacity: 0.5;">u</span>
+                    <span>v</span>
+                    <span>w</span>
+                    <span style="opacity: 0.5;">x</span>
+                    <span>y</span>
+                    <span>z</span>
+                    <span style="opacity: 0.5;">0-9</span>
+                </div>
+            </div>
+            <div class="brands-content-container">
+                <div class="brands-content-left">
+                    <div class="brands-content-floating" style="top: 0px; bottom: unset;">
+                        <div>
+                         
+                            <input type="text" placeholder="Search...">
+                        </div>
+                        <div id="shopify-section-brand_advertisement" class="shopify-section">
+                            <div class="advertisement-container brands" style="width: 255.46px;"><a
+                                    href="https://thenutricosmeticcompany.com/collections/baubo" target="_blank"><img
+                                        src="https://thenutricosmeticcompany.co.uk/api/advertisements/uploads/brand/desktop.png?1677215153578"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="brands-content-right">
+                    <!-- <div class="brands-alphabetical">
+                        <div class="brand-alphabet" data-scroll-spy="C">C</div>
+                        <div class="brand-names"><a href="/collections/cidrani">Cidrani</a><a
+                                href="/collections/complete-me">Complete Me</a></div>
+                    </div> -->
+                    <div class="brands-alphabetical" *ngFor="let brand of brands; let i=index">
+                        <div class="brand-alphabet">{{brand[1].alphaate}}</div>
+
+                        <div class="brand-names" *ngFor="let brand1 of brand[1].record; let i=index">
+
+                            <a href="/collections/{{ brand1.ID }}">{{brand1.name}}</a>
+                             </div>
+                           
+                    </div>
+                    <!-- <div class="brands-alphabetical">
+                        <div class="brand-alphabet" data-scroll-spy="C">C</div>
+                        <div class="brand-names"><a href="/collections/cidrani">Cidrani</a><a
+                                href="/collections/complete-me">Complete Me</a></div>
+                    </div>
+                    <div class="brands-alphabetical">
+                        <div class="brand-alphabet" data-scroll-spy="D">D</div>
+                        <div class="brand-names"><a href="/collections/dl-md">DL.MD</a><a
+                                href="/collections/dan-lion">Dan &amp; Lion</a></div>
+                    </div>
+                    <div class="brands-alphabetical">
+                        <div class="brand-alphabet" data-scroll-spy="E">E</div>
+                        <div class="brand-names"><a href="/collections/earth-s-secret">Earth’s Secret</a><a
+                                href="/collections/ellactiva">Ellactiva</a><a
+                                href="/collections/essentials-by-zoe-lvh">Essentials By Zoe LVH</a></div>
+                    </div>
+                    <div class="brands-alphabetical">
+                        <div class="brand-alphabet" data-scroll-spy="F">F</div>
+                        <div class="brand-names"><a href="/collections/flora-bast">Flora + Bast</a><a
+                                href="/collections/flow-cognition">Flow Cognition</a><a
+                                href="/collections/forest-spa-finland">Forest Spa Finland</a><a
+                                href="/collections/four-sigmatic">Four Sigmatic</a></div>
+                    </div>
+                    <div class="brands-alphabetical">
+                        <div class="brand-alphabet" data-scroll-spy="H">H</div>
+                        <div class="brand-names"><a href="/collections/halo-hydration">Halo Hydration</a><a
+                                href="/collections/hermosa">Hermosa</a></div>
+                    </div>
+                    <div class="brands-alphabetical">
+                        <div class="brand-alphabet" data-scroll-spy="I">I</div>
+                        <div class="brand-names"><a href="/collections/immunocologie">Immunocologie</a><a
+                                href="/collections/ingenious">Ingenious</a></div>
+                    </div>
+                    <div class="brands-alphabetical">
+                        <div class="brand-alphabet" data-scroll-spy="J">J</div>
+                        <div class="brand-names"><a href="/collections/jillian-dempsey">Jillian Dempsey</a><a
+                                href="/collections/juni">Juni</a></div>
+                    </div>
+                    <div class="brands-alphabetical">
+                        <div class="brand-alphabet" data-scroll-spy="K">K</div>
+                        <div class="brand-names"><a href="/collections/kera-health">Kera Health</a><a
+                                href="/collections/kloris">Kloris</a><a href="/collections/kohl-kreatives">Kohl
+                                Kreatives</a></div>
+                    </div>
+                    <div class="brands-alphabetical">
+                        <div class="brand-alphabet" data-scroll-spy="L">L</div>
+                        <div class="brand-names"><a href="/collections/la-fervance">La Fervance</a><a
+                                href="/collections/laird-superfood">Laird Superfood</a><a
+                                href="/collections/land-water">Land &amp; Water</a><a
+                                href="/collections/leapfrog">Leapfrog</a><a href="/collections/little-bud">Little
+                                Bud</a></div>
+                    </div>
+                    <div class="brands-alphabetical">
+                        <div class="brand-alphabet" data-scroll-spy="M">M</div>
+                        <div class="brand-names"><a href="/collections/marie-reynolds">Marie Reynolds</a><a
+                                href="/collections/matcha-co">Matcha &amp; Co</a><a
+                                href="/collections/mauli-rituals">Mauli Rituals</a><a
+                                href="/collections/moam">Moam</a><a href="/collections/motion-nutrition">Motion
+                                Nutrition</a></div>
+                    </div>
+                    <div class="brands-alphabetical">
+                        <div class="brand-alphabet" data-scroll-spy="N">N</div>
+                        <div class="brand-names"><a href="/collections/nanno-phi">Nanno Phi</a><a
+                                href="/collections/never-go-alone">Never Go Alone</a><a
+                                href="/collections/nudco">Nudco</a><a href="/collections/nutrigold">Nutrigold</a>
+                        </div>
+                    </div>
+                    <div class="brands-alphabetical">
+                        <div class="brand-alphabet" data-scroll-spy="O">O</div>
+                        <div class="brand-names"><a href="/collections/okoko-cosmetiques">Okoko Cosmetiques</a><a
+                                href="/collections/olverum">Olverum</a></div>
+                    </div>
+                    <div class="brands-alphabetical">
+                        <div class="brand-alphabet" data-scroll-spy="P">P</div>
+                        <div class="brand-names"><a href="/collections/pietro-simone">Pietro Simone</a><a
+                                href="/collections/pjyrity">Pjyrity</a><a href="/collections/plant-supplements">Plant
+                                Supplements</a><a href="/collections/proceanis">Proceanis</a></div>
+                    </div>
+                    <div class="brands-alphabetical">
+                        <div class="brand-alphabet" data-scroll-spy="R">R</div>
+                        <div class="brand-names"><a href="/collections/raw-gorilla">Raw Gorilla</a></div>
+                    </div>
+                    <div class="brands-alphabetical">
+                        <div class="brand-alphabet" data-scroll-spy="S">S</div>
+                        <div class="brand-names"><a href="/collections/shiffa">SHIFFA</a><a
+                                href="/collections/skiin-company">SKIIN Company</a><a
+                                href="/collections/simone-thomas-wellness">Simone Thomas Wellness</a><a
+                                href="/collections/skin-molecule-x">Skin Molecule X</a><a
+                                href="/collections/sunday-of-london">Sunday Of London</a><a
+                                href="/collections/suvi-labs">Suvi Labs</a><a
+                                href="/collections/synchronicity-scents">Synchronicity Scents</a></div>
+                    </div>
+                    <div class="brands-alphabetical">
+                        <div class="brand-alphabet" data-scroll-spy="T">T</div>
+                        <div class="brand-names"><a href="/collections/tamaar-london">TAMAAR London</a><a
+                                href="/collections/tario">Tario</a><a href="/collections/three-warriors">Three
+                                Warriors</a></div>
+                    </div>
+                    <div class="brands-alphabetical">
+                        <div class="brand-alphabet" data-scroll-spy="V">V</div>
+                        <div class="brand-names"><a href="/collections/vk6">VK6</a><a
+                                href="/collections/viteamins">Viteamins</a><a href="/collections/volant-aroma">Volant
+                                Aroma</a></div>
+                    </div>
+                    <div class="brands-alphabetical">
+                        <div class="brand-alphabet" data-scroll-spy="W">W</div>
+                        <div class="brand-names"><a href="/collections/wisdow">WISDOW</a><a
+                                href="/collections/watson-son">Watson &amp; Son</a><a
+                                href="/collections/wunder-workshop">Wunder Workshop</a></div>
+                    </div>
+                    <div class="brands-alphabetical">
+                        <div class="brand-alphabet" data-scroll-spy="Y">Y</div>
+                        <div class="brand-names"><a href="/collections/yuma">Yuma</a></div>
+                    </div>
+                    <div class="brands-alphabetical">
+                        <div class="brand-alphabet" data-scroll-spy="Z">Z</div>
+                        <div class="brand-names"><a href="/collections/zenii">ZENii</a></div>
+                    </div> -->
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+        <!-- MLveda code ends -->
+    </main>
+</div>

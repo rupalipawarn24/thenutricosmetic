@@ -1,0 +1,1189 @@
+<div class="px-3">
+    <div class="container-fliud">
+        <div class="row pb-5">
+            <div class="col-5 mx-auto text-center">
+                <h2 class="section-Heading">INGENIOUS</h2>
+                <p class="m-0 mt-4" style="font-size: 14px;">
+                    Unique And Pure
+                </p>
+                <p class="m-0" style="font-size: 14px;">
+                    Winner of the best collagen supplement in 2019, Ingenious are passionate about science and the
+                    difference the right
+                    supplements can make to peoples’ lives. With ingredients of the highest possible quality, and strong
+                    sustainable morals.
+                    You’re guaranteed a supplement with soul.
+                </p>
+            </div>
+        </div>
+        <div class="row border">
+            <div class="col-1 float-start p-0">
+                <div class="text-center btn-product-layout">
+                    <i class="fa fa-th-large mx-2" (click)="changeLayout('large')" aria-hidden="true"></i>
+                    <i class="fa fa-th mx-2" (click)="changeLayout('small')" aria-hidden="true"></i>
+                </div>
+            </div>
+            <div class="col-9 col-lg-10">
+
+            </div>
+            <div class="col-1 float-end p-0">
+                <ng-template #popContent>
+                    <div class="list-group">
+                        <a class="list-group-item list-group-item-action active">50ML
+                        </a>
+                        <a class="list-group-item list-group-item-action">100ML</a>
+                        <a class="list-group-item list-group-item-action">200ML</a>
+                        <a class="list-group-item list-group-item-action">300ML</a>
+                    </div>
+                </ng-template>
+                <button type="button" class="btn btn-product-sort p-3 w-100 h-100" placement="top"
+                    [ngbPopover]="popContent">
+                    <strong>SORT </strong>
+                    <i class="fa fa-chevron-down" style="margin-left: 5px;"></i>
+                </button>
+            </div>
+            <div class="col-1 d-lg-none float-end p-0">
+                <button type="button" class="btn btn-product-sort p-3 w-100 h-100" (click)="open(content)">
+                    <strong>Filter</strong>
+                </button>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-3 px-4 filters-catalog d-none d-lg-block">
+                <ngb-accordion [closeOthers]="false" [activeIds]="activeIds">
+                    <ngb-panel id="tab-1" title="Brand Partner">
+                        <ng-template ngbPanelContent>
+                            <div class="form-check">
+                                <input mdbCheckbox class="form-check-input" type="checkbox" value="Brand_Partner"
+                                    id="flexCheckDefault" />
+                                <label class="form-check-label" for="flexCheckDefault">
+                                    Ingenious
+                                </label>
+                                <label class="form-check-label float-end" for="flexCheckDefault">
+                                    (9)
+                                </label>
+                            </div>
+                        </ng-template>
+                    </ngb-panel>
+                    <ngb-panel id="tab-2" title="Fulfilled By">
+                        <ng-template ngbPanelContent>
+                            <div class="form-check">
+                                <input mdbCheckbox class="form-check-input" type="checkbox" value="Fulfilled_By"
+                                    id="Fulfilled_By" />
+                                <label class="form-check-label" for="Fulfilled_By">
+                                    The Nutricosmetic Company
+                                </label>
+                                <label class="form-check-label float-end" for="Fulfilled_By">
+                                    (9)
+                                </label>
+                            </div>
+                        </ng-template>
+                    </ngb-panel>
+                    <ngb-panel id="tab-3" title="Global Store">
+                        <ng-template ngbPanelContent>
+                            <div class="form-check">
+                                <input mdbCheckbox class="form-check-input" type="checkbox" value="Global_Store"
+                                    id="Global_Store" />
+                                <label class="form-check-label" for="Global_Store">
+                                    UK
+                                </label>
+                                <label class="form-check-label float-end" for="Global_Store">
+                                    (9)
+                                </label>
+                            </div>
+                        </ng-template>
+                    </ngb-panel>
+                    <ngb-panel id="tab-4" title="Product Type">
+                        <ng-template ngbPanelContent>
+                            <div class="form-check">
+                                <input mdbCheckbox class="form-check-input" type="checkbox" value="Product_Type"
+                                    id="Product_Type" />
+                                <label class="form-check-label" for="Product_Type">
+                                    Food Supplement
+                                </label>
+                                <label class="form-check-label float-end" for="Product_Type">
+                                    (9)
+                                </label>
+                            </div>
+                        </ng-template>
+                    </ngb-panel>
+                    <ngb-panel id="tab-5" title="Availability">
+                        <ng-template ngbPanelContent>
+                            <div class="form-check">
+                                <input mdbCheckbox class="form-check-input" type="checkbox" value="Availability_InStock"
+                                    id="Availability_InStock" />
+                                <label class="form-check-label" for="Availability_InStock">
+                                    In Stock
+                                </label>
+                                <label class="form-check-label float-end" for="Availability_InStock">
+                                    (7)
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input mdbCheckbox class="form-check-input" type="checkbox"
+                                    value="Availability_OutStock" id="Availability_OutStock" />
+                                <label class="form-check-label" for="Availability_OutStock">
+                                    Out Of Stock
+                                </label>
+                                <label class="form-check-label float-end" for="Availability_OutStock">
+                                    (2)
+                                </label>
+                            </div>
+                        </ng-template>
+                    </ngb-panel>
+                    <ngb-panel id="tab-6" title="Avg. Review Ratings">
+                        <ng-template ngbPanelContent>
+                            <div class="form-check">
+                                <input mdbCheckbox class="form-check-input" type="checkbox" value="avg_rating1"
+                                    id="avg_rating1" />
+                                <label class="form-check-label" for="avg_rating1">
+                                    <div class="rating mx-1">
+                                        <div class="stars">
+                                            <span class="fa fa-star-o checked"></span>
+                                            <span class="fa fa-star-o checked"></span>
+                                            <span class="fa fa-star-o checked"></span>
+                                            <span class="fa fa-star-o checked"></span>
+                                            <span class="fa fa-star-o checked"></span>
+                                        </div>
+                                    </div>
+                                </label>
+                                <label class="form-check-label float-end" for="avg_rating1">
+                                    (1)
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input mdbCheckbox class="form-check-input" type="checkbox" disabled value="avg_rating2"
+                                    id="avg_rating2" />
+                                <label class="form-check-label" for="avg_rating2">
+                                    <div class="rating mx-1">
+                                        <div class="stars">
+                                            <span class="fa fa-star-o checked"></span>
+                                            <span class="fa fa-star-o checked"></span>
+                                            <span class="fa fa-star-o checked"></span>
+                                            <span class="fa fa-star-o checked"></span>
+                                            <span class="fa fa-star-o"></span>
+                                        </div>
+                                    </div>
+                                </label>
+                                <label class="form-check-label float-end" for="avg_rating2">
+                                    (0)
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input mdbCheckbox class="form-check-input" type="checkbox" disabled value="avg_rating3"
+                                    id="avg_rating3" />
+                                <label class="form-check-label" for="avg_rating3">
+                                    <div class="rating mx-1">
+                                        <div class="stars">
+                                            <span class="fa fa-star-o checked"></span>
+                                            <span class="fa fa-star-o checked"></span>
+                                            <span class="fa fa-star-o checked"></span>
+                                            <span class="fa fa-star-o"></span>
+                                            <span class="fa fa-star-o"></span>
+                                        </div>
+                                    </div>
+                                </label>
+                                <label class="form-check-label float-end" for="avg_rating3">
+                                    (0)
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input mdbCheckbox class="form-check-input" type="checkbox" disabled value="avg_rating4"
+                                    id="avg_rating4" />
+                                <label class="form-check-label" for="avg_rating4">
+                                    <div class="rating mx-1">
+                                        <div class="stars">
+                                            <span class="fa fa-star-o checked"></span>
+                                            <span class="fa fa-star-o checked"></span>
+                                            <span class="fa fa-star-o"></span>
+                                            <span class="fa fa-star-o"></span>
+                                            <span class="fa fa-star-o"></span>
+                                        </div>
+                                    </div>
+                                </label>
+                                <label class="form-check-label float-end" for="avg_rating4">
+                                    (0)
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input mdbCheckbox class="form-check-input" type="checkbox" disabled value="avg_rating5"
+                                    id="avg_rating5" />
+                                <label class="form-check-label" for="avg_rating5">
+                                    <div class="rating mx-1">
+                                        <div class="stars">
+                                            <span class="fa fa-star-o checked"></span>
+                                            <span class="fa fa-star-o"></span>
+                                            <span class="fa fa-star-o"></span>
+                                            <span class="fa fa-star-o"></span>
+                                            <span class="fa fa-star-o"></span>
+                                        </div>
+                                    </div>
+                                </label>
+                                <label class="form-check-label float-end" for="avg_rating5">
+                                    (0)
+                                </label>
+                            </div>
+                        </ng-template>
+                    </ngb-panel>
+                    <ngb-panel id="tab-7" title="Price">
+                        <ng-template ngbPanelContent>
+                            <div class="custom-slider">
+                                <form [formGroup]="sliderForm">
+                                    <div class="row">
+                                        <div class="col-5 p-0">
+                                            <input type="text" [value]="sliderForm.value.sliderControl[0]"
+                                                id="min_price" name="min_price" class="form-control text-center">
+                                        </div>
+                                        <div class="col-2 p-0 align-self-center text-center">
+                                            -
+                                        </div>
+                                        <div class="col-5 p-0">
+                                            <input type="text" [value]="sliderForm.value.sliderControl[1]"
+                                                id="max_price" name="max_price" class="form-control text-center">
+                                        </div>
+                                    </div>
+                                    <div class="row mt-5">
+                                        <ngx-slider [options]="options" formControlName="sliderControl"></ngx-slider>
+                                    </div>
+                                </form>
+                            </div>
+                        </ng-template>
+                    </ngb-panel>
+                </ngb-accordion>
+            </div>
+            <div class="col-12 col-lg-9">
+                <section class="newin__Wrapper my-5">
+                    <div class="container-xl">
+                        <div class="row m-0 mb-5 product-catalog">
+                            <div [class]="catlogLayout">
+                                <a href="/product-details" class="card">
+                                    <h2 class="title">Okoko Cosmetiques</h2>
+                                    <div class="image">
+                                        <img class="img-fluid" src="assets/images/product-1.png" alt="">
+                                    </div>
+                                    <div class="popup_btn_addtocart">
+                                        <form action="" method="post" enctype="">
+                                            <button class="tdcart" type="submit" name="add" data-add-to-cart="">
+                                                Add to cart
+                                            </button>
+                                        </form>
+                                    </div>
+                                    <p class="description">La Boue De Beaute Black Label Brightening, Anti-Aging Face
+                                        Mask</p>
+                                    <div class="description mb-0">
+                                        <ul class="list-unstyled d-flex star-ul mb-2">
+                                            <li><img class="img-fluid" src="assets/images/star-outline.png" alt=""
+                                                    width="16" />
+                                            </li>
+                                            <li><img class="img-fluid" src="assets/images/star-outline.png" alt=""
+                                                    width="16" />
+                                            </li>
+                                            <li><img class="img-fluid" src="assets/images/star-outline.png" alt=""
+                                                    width="16" />
+                                            </li>
+                                            <li><img class="img-fluid" src="assets/images/star-outline.png" alt=""
+                                                    width="16" />
+                                            </li>
+                                            <li><img class="img-fluid" src="assets/images/star-outline.png" alt=""
+                                                    width="16" />
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <!-- The badge is placed right next to prices so its read out by screen readers in a more logical way. -->
+                                    <div class="favourite"><img class="img-fluid" src="assets/images/star-outline.png"
+                                            alt="" width="18" />
+                                    </div>
+
+                                    <div class="price mb-3">
+                                        <span class="new-price">₴2,344.68</span>
+                                    </div>
+                                </a>
+                            </div>
+                            <div [class]="catlogLayout">
+                                <a href="/product-details" class="card">
+                                    <h2 class="title">Okoko Cosmetiques</h2>
+                                    <div class="image">
+                                        <img class="img-fluid" src="assets/images/product-1.png" alt="">
+                                    </div>
+                                    <div class="popup_btn_addtocart">
+                                        <form action="" method="post" enctype="">
+                                            <button class="tdcart" type="submit" name="add" data-add-to-cart="">
+                                                Add to cart
+                                            </button>
+                                        </form>
+                                    </div>
+                                    <p class="description">La Boue De Beaute Black Label Brightening, Anti-Aging Face
+                                        Mask</p>
+                                    <div class="description mb-0">
+                                        <ul class="list-unstyled d-flex star-ul mb-2">
+                                            <li><img class="img-fluid" src="assets/images/star-outline.png" alt=""
+                                                    width="16" />
+                                            </li>
+                                            <li><img class="img-fluid" src="assets/images/star-outline.png" alt=""
+                                                    width="16" />
+                                            </li>
+                                            <li><img class="img-fluid" src="assets/images/star-outline.png" alt=""
+                                                    width="16" />
+                                            </li>
+                                            <li><img class="img-fluid" src="assets/images/star-outline.png" alt=""
+                                                    width="16" />
+                                            </li>
+                                            <li><img class="img-fluid" src="assets/images/star-outline.png" alt=""
+                                                    width="16" />
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <!-- The badge is placed right next to prices so its read out by screen readers in a more logical way. -->
+                                    <div class="favourite"><img class="img-fluid" src="assets/images/star-outline.png"
+                                            alt="" width="18" />
+                                    </div>
+
+                                    <div class="price mb-3">
+                                        <span class="new-price">₴2,344.68</span>
+                                    </div>
+                                </a>
+                            </div>
+                            <div [class]="catlogLayout">
+                                <a href="/product-details" class="card">
+                                    <h2 class="title">Okoko Cosmetiques</h2>
+                                    <div class="image">
+                                        <img class="img-fluid" src="assets/images/product-1.png" alt="">
+                                    </div>
+                                    <div class="popup_btn_addtocart">
+                                        <form action="" method="post" enctype="">
+                                            <button class="tdcart" type="submit" name="add" data-add-to-cart="">
+                                                Add to cart
+                                            </button>
+                                        </form>
+                                    </div>
+                                    <p class="description">La Boue De Beaute Black Label Brightening, Anti-Aging Face
+                                        Mask</p>
+                                    <div class="description mb-0">
+                                        <ul class="list-unstyled d-flex star-ul mb-2">
+                                            <li><img class="img-fluid" src="assets/images/star-outline.png" alt=""
+                                                    width="16" />
+                                            </li>
+                                            <li><img class="img-fluid" src="assets/images/star-outline.png" alt=""
+                                                    width="16" />
+                                            </li>
+                                            <li><img class="img-fluid" src="assets/images/star-outline.png" alt=""
+                                                    width="16" />
+                                            </li>
+                                            <li><img class="img-fluid" src="assets/images/star-outline.png" alt=""
+                                                    width="16" />
+                                            </li>
+                                            <li><img class="img-fluid" src="assets/images/star-outline.png" alt=""
+                                                    width="16" />
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <!-- The badge is placed right next to prices so its read out by screen readers in a more logical way. -->
+                                    <div class="favourite"><img class="img-fluid" src="assets/images/star-outline.png"
+                                            alt="" width="18" />
+                                    </div>
+
+                                    <div class="price mb-3">
+                                        <span class="new-price">₴2,344.68</span>
+                                    </div>
+                                </a>
+                            </div>
+                            <div [class]="catlogLayout">
+                                <a href="/product-details" class="card">
+                                    <h2 class="title">Okoko Cosmetiques</h2>
+                                    <div class="image">
+                                        <img class="img-fluid" src="assets/images/product-1.png" alt="">
+                                    </div>
+                                    <div class="popup_btn_addtocart">
+                                        <form action="" method="post" enctype="">
+                                            <button class="tdcart" type="submit" name="add" data-add-to-cart="">
+                                                Add to cart
+                                            </button>
+                                        </form>
+                                    </div>
+                                    <p class="description">La Boue De Beaute Black Label Brightening, Anti-Aging Face
+                                        Mask</p>
+                                    <div class="description mb-0">
+                                        <ul class="list-unstyled d-flex star-ul mb-2">
+                                            <li><img class="img-fluid" src="assets/images/star-outline.png" alt=""
+                                                    width="16" />
+                                            </li>
+                                            <li><img class="img-fluid" src="assets/images/star-outline.png" alt=""
+                                                    width="16" />
+                                            </li>
+                                            <li><img class="img-fluid" src="assets/images/star-outline.png" alt=""
+                                                    width="16" />
+                                            </li>
+                                            <li><img class="img-fluid" src="assets/images/star-outline.png" alt=""
+                                                    width="16" />
+                                            </li>
+                                            <li><img class="img-fluid" src="assets/images/star-outline.png" alt=""
+                                                    width="16" />
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <!-- The badge is placed right next to prices so its read out by screen readers in a more logical way. -->
+                                    <div class="favourite"><img class="img-fluid" src="assets/images/star-outline.png"
+                                            alt="" width="18" />
+                                    </div>
+
+                                    <div class="price mb-3">
+                                        <span class="new-price">₴2,344.68</span>
+                                    </div>
+                                </a>
+                            </div>
+                            <div [class]="catlogLayout">
+                                <a href="/product-details" class="card">
+                                    <h2 class="title">Okoko Cosmetiques</h2>
+                                    <div class="image">
+                                        <img class="img-fluid" src="assets/images/product-1.png" alt="">
+                                    </div>
+                                    <div class="popup_btn_addtocart">
+                                        <form action="" method="post" enctype="">
+                                            <button class="tdcart" type="submit" name="add" data-add-to-cart="">
+                                                Add to cart
+                                            </button>
+                                        </form>
+                                    </div>
+                                    <p class="description">La Boue De Beaute Black Label Brightening, Anti-Aging Face
+                                        Mask</p>
+                                    <div class="description mb-0">
+                                        <ul class="list-unstyled d-flex star-ul mb-2">
+                                            <li><img class="img-fluid" src="assets/images/star-outline.png" alt=""
+                                                    width="16" />
+                                            </li>
+                                            <li><img class="img-fluid" src="assets/images/star-outline.png" alt=""
+                                                    width="16" />
+                                            </li>
+                                            <li><img class="img-fluid" src="assets/images/star-outline.png" alt=""
+                                                    width="16" />
+                                            </li>
+                                            <li><img class="img-fluid" src="assets/images/star-outline.png" alt=""
+                                                    width="16" />
+                                            </li>
+                                            <li><img class="img-fluid" src="assets/images/star-outline.png" alt=""
+                                                    width="16" />
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <!-- The badge is placed right next to prices so its read out by screen readers in a more logical way. -->
+                                    <div class="favourite"><img class="img-fluid" src="assets/images/star-outline.png"
+                                            alt="" width="18" />
+                                    </div>
+
+                                    <div class="price mb-3">
+                                        <span class="new-price">₴2,344.68</span>
+                                    </div>
+                                </a>
+                            </div>
+                            <div [class]="catlogLayout">
+                                <a href="/product-details" class="card">
+                                    <h2 class="title">Okoko Cosmetiques</h2>
+                                    <div class="image">
+                                        <img class="img-fluid" src="assets/images/product-1.png" alt="">
+                                    </div>
+                                    <div class="popup_btn_addtocart">
+                                        <form action="" method="post" enctype="">
+                                            <button class="tdcart" type="submit" name="add" data-add-to-cart="">
+                                                Add to cart
+                                            </button>
+                                        </form>
+                                    </div>
+                                    <p class="description">La Boue De Beaute Black Label Brightening, Anti-Aging Face
+                                        Mask</p>
+                                    <div class="description mb-0">
+                                        <ul class="list-unstyled d-flex star-ul mb-2">
+                                            <li><img class="img-fluid" src="assets/images/star-outline.png" alt=""
+                                                    width="16" />
+                                            </li>
+                                            <li><img class="img-fluid" src="assets/images/star-outline.png" alt=""
+                                                    width="16" />
+                                            </li>
+                                            <li><img class="img-fluid" src="assets/images/star-outline.png" alt=""
+                                                    width="16" />
+                                            </li>
+                                            <li><img class="img-fluid" src="assets/images/star-outline.png" alt=""
+                                                    width="16" />
+                                            </li>
+                                            <li><img class="img-fluid" src="assets/images/star-outline.png" alt=""
+                                                    width="16" />
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <!-- The badge is placed right next to prices so its read out by screen readers in a more logical way. -->
+                                    <div class="favourite"><img class="img-fluid" src="assets/images/star-outline.png"
+                                            alt="" width="18" />
+                                    </div>
+
+                                    <div class="price mb-3">
+                                        <span class="new-price">₴2,344.68</span>
+                                    </div>
+                                </a>
+                            </div>
+                            <div [class]="catlogLayout">
+                                <a href="/product-details" class="card">
+                                    <h2 class="title">Okoko Cosmetiques</h2>
+                                    <div class="image">
+                                        <img class="img-fluid" src="assets/images/product-1.png" alt="">
+                                    </div>
+                                    <div class="popup_btn_addtocart">
+                                        <form action="" method="post" enctype="">
+                                            <button class="tdcart" type="submit" name="add" data-add-to-cart="">
+                                                Add to cart
+                                            </button>
+                                        </form>
+                                    </div>
+                                    <p class="description">La Boue De Beaute Black Label Brightening, Anti-Aging Face
+                                        Mask</p>
+                                    <div class="description mb-0">
+                                        <ul class="list-unstyled d-flex star-ul mb-2">
+                                            <li><img class="img-fluid" src="assets/images/star-outline.png" alt=""
+                                                    width="16" />
+                                            </li>
+                                            <li><img class="img-fluid" src="assets/images/star-outline.png" alt=""
+                                                    width="16" />
+                                            </li>
+                                            <li><img class="img-fluid" src="assets/images/star-outline.png" alt=""
+                                                    width="16" />
+                                            </li>
+                                            <li><img class="img-fluid" src="assets/images/star-outline.png" alt=""
+                                                    width="16" />
+                                            </li>
+                                            <li><img class="img-fluid" src="assets/images/star-outline.png" alt=""
+                                                    width="16" />
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <!-- The badge is placed right next to prices so its read out by screen readers in a more logical way. -->
+                                    <div class="favourite"><img class="img-fluid" src="assets/images/star-outline.png"
+                                            alt="" width="18" />
+                                    </div>
+
+                                    <div class="price mb-3">
+                                        <span class="new-price">₴2,344.68</span>
+                                    </div>
+                                </a>
+                            </div>
+                            <div [class]="catlogLayout">
+                                <a href="/product-details" class="card">
+                                    <h2 class="title">Okoko Cosmetiques</h2>
+                                    <div class="image">
+                                        <img class="img-fluid" src="assets/images/product-1.png" alt="">
+                                    </div>
+                                    <div class="popup_btn_addtocart">
+                                        <form action="" method="post" enctype="">
+                                            <button class="tdcart" type="submit" name="add" data-add-to-cart="">
+                                                Add to cart
+                                            </button>
+                                        </form>
+                                    </div>
+                                    <p class="description">La Boue De Beaute Black Label Brightening, Anti-Aging Face
+                                        Mask</p>
+                                    <div class="description mb-0">
+                                        <ul class="list-unstyled d-flex star-ul mb-2">
+                                            <li><img class="img-fluid" src="assets/images/star-outline.png" alt=""
+                                                    width="16" />
+                                            </li>
+                                            <li><img class="img-fluid" src="assets/images/star-outline.png" alt=""
+                                                    width="16" />
+                                            </li>
+                                            <li><img class="img-fluid" src="assets/images/star-outline.png" alt=""
+                                                    width="16" />
+                                            </li>
+                                            <li><img class="img-fluid" src="assets/images/star-outline.png" alt=""
+                                                    width="16" />
+                                            </li>
+                                            <li><img class="img-fluid" src="assets/images/star-outline.png" alt=""
+                                                    width="16" />
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <!-- The badge is placed right next to prices so its read out by screen readers in a more logical way. -->
+                                    <div class="favourite"><img class="img-fluid" src="assets/images/star-outline.png"
+                                            alt="" width="18" />
+                                    </div>
+
+                                    <div class="price mb-3">
+                                        <span class="new-price">₴2,344.68</span>
+                                    </div>
+                                </a>
+                            </div>
+                            <div [class]="catlogLayout">
+                                <a href="/product-details" class="card">
+                                    <h2 class="title">Okoko Cosmetiques</h2>
+                                    <div class="image">
+                                        <img class="img-fluid" src="assets/images/product-1.png" alt="">
+                                    </div>
+                                    <div class="popup_btn_addtocart">
+                                        <form action="" method="post" enctype="">
+                                            <button class="tdcart" type="submit" name="add" data-add-to-cart="">
+                                                Add to cart
+                                            </button>
+                                        </form>
+                                    </div>
+                                    <p class="description">La Boue De Beaute Black Label Brightening, Anti-Aging Face
+                                        Mask</p>
+                                    <div class="description mb-0">
+                                        <ul class="list-unstyled d-flex star-ul mb-2">
+                                            <li><img class="img-fluid" src="assets/images/star-outline.png" alt=""
+                                                    width="16" />
+                                            </li>
+                                            <li><img class="img-fluid" src="assets/images/star-outline.png" alt=""
+                                                    width="16" />
+                                            </li>
+                                            <li><img class="img-fluid" src="assets/images/star-outline.png" alt=""
+                                                    width="16" />
+                                            </li>
+                                            <li><img class="img-fluid" src="assets/images/star-outline.png" alt=""
+                                                    width="16" />
+                                            </li>
+                                            <li><img class="img-fluid" src="assets/images/star-outline.png" alt=""
+                                                    width="16" />
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <!-- The badge is placed right next to prices so its read out by screen readers in a more logical way. -->
+                                    <div class="favourite"><img class="img-fluid" src="assets/images/star-outline.png"
+                                            alt="" width="18" />
+                                    </div>
+
+                                    <div class="price mb-3">
+                                        <span class="new-price">₴2,344.68</span>
+                                    </div>
+                                </a>
+                            </div>
+                            <div [class]="catlogLayout">
+                                <a href="/product-details" class="card">
+                                    <h2 class="title">Okoko Cosmetiques</h2>
+                                    <div class="image">
+                                        <img class="img-fluid" src="assets/images/product-1.png" alt="">
+                                    </div>
+                                    <div class="popup_btn_addtocart">
+                                        <form action="" method="post" enctype="">
+                                            <button class="tdcart" type="submit" name="add" data-add-to-cart="">
+                                                Add to cart
+                                            </button>
+                                        </form>
+                                    </div>
+                                    <p class="description">La Boue De Beaute Black Label Brightening, Anti-Aging Face
+                                        Mask</p>
+                                    <div class="description mb-0">
+                                        <ul class="list-unstyled d-flex star-ul mb-2">
+                                            <li><img class="img-fluid" src="assets/images/star-outline.png" alt=""
+                                                    width="16" />
+                                            </li>
+                                            <li><img class="img-fluid" src="assets/images/star-outline.png" alt=""
+                                                    width="16" />
+                                            </li>
+                                            <li><img class="img-fluid" src="assets/images/star-outline.png" alt=""
+                                                    width="16" />
+                                            </li>
+                                            <li><img class="img-fluid" src="assets/images/star-outline.png" alt=""
+                                                    width="16" />
+                                            </li>
+                                            <li><img class="img-fluid" src="assets/images/star-outline.png" alt=""
+                                                    width="16" />
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <!-- The badge is placed right next to prices so its read out by screen readers in a more logical way. -->
+                                    <div class="favourite"><img class="img-fluid" src="assets/images/star-outline.png"
+                                            alt="" width="18" />
+                                    </div>
+
+                                    <div class="price mb-3">
+                                        <span class="new-price">₴2,344.68</span>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+        <hr>
+        <div class="row">
+            <section class="newin__Wrapper my-5">
+                <div class="container-xl">
+                    <div class="row m-0 mb-4 text-center">
+                        <h2 class="section-Heading">RECENTLY VIEWED</h2>
+                    </div>
+                    <div class="row m-0 mb-5">
+                        <div class="card-slider">
+                            <a href="/product-details" class="card">
+                                <h2 class="title">Okoko Cosmetiques</h2>
+                                <div class="image">
+                                    <img class="img-fluid" src="assets/images/product-1.png" alt="">
+                                </div>
+                                <div class="popup_btn_addtocart">
+                                    <form action="" method="post" enctype="">
+                                        <button class="tdcart" type="submit" name="add" data-add-to-cart="">
+                                            Add to cart
+                                        </button>
+                                    </form>
+                                </div>
+                                <p class="description">La Boue De Beaute Black Label Brightening, Anti-Aging Face Mask
+                                </p>
+                                <div class="description mb-0">
+                                    <ul class="list-unstyled d-flex star-ul mb-2">
+                                        <li><img class="img-fluid" src="assets/images/star-outline.png" alt=""
+                                                width="16" />
+                                        </li>
+                                        <li><img class="img-fluid" src="assets/images/star-outline.png" alt=""
+                                                width="16" />
+                                        </li>
+                                        <li><img class="img-fluid" src="assets/images/star-outline.png" alt=""
+                                                width="16" />
+                                        </li>
+                                        <li><img class="img-fluid" src="assets/images/star-outline.png" alt=""
+                                                width="16" />
+                                        </li>
+                                        <li><img class="img-fluid" src="assets/images/star-outline.png" alt=""
+                                                width="16" />
+                                        </li>
+                                    </ul>
+                                </div>
+                                <!-- The badge is placed right next to prices so its read out by screen readers in a more logical way. -->
+                                <div class="favourite"><img class="img-fluid" src="assets/images/star-outline.png"
+                                        alt="" width="18" />
+                                </div>
+
+                                <div class="price mb-3">
+                                    <span class="new-price">₴2,344.68</span>
+                                </div>
+                            </a>
+
+                            <a href="javascript:void(0);" class="card">
+                                <h2 class="title">Okoko Cosmetiques</h2>
+                                <div class="image">
+                                    <img class="img-fluid" src="assets/images/product-2.png" alt="">
+                                </div>
+                                <div class="popup_btn_addtocart">
+                                    <form action="" method="post" enctype="">
+                                        <button class="tdcart" type="submit" name="add" data-add-to-cart="">
+                                            Add to cart
+                                        </button>
+                                    </form>
+                                </div>
+                                <p class="description">La Boue De Beaute Black Label Brightening, Anti-Aging Face Mask
+                                </p>
+                                <div class="description mb-0">
+                                    <ul class="list-unstyled d-flex star-ul mb-2">
+                                        <li><img class="img-fluid" src="assets/images/star-outline.png" alt=""
+                                                width="16" />
+                                        </li>
+                                        <li><img class="img-fluid" src="assets/images/star-outline.png" alt=""
+                                                width="16" />
+                                        </li>
+                                        <li><img class="img-fluid" src="assets/images/star-outline.png" alt=""
+                                                width="16" />
+                                        </li>
+                                        <li><img class="img-fluid" src="assets/images/star-outline.png" alt=""
+                                                width="16" />
+                                        </li>
+                                        <li><img class="img-fluid" src="assets/images/star-outline.png" alt=""
+                                                width="16" />
+                                        </li>
+                                    </ul>
+                                </div>
+                                <!-- The badge is placed right next to prices so its read out by screen readers in a more logical way. -->
+                                <div class="favourite"><img class="img-fluid" src="assets/images/star-outline.png"
+                                        alt="" width="18" />
+                                </div>
+
+                                <div class="price mb-3">
+                                    <span class="new-price">₴2,344.68</span>
+                                </div>
+                            </a>
+                            <a href="javascript:void(0);" class="card">
+                                <h2 class="title">Okoko Cosmetiques</h2>
+                                <div class="image">
+                                    <img class="img-fluid" src="assets/images/product-3.png" alt="">
+                                </div>
+                                <div class="popup_btn_addtocart">
+                                    <form action="" method="post" enctype="">
+                                        <button class="tdcart" type="submit" name="add" data-add-to-cart="">
+                                            Add to cart
+                                        </button>
+                                    </form>
+                                </div>
+                                <p class="description">La Boue De Beaute Black Label Brightening, Anti-Aging Face Mask
+                                </p>
+                                <div class="description mb-0">
+                                    <ul class="list-unstyled d-flex star-ul mb-2">
+                                        <li><img class="img-fluid" src="assets/images/star-outline.png" alt=""
+                                                width="16" />
+                                        </li>
+                                        <li><img class="img-fluid" src="assets/images/star-outline.png" alt=""
+                                                width="16" />
+                                        </li>
+                                        <li><img class="img-fluid" src="assets/images/star-outline.png" alt=""
+                                                width="16" />
+                                        </li>
+                                        <li><img class="img-fluid" src="assets/images/star-outline.png" alt=""
+                                                width="16" />
+                                        </li>
+                                        <li><img class="img-fluid" src="assets/images/star-outline.png" alt=""
+                                                width="16" />
+                                        </li>
+                                    </ul>
+                                </div>
+                                <!-- The badge is placed right next to prices so its read out by screen readers in a more logical way. -->
+                                <div class="favourite"><img class="img-fluid" src="assets/images/star-outline.png"
+                                        alt="" width="18" />
+                                </div>
+
+                                <div class="price mb-3">
+                                    <span class="new-price">₴2,344.68</span>
+                                </div>
+                            </a>
+                            <a href="javascript:void(0);" class="card">
+                                <h2 class="title">Okoko Cosmetiques</h2>
+                                <div class="image">
+                                    <img class="img-fluid" src="assets/images/product-4.png" alt="">
+                                </div>
+                                <div class="popup_btn_addtocart">
+                                    <form action="" method="post" enctype="">
+                                        <button class="tdcart" type="submit" name="add" data-add-to-cart="">
+                                            Add to cart
+                                        </button>
+                                    </form>
+                                </div>
+                                <p class="description">La Boue De Beaute Black Label Brightening, Anti-Aging Face Mask
+                                </p>
+                                <div class="description mb-0">
+                                    <ul class="list-unstyled d-flex star-ul mb-2">
+                                        <li><img class="img-fluid" src="assets/images/star-outline.png" alt=""
+                                                width="16" />
+                                        </li>
+                                        <li><img class="img-fluid" src="assets/images/star-outline.png" alt=""
+                                                width="16" />
+                                        </li>
+                                        <li><img class="img-fluid" src="assets/images/star-outline.png" alt=""
+                                                width="16" />
+                                        </li>
+                                        <li><img class="img-fluid" src="assets/images/star-outline.png" alt=""
+                                                width="16" />
+                                        </li>
+                                        <li><img class="img-fluid" src="assets/images/star-outline.png" alt=""
+                                                width="16" />
+                                        </li>
+                                    </ul>
+                                </div>
+                                <!-- The badge is placed right next to prices so its read out by screen readers in a more logical way. -->
+                                <div class="favourite"><img class="img-fluid" src="assets/images/star-outline.png"
+                                        alt="" width="18" />
+                                </div>
+
+                                <div class="price mb-3">
+                                    <span class="new-price">₴2,344.68</span>
+                                </div>
+                            </a>
+                            <a href="javascript:void(0);" class="card">
+                                <h2 class="title">Okoko Cosmetiques</h2>
+                                <div class="image">
+                                    <img class="img-fluid" src="assets/images/product-5.png" alt="">
+                                </div>
+                                <div class="popup_btn_addtocart">
+                                    <form action="" method="post" enctype="">
+                                        <button class="tdcart" type="submit" name="add" data-add-to-cart="">
+                                            Add to cart
+                                        </button>
+                                    </form>
+                                </div>
+                                <p class="description">La Boue De Beaute Black Label Brightening, Anti-Aging Face Mask
+                                </p>
+                                <div class="description mb-0">
+                                    <ul class="list-unstyled d-flex star-ul mb-2">
+                                        <li><img class="img-fluid" src="assets/images/star-outline.png" alt=""
+                                                width="16" />
+                                        </li>
+                                        <li><img class="img-fluid" src="assets/images/star-outline.png" alt=""
+                                                width="16" />
+                                        </li>
+                                        <li><img class="img-fluid" src="assets/images/star-outline.png" alt=""
+                                                width="16" />
+                                        </li>
+                                        <li><img class="img-fluid" src="assets/images/star-outline.png" alt=""
+                                                width="16" />
+                                        </li>
+                                        <li><img class="img-fluid" src="assets/images/star-outline.png" alt=""
+                                                width="16" />
+                                        </li>
+                                    </ul>
+                                </div>
+                                <!-- The badge is placed right next to prices so its read out by screen readers in a more logical way. -->
+                                <div class="favourite"><img class="img-fluid" src="assets/images/star-outline.png"
+                                        alt="" width="18" />
+                                </div>
+
+                                <div class="price mb-3">
+                                    <span class="new-price">₴2,344.68</span>
+                                </div>
+                            </a>
+                            <a href="javascript:void(0);" class="card">
+                                <h2 class="title">Okoko Cosmetiques</h2>
+                                <div class="image">
+                                    <img class="img-fluid" src="assets/images/product-1.png" alt="">
+                                </div>
+                                <div class="popup_btn_addtocart">
+                                    <form action="" method="post" enctype="">
+                                        <button class="tdcart" type="submit" name="add" data-add-to-cart="">
+                                            Add to cart
+                                        </button>
+                                    </form>
+                                </div>
+                                <p class="description">La Boue De Beaute Black Label Brightening, Anti-Aging Face Mask
+                                </p>
+                                <div class="description mb-0">
+                                    <ul class="list-unstyled d-flex star-ul mb-2">
+                                        <li><img class="img-fluid" src="assets/images/star-outline.png" alt=""
+                                                width="16" />
+                                        </li>
+                                        <li><img class="img-fluid" src="assets/images/star-outline.png" alt=""
+                                                width="16" />
+                                        </li>
+                                        <li><img class="img-fluid" src="assets/images/star-outline.png" alt=""
+                                                width="16" />
+                                        </li>
+                                        <li><img class="img-fluid" src="assets/images/star-outline.png" alt=""
+                                                width="16" />
+                                        </li>
+                                        <li><img class="img-fluid" src="assets/images/star-outline.png" alt=""
+                                                width="16" />
+                                        </li>
+                                    </ul>
+                                </div>
+                                <!-- The badge is placed right next to prices so its read out by screen readers in a more logical way. -->
+                                <div class="favourite"><img class="img-fluid" src="assets/images/star-outline.png"
+                                        alt="" width="18" />
+                                </div>
+
+                                <div class="price mb-3">
+                                    <span class="new-price">₴2,344.68</span>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+</div>
+<ng-template #content let-modal>
+    <div class="modal-header">
+        <div class="row w-100">
+            <div class="col-11 text-center">
+                <h4 class="modal-title" id="modal-basic-title">Filters</h4>
+            </div>
+            <div class="col-1 text-center align-self-center">
+                <button type="button" class="btn-close" aria-label="Close"
+                    (click)="modal.dismiss('Cross click')"></button>
+            </div>
+        </div>
+    </div>
+    <div class="modal-body">
+        <div class="row">
+            <div class="col-12 px-4 filters-catalog">
+                <ngb-accordion [closeOthers]="false" [activeIds]="activeIds">
+                    <ngb-panel id="tab-1" title="Brand Partner">
+                        <ng-template ngbPanelContent>
+                            <div class="form-check">
+                                <input mdbCheckbox class="form-check-input" type="checkbox" value="Brand_Partner"
+                                    id="flexCheckDefault" />
+                                <label class="form-check-label" for="flexCheckDefault">
+                                    Ingenious
+                                </label>
+                                <label class="form-check-label float-end" for="flexCheckDefault">
+                                    (9)
+                                </label>
+                            </div>
+                        </ng-template>
+                    </ngb-panel>
+                    <ngb-panel id="tab-2" title="Fulfilled By">
+                        <ng-template ngbPanelContent>
+                            <div class="form-check">
+                                <input mdbCheckbox class="form-check-input" type="checkbox" value="Fulfilled_By"
+                                    id="Fulfilled_By" />
+                                <label class="form-check-label" for="Fulfilled_By">
+                                    The Nutricosmetic Company
+                                </label>
+                                <label class="form-check-label float-end" for="Fulfilled_By">
+                                    (9)
+                                </label>
+                            </div>
+                        </ng-template>
+                    </ngb-panel>
+                    <ngb-panel id="tab-3" title="Global Store">
+                        <ng-template ngbPanelContent>
+                            <div class="form-check">
+                                <input mdbCheckbox class="form-check-input" type="checkbox" value="Global_Store"
+                                    id="Global_Store" />
+                                <label class="form-check-label" for="Global_Store">
+                                    UK
+                                </label>
+                                <label class="form-check-label float-end" for="Global_Store">
+                                    (9)
+                                </label>
+                            </div>
+                        </ng-template>
+                    </ngb-panel>
+                    <ngb-panel id="tab-4" title="Product Type">
+                        <ng-template ngbPanelContent>
+                            <div class="form-check">
+                                <input mdbCheckbox class="form-check-input" type="checkbox" value="Product_Type"
+                                    id="Product_Type" />
+                                <label class="form-check-label" for="Product_Type">
+                                    Food Supplement
+                                </label>
+                                <label class="form-check-label float-end" for="Product_Type">
+                                    (9)
+                                </label>
+                            </div>
+                        </ng-template>
+                    </ngb-panel>
+                    <ngb-panel id="tab-5" title="Availability">
+                        <ng-template ngbPanelContent>
+                            <div class="form-check">
+                                <input mdbCheckbox class="form-check-input" type="checkbox" value="Availability_InStock"
+                                    id="Availability_InStock" />
+                                <label class="form-check-label" for="Availability_InStock">
+                                    In Stock
+                                </label>
+                                <label class="form-check-label float-end" for="Availability_InStock">
+                                    (7)
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input mdbCheckbox class="form-check-input" type="checkbox"
+                                    value="Availability_OutStock" id="Availability_OutStock" />
+                                <label class="form-check-label" for="Availability_OutStock">
+                                    Out Of Stock
+                                </label>
+                                <label class="form-check-label float-end" for="Availability_OutStock">
+                                    (2)
+                                </label>
+                            </div>
+                        </ng-template>
+                    </ngb-panel>
+                    <ngb-panel id="tab-6" title="Avg. Review Ratings">
+                        <ng-template ngbPanelContent>
+                            <div class="form-check">
+                                <input mdbCheckbox class="form-check-input" type="checkbox" value="avg_rating1"
+                                    id="avg_rating1" />
+                                <label class="form-check-label" for="avg_rating1">
+                                    <div class="rating mx-1">
+                                        <div class="stars">
+                                            <span class="fa fa-star-o checked"></span>
+                                            <span class="fa fa-star-o checked"></span>
+                                            <span class="fa fa-star-o checked"></span>
+                                            <span class="fa fa-star-o checked"></span>
+                                            <span class="fa fa-star-o checked"></span>
+                                        </div>
+                                    </div>
+                                </label>
+                                <label class="form-check-label float-end" for="avg_rating1">
+                                    (1)
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input mdbCheckbox class="form-check-input" type="checkbox" disabled value="avg_rating2"
+                                    id="avg_rating2" />
+                                <label class="form-check-label" for="avg_rating2">
+                                    <div class="rating mx-1">
+                                        <div class="stars">
+                                            <span class="fa fa-star-o checked"></span>
+                                            <span class="fa fa-star-o checked"></span>
+                                            <span class="fa fa-star-o checked"></span>
+                                            <span class="fa fa-star-o checked"></span>
+                                            <span class="fa fa-star-o"></span>
+                                        </div>
+                                    </div>
+                                </label>
+                                <label class="form-check-label float-end" for="avg_rating2">
+                                    (0)
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input mdbCheckbox class="form-check-input" type="checkbox" disabled value="avg_rating3"
+                                    id="avg_rating3" />
+                                <label class="form-check-label" for="avg_rating3">
+                                    <div class="rating mx-1">
+                                        <div class="stars">
+                                            <span class="fa fa-star-o checked"></span>
+                                            <span class="fa fa-star-o checked"></span>
+                                            <span class="fa fa-star-o checked"></span>
+                                            <span class="fa fa-star-o"></span>
+                                            <span class="fa fa-star-o"></span>
+                                        </div>
+                                    </div>
+                                </label>
+                                <label class="form-check-label float-end" for="avg_rating3">
+                                    (0)
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input mdbCheckbox class="form-check-input" type="checkbox" disabled value="avg_rating4"
+                                    id="avg_rating4" />
+                                <label class="form-check-label" for="avg_rating4">
+                                    <div class="rating mx-1">
+                                        <div class="stars">
+                                            <span class="fa fa-star-o checked"></span>
+                                            <span class="fa fa-star-o checked"></span>
+                                            <span class="fa fa-star-o"></span>
+                                            <span class="fa fa-star-o"></span>
+                                            <span class="fa fa-star-o"></span>
+                                        </div>
+                                    </div>
+                                </label>
+                                <label class="form-check-label float-end" for="avg_rating4">
+                                    (0)
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input mdbCheckbox class="form-check-input" type="checkbox" disabled value="avg_rating5"
+                                    id="avg_rating5" />
+                                <label class="form-check-label" for="avg_rating5">
+                                    <div class="rating mx-1">
+                                        <div class="stars">
+                                            <span class="fa fa-star-o checked"></span>
+                                            <span class="fa fa-star-o"></span>
+                                            <span class="fa fa-star-o"></span>
+                                            <span class="fa fa-star-o"></span>
+                                            <span class="fa fa-star-o"></span>
+                                        </div>
+                                    </div>
+                                </label>
+                                <label class="form-check-label float-end" for="avg_rating5">
+                                    (0)
+                                </label>
+                            </div>
+                        </ng-template>
+                    </ngb-panel>
+                    <ngb-panel id="tab-7" title="Price">
+                        <ng-template ngbPanelContent>
+                            <div class="custom-slider">
+                                <form [formGroup]="sliderForm">
+                                    <div class="row">
+                                        <div class="col-5 p-0">
+                                            <input type="text" [value]="sliderForm.value.sliderControl[0]"
+                                                id="min_price" name="min_price" class="form-control text-center">
+                                        </div>
+                                        <div class="col-2 p-0 align-self-center text-center">
+                                            -
+                                        </div>
+                                        <div class="col-5 p-0">
+                                            <input type="text" [value]="sliderForm.value.sliderControl[1]"
+                                                id="max_price" name="max_price" class="form-control text-center">
+                                        </div>
+                                    </div>
+                                    <div class="row mt-5">
+                                        <ngx-slider [options]="options" formControlName="sliderControl"></ngx-slider>
+                                    </div>
+                                </form>
+                            </div>
+                        </ng-template>
+                    </ngb-panel>
+                </ngb-accordion>
+            </div>
+        </div>
+    </div>
+</ng-template>

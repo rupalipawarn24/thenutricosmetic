@@ -1,0 +1,335 @@
+div.PageContainer  collection_inner{
+    text-size-adjust: 100%;
+    font-size: 14px;
+    --use-sticky-header: 1;
+    --use-unsticky-header: 0;
+    --header-is-transparent: 0;
+    --window-height: 657px;
+    --announcement-bar-height: 40px;
+    --header-height: 77px;
+    --header-is-not-transparent: 1;
+    font-family: Futura,sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #454545;
+    line-height: 1.65;
+    box-sizing: border-box!important;
+    -webkit-font-smoothing: antialiased;
+    }
+
+
+main#main.alyssa_inner_page{
+
+display: block;
+}
+nav.breadcrumbs{
+
+    display: block;
+    margin: 2em;
+    }
+    ol.breadcrumbs__list{
+
+        display: block;
+        }
+
+
+
+header.brands-header {
+    text-size-adjust: 100%;
+    font-size: 14px;
+    --use-sticky-header: 1;
+    --use-unsticky-header: 0;
+    --header-is-transparent: 0;
+    --window-height: 657px;
+    --announcement-bar-height: 40px;
+    --header-height: 77px;
+    --header-is-not-transparent: 1;
+    font-family: Futura,sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #454545;
+    line-height: 1.65;
+    box-sizing: border-box!important;
+    -webkit-font-smoothing: antialiased;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+h1{
+    text-size-adjust: 100%;
+    --use-sticky-header: 1;
+    --use-unsticky-header: 0;
+    --header-is-transparent: 0;
+    --window-height: 657px;
+    --announcement-bar-height: 40px;
+    --header-height: 77px;
+    --header-is-not-transparent: 1;
+    line-height: 1.65;
+    box-sizing: border-box!important;
+    -webkit-font-smoothing: antialiased;
+    margin-top: 0;
+    font-family: Futura,sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    color: #454545;
+    transition: color .2s ease-in-out;
+    letter-spacing: .2em;
+    text-transform: uppercase;
+    font-size: 22px;
+}
+h4{
+    text-size-adjust: 100%;
+    --use-sticky-header: 1;
+    --use-unsticky-header: 0;
+    --header-is-transparent: 0;
+    --window-height: 657px;
+    --announcement-bar-height: 40px;
+    --header-height: 77px;
+    --header-is-not-transparent: 1;
+    font-family: Futura,sans-serif;
+    font-style: normal;
+    color: #454545;
+    line-height: 1.65;
+    box-sizing: border-box!important;
+    -webkit-font-smoothing: antialiased;
+    margin-top: 0;
+    font-size: inherit;
+    font-weight: inherit;
+    margin-bottom: 0;
+}
+
+
+div.brands-container
+{
+
+margin: 2rem;
+display: flex;
+flex-direction: column;
+position: relative;
+}
+div.brands-all-alphabets{
+
+display: flex;
+background: #fff;
+z-index: 1;
+height: 70px;
+border-top: solid 1px #454545;
+border-bottom: solid 1px #454545;
+overflow-x: auto;
+position: sticky;
+top: 70px;
+}
+
+div.brands-all-alphabets-wrapper{
+
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+background: #fff;
+z-index: 1;
+display: flex;
+border: 0;
+padding: 0;
+
+}
+
+.brands-container .brands-all-alphabets .brands-all-alphabets-wrapper>span{
+text-size-adjust: 100%;
+font-size: 14px;
+--use-sticky-header: 1;
+--use-unsticky-header: 0;
+--header-is-transparent: 0;
+--window-height: 657px;
+--announcement-bar-height: 40px;
+--header-height: 77px;
+--header-is-not-transparent: 1;
+font-family: Futura,sans-serif;
+font-weight: 400;
+font-style: normal;
+color: #454545;
+line-height: 1.65;
+box-sizing: border-box!important;
+-webkit-font-smoothing: antialiased;
+align-items: center;
+margin: .5rem;
+text-transform: uppercase;
+cursor: pointer;
+display: flex;
+letter-spacing: .2rem;
+flex: unset;
+justify-content: left;
+padding: .5rem;
+}
+
+div.brands-content-container
+{
+ 
+    padding: 2rem 0;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    width: 90%;
+    margin: 0 auto;
+    flex-wrap: wrap;
+}
+div.brands-content-left{
+
+    position: relative;
+    flex: 1 0 30%;
+}
+div.brands-content-floating {
+
+    position: absolute;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    top: 29.7812px;
+    bottom: unset;
+}
+
+
+.brands-container .brands-content-container .brands-content-left .brands-content-floating>div {
+
+    position: relative;
+    display: inline-block;
+    margin: 0 auto 2rem;
+    width: 100%;   
+}
+div.brands-container div.brands-content-container div.brands-content-left div.brands-content-floating>div>span {
+
+    font-size: 22px;
+    position: absolute;
+    top: 15px;
+    left: 15px;
+}
+svg.Icon.Icon--search-desktop{
+
+    display: inline-block;
+    height: 1em;
+    width: 1em;
+    fill: currentColor;
+    vertical-align: middle;
+    stroke-width: 1px;
+    background: none;
+    pointer-events: none;
+    overflow: hidden;
+}
+svg.Icon.Icon--search-desktop{
+    
+    display: inline-block;
+    height: 1em;
+    width: 1em;
+    fill: currentColor;
+    vertical-align: middle;
+    stroke-width: 1px;
+    background: none;
+    pointer-events: none;
+    overflow: hidden;
+}
+
+.brands-container .brands-content-container .brands-content-left .brands-content-floating>div>input {
+
+    font: inherit;
+    margin: 0;
+    line-height: normal;
+    border-radius: 0;
+    width: 74%;
+    padding: 12px 10px 12px 40px;
+    background: #fff;
+    font-size: 14px;
+    color: #454545;
+    border: 1px solid #ddd;
+    
+
+}
+div#shopify-section-brand_advertisement
+{
+    
+    position: relative;
+    width: 70%;
+    display: inline-block;
+    margin: 0 auto 2rem;
+}
+div.advertisement-container.brands
+{
+    margin: 0 auto;
+    width: 714.97px;
+}
+
+a{
+color: inherit;
+background-color: transparent;
+text-decoration: none;
+outline: 0;
+}
+img{
+
+    max-width: 100%;
+    height: auto;
+    border-style: none;
+    vertical-align: top;
+}
+div.brands-content-right
+{
+
+    flex: 1 0 70%;
+    padding: 0 0 0 2rem;
+}
+div.brands-alphabetical
+{
+
+    padding: 0 0 2rem;
+}
+div.brand-alphabet
+{
+   
+    font-size: 22px;
+    font-weight: 700;
+}
+
+div.brand-names
+{
+    text-size-adjust: 100%;
+    font-size: 14px;
+    --use-sticky-header: 1;
+    --use-unsticky-header: 0;
+    --header-is-transparent: 0;
+    --window-height: 657px;
+    --announcement-bar-height: 40px;
+    --header-height: 77px;
+    --header-is-not-transparent: 1;
+    font-family: Futura,sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #454545;
+    line-height: 1.65;
+    box-sizing: border-box!important;
+    -webkit-font-smoothing: antialiased;
+    display: flex;
+}
+
+.brands-container .brands-content-container .brands-content-right .brand-names a {
+    text-size-adjust: 100%;
+    font-size: 14px;
+    --use-sticky-header: 1;
+    --use-unsticky-header: 0;
+    --header-is-transparent: 0;
+    --window-height: 657px;
+    --announcement-bar-height: 40px;
+    --header-height: 77px;
+    --header-is-not-transparent: 1;
+    font-family: Futura,sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 1.65;
+    box-sizing: border-box!important;
+    -webkit-font-smoothing: antialiased;
+    color: inherit;
+    background-color: transparent;
+    text-decoration: none;
+    padding: .5rem 1rem .5rem 0;
+    flex: 0 0 20%;
+
+}

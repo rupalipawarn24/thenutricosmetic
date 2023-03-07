@@ -1,0 +1,27 @@
+ol.breadcrumb {
+    padding: 10px 75px;
+    list-style: none;
+}
+
+/* Display list items side by side */
+ol.breadcrumb li {
+    display: inline;
+    font-size: 14px;
+}
+
+/* Add a slash symbol (/) before/behind each list item */
+ol.breadcrumb li+li:before {
+    color: black;
+    content: "|";
+}
+
+/* Add a color to all links inside the list */
+ol.breadcrumb li a {
+    color: #454545;
+}
+
+/* Add a color on mouse-over */
+ol.breadcrumb li a:hover {
+    color: #000000;
+    text-decoration: underline;
+}

@@ -1,0 +1,1019 @@
+<div class="container">
+    <div class="container-fliud">
+        <div class="wrapper row">
+            <div class="col-md-8">
+                <div class="preview">
+                    <ngx-gallery [options]="galleryOptions" [images]="galleryImages" class="align-self-center">
+                    </ngx-gallery>
+                </div>
+                <div class="mt-5">
+                    <ngb-accordion [closeOthers]="true" activeIds="tab-1">
+                        <ngb-panel id="tab-1" title="DESCRIPTION">
+                            <ng-template ngbPanelContent>
+                                <p>Gommage Extraordinaire is a sugar ester emulsion that progressively changes into an
+                                    oil during the massage releasing its
+                                    natural exfoliation and a slight nourishing heated sensation to reveal smoother,
+                                    nourished skin. Enriched with
+                                    Australian fruits complex like tropical AHAs and macadamia extract, Gommage
+                                    Extraordinaire can be applied as a mask for
+                                    regenerated and radiant skin. Its intoxicating bespoke natural fragrance calms the
+                                    senses for a relaxing self-care
+                                    ritual.</p>
+                            </ng-template>
+                        </ngb-panel>
+                        <ngb-panel id="tab-2" title="BENEFITS & FEATURES">
+                            <ng-template ngbPanelContent>
+                                <p>Macadamia seeds powder, combined with natural sand and organic sugar gently
+                                    exfoliates, eliminating impurities and
+                                    irregularities caused by dead skin cells to reveal soft, supple, smooth skin. It
+                                    helps to moisturize and accelerates
+                                    skin desquamation to fade away uneven skin pigmentation.
+                                    <br>
+                                    <br>
+                                    Enriched with mineral-rich seawater and Palmaria Palmata seaweed extract, it gently
+                                    cleanses and stimulates cell
+                                    renewal. It acts as a tightener and purifier to gently capture and eliminate all
+                                    impurities including polluting
+                                    particles and sebum with a formula that combines the benefits of vegetable charcoal
+                                    with natural exfoliants. The expert
+                                    blend contains tropical fruit extracts grown in Australia including mango, pineapple
+                                    and papaya. Its complex is rich in
+                                    proteolytic enzymes and works as an antioxidant to fight free radicals and protect
+                                    your skin from aging. Use before
+                                    Eclat Extraordinaire in your skincare routine to buff away dead skin cells for
+                                    fresh, revitalized skin that is ready for
+                                    hydration from Eclat Extraordinaire.
+                                </p>
+                            </ng-template>
+                        </ngb-panel>
+                        <ngb-panel id="tab-3" title="HOW TO USE">
+                            <ng-template ngbPanelContent>
+                                <p>Apply a thin layer to clean, dry face and neck, avoiding the eye area. Leave for at
+                                    least 10 minutes. Massage in
+                                    circular motions with lightly moistened hands until the emulsion turns into
+                                    delicately scented milky bath. Rinse with
+                                    water. Use 1 or 2 times a week to buff away dead skin cells gently. This ritual may
+                                    be followed with a thin layer of the
+                                    Eclat Extraordinaire for a healthy and hydrated glow.</p>
+                            </ng-template>
+                        </ngb-panel>
+                        <ngb-panel id="tab-4" title="INGREDIENTS">
+                            <ng-template ngbPanelContent>
+                                <p>Australian Macadamia extract, Vegetable charcoal (from silica rich Bamboo), Natural
+                                    exfoliants (French quartz sand
+                                    powder, olive stones from Provence), enriched with pure seawater and French Red
+                                    Algae (Palmaria seaweed) extract, it
+                                    provides a wealth of magnesium, potassium, calcium, trace elements with balancing,
+                                    purifying and remineralizing virtues.</p>
+                            </ng-template>
+                        </ngb-panel>
+                        <ngb-panel id="tab-5" title="DETAILS">
+                            <ng-template ngbPanelContent>
+                                <p>Gommage Extraordinaire is 100% natural, clinically proven, COSMOS certified and made
+                                    in France as part of La Fervance’s
+                                    Fusionistique Skincare.</p>
+                            </ng-template>
+                        </ngb-panel>
+                    </ngb-accordion>
+                </div>
+            </div>
+            <div class="details col-md-4">
+                <h3 class="product-title">La Fervance</h3>
+                <small>LAF-002</small>
+                <p class="mt-2 product-description">Gommage Extraordinaire <br>
+                    Exfoliating Sugar Emulsion</p>
+                <div class="rating my-3">
+                    <div class="stars">
+                        <span class="fa fa-star-o checked"></span>
+                        <span class="fa fa-star-o checked"></span>
+                        <span class="fa fa-star-o checked"></span>
+                        <span class="fa fa-star-o"></span>
+                        <span class="fa fa-star-o"></span>
+                    </div>
+                    <!-- <span class="review-no">41 reviews</span> -->
+                </div>
+                <h4 class="price">RS. <span>8,275.36</span></h4>
+                <ng-template #popContent>
+                    <div class="list-group">
+                        <a class="list-group-item list-group-item-action active">50ML
+                        </a>
+                        <a class="list-group-item list-group-item-action">100ML</a>
+                        <a class="list-group-item list-group-item-action">200ML</a>
+                        <a class="list-group-item list-group-item-action">300ML</a>
+                    </div>
+                </ng-template>
+                <button type="button" class="btn mt-3" placement="left" [ngbPopover]="popContent">
+                    <span class="float-start">
+                        Size: 100ML
+                    </span>
+                    <span class="float-end">
+                        <i class="fa fa-chevron-down"></i>
+                    </span>
+                </button>
+                <div class="row mt-4">
+                    <div class="col-12 col-md-6 ">
+                        <div class="input-group">
+                            <span class="input-group-btn">
+                                <button type="button" class="btn w-100">
+                                    <i class="fa fa-minus" aria-hidden="true"></i>
+                                </button>
+                            </span>
+                            <input type="text" id="quantity" name="quantity" class="form-control input-number"
+                                value="10" min="1" max="100">
+                            <span class="input-group-btn">
+                                <button type="button" class="btn w-100">
+                                    <i class="fa fa-plus" aria-hidden="true"></i>
+                                </button>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 mt-md-0 mt-4">
+                        <button type="button" class="btn w-100" (click)="openScrollableContent(longContent)" >
+                            Add To Cart
+                        </button>
+                    </div>
+                    <div class="col-12 mt-4">
+                        <button type="button" class="btn btn-shop w-100">
+                            Buy with XYZ
+                        </button>
+                    </div>
+                    <div class="col-12 mt-3 text-center">
+                        <a href="">
+                            More payment options
+                        </a>
+                    </div>
+                </div>
+                <div class="row mt-3">
+                    <div class="col-12 mt-3 text-start">
+                        <span class="fa fa-star-o" style="font-size: 40px !important;"></span>
+                    </div>
+                </div>
+                <div class="row mt-3">
+                    <div class="col-12 text-start share-icons">
+                        <a href="">SHARE</a>
+                        <a class="mx-2" href=""><i class="fa fa-facebook"></i></a>
+                        <a class="mx-2" href=""><i class="fa fa-twitter"></i></a>
+                        <a class="mx-2" href=""><i class="fa fa-pinterest"></i></a>
+                    </div>
+                </div>
+                <div class="row mt-3">
+                    <div class="col-12">
+                        <ngb-accordion [closeOthers]="true" activeIds="static-1">
+                            <ngb-panel id="static-1" title="DISCOVER MORE">
+                                <ng-template ngbPanelContent>
+                                    <span class="accordination-title">LA FERVANCE: LUXURIOUS & SUSTAINABLE
+                                        SKINCARE</span><br>
+                                    <img class="my-3" style="width: 75%;" src="assets/images/product-2.png" alt="">
+                                    <br>
+                                    <span class="accordination-title text-muted">MEET THE MAKERS
+                                    </span><br><br>
+                                    A world first: high-performing, luxurious skincare that is strictly sustainable with
+                                    all-natural ingredients.
+                                    <br>
+                                    <a href="">Read More</a>
+                                </ng-template>
+                            </ngb-panel>
+                        </ngb-accordion>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="wrapper row mt-5">
+            <div class="col-12 reviewsTemp">
+                <ngb-accordion [closeOthers]="true" activeIds="pannel-1">
+                    <ngb-panel id="pannel-1" title="REVIEWS">
+                        <ng-template ngbPanelContent>
+                            <div class="row w-100 reviews">
+                                <div class="col-12 text-center">
+                                    <div class="rating">
+                                        <div class="stars">
+                                            <span class="fa fa-star-o checked"></span>
+                                            <span class="fa fa-star-o checked"></span>
+                                            <span class="fa fa-star-o checked"></span>
+                                            <span class="fa fa-star-o"></span>
+                                            <span class="fa fa-star-o"></span>
+                                        </div>
+                                        <!-- <span class="review-no">41 reviews</span> -->
+                                    </div>
+                                </div>
+                                <div class="row mt-3">
+                                    <div class="col-md-8 reviews">
+                                        <div class="row w-100">
+                                            <div class="col-md-5"
+                                                style="border-right: var(--bs-accordion-border-width) solid var(--bs-accordion-border-color) !important;">
+                                                <div class="rating">
+                                                    <div class="stars">
+                                                        <span class="ratingNum">5.0</span>
+                                                        <span class="fa fa-star-o checked"></span>
+                                                        <span class="fa fa-star-o checked"></span>
+                                                        <span class="fa fa-star-o checked"></span>
+                                                        <span class="fa fa-star-o"></span>
+                                                        <span class="fa fa-star-o"></span>
+                                                    </div>
+                                                    <span class="review-no">Based on 2 Reviews</span>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-7"
+                                                style="border-right: var(--bs-accordion-border-width) solid var(--bs-accordion-border-color) !important;">
+                                                <div class="row rating">
+                                                    <div class="col-md-5">
+                                                        <div class="stars starts-review">
+                                                            <span class="fa fa-star-o checked"></span>
+                                                            <span class="fa fa-star-o checked"></span>
+                                                            <span class="fa fa-star-o checked"></span>
+                                                            <span class="fa fa-star-o checked"></span>
+                                                            <span class="fa fa-star-o checked"></span>
+                                                        </div>
+                                                        <div class="stars starts-review">
+                                                            <span class="fa fa-star-o checked"></span>
+                                                            <span class="fa fa-star-o checked"></span>
+                                                            <span class="fa fa-star-o checked"></span>
+                                                            <span class="fa fa-star-o checked"></span>
+                                                            <span class="fa fa-star-o"></span>
+                                                        </div>
+                                                        <div class="stars starts-review">
+                                                            <span class="fa fa-star-o checked"></span>
+                                                            <span class="fa fa-star-o checked"></span>
+                                                            <span class="fa fa-star-o checked"></span>
+                                                            <span class="fa fa-star-o"></span>
+                                                            <span class="fa fa-star-o"></span>
+                                                        </div>
+                                                        <div class="stars starts-review">
+                                                            <span class="fa fa-star-o checked"></span>
+                                                            <span class="fa fa-star-o checked"></span>
+                                                            <span class="fa fa-star-o"></span>
+                                                            <span class="fa fa-star-o"></span>
+                                                            <span class="fa fa-star-o"></span>
+                                                        </div>
+                                                        <div class="stars starts-review">
+                                                            <span class="fa fa-star-o checked"></span>
+                                                            <span class="fa fa-star-o"></span>
+                                                            <span class="fa fa-star-o"></span>
+                                                            <span class="fa fa-star-o"></span>
+                                                            <span class="fa fa-star-o"></span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-7">
+                                                        <div class="row">
+                                                            <div class="col-md-10 align-self-center">
+                                                                <div class="progress mt-2">
+                                                                    <div class="progress-bar dark"
+                                                                        style="width:70%;height:10px"></div>
+                                                                </div>
+                                                                <div class="progress ">
+                                                                    <div class="progress-bar dark"
+                                                                        style="width:10%;height:10px"></div>
+                                                                </div>
+                                                                <div class="progress ">
+                                                                    <div class="progress-bar dark"
+                                                                        style="width:10%;height:10px"></div>
+                                                                </div>
+                                                                <div class="progress ">
+                                                                    <div class="progress-bar dark"
+                                                                        style="width:5%;height:10px"></div>
+                                                                </div>
+                                                                <div class="progress ">
+                                                                    <div class="progress-bar dark"
+                                                                        style="width:5%;height:10px"></div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-md-2">
+                                                                <div class="row">
+                                                                    <h6 class="">(5)</h6>
+                                                                </div>
+                                                                <div class="row">
+                                                                    <h6 class="">(4)</h6>
+                                                                </div>
+                                                                <div class="row">
+                                                                    <h6 class="">(3)</h6>
+                                                                </div>
+                                                                <div class="row">
+                                                                    <h6 class="">(2)</h6>
+                                                                </div>
+                                                                <div class="row">
+                                                                    <h6 class="">(1)</h6>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4 reviews">
+                                        <button type="button" class="btn float-end">
+                                            <i class='fa fa-edit'></i><span style="margin-left: 5px;">Write a
+                                                Review</span>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row mt-3">
+                                <div class="col-md-12">
+                                    <ul ngbNav #nav="ngbNav" (activeId)="1" class="nav-tabs">
+                                        <li [ngbNavItem]="1">
+                                            <a ngbNavLink>REVIEWS</a>
+                                            <ng-template ngbNavContent>
+                                                <div class="row mt-3">
+                                                    <div class="col-md-3">
+                                                        <span>Name</span>
+                                                        <input type="text" id="name" name="name" class="form-control"
+                                                            placeholder="Enter your name">
+                                                    </div>
+                                                    <div class="col-md-3">
+                                                        <span>Email</span>
+                                                        <input type="text" id="email" name="email" class="form-control"
+                                                            placeholder="john.smit@example.com">
+                                                    </div>
+                                                    <div class="col-md-12 mt-3">
+                                                        <span>Rating</span>
+                                                        <div class="rating review-sec">
+                                                            <div class="stars">
+                                                                <span class="fa fa-star-o"></span>
+                                                                <span class="fa fa-star-o"></span>
+                                                                <span class="fa fa-star-o"></span>
+                                                                <span class="fa fa-star-o"></span>
+                                                                <span class="fa fa-star-o"></span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-12 mt-3">
+                                                        <span>Title of Review</span>
+                                                        <input type="text" id="review" name="review"
+                                                            class="form-control" placeholder="Give your review a title">
+                                                    </div>
+                                                    <div class="col-md-12 mt-3">
+                                                        <span>How was your overall experience?</span>
+                                                        <textarea name="review_description" id="review_description"
+                                                            class="form-control" cols="30" rows="10"></textarea>
+                                                    </div>
+                                                    <div class="col-md-12 mt-3">
+                                                        <button type="button"
+                                                            class="shop-now-btn float-end m-0">SUBMIT</button>
+                                                    </div>
+                                                </div>
+                                            </ng-template>
+                                        </li>
+                                    </ul>
+                                    <div [ngbNavOutlet]="nav" class="px-4 pb-3 border"></div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="btn-group float-end">
+                                        <button type="button" class="btn">Sort</button>
+                                        <div class="btn-group" ngbDropdown role="group"
+                                            aria-label="Button group with nested dropdown">
+                                            <button type="button" class="btn dropdown-toggle-split"
+                                                ngbDropdownToggle></button>
+                                            <div class="dropdown-menu" ngbDropdownMenu>
+                                                <button ngbDropdownItem>Sort</button>
+                                                <button ngbDropdownItem>Most Recent</button>
+                                                <button ngbDropdownItem>Highest Rating</button>
+                                                <button ngbDropdownItem>Lowest Rating</button>
+                                                <button ngbDropdownItem>Most Helpful</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row w-100 m-0">
+                                        <div class="col-md-12 p-0">
+                                            <div class="reviewsLis">
+                                                <span class="float-start reviewtitle">Sebastiane</span>
+                                                <span class="float-end">08/26/2021</span>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-12 p-0">
+                                            <span class="text-muted">Germany</span>
+                                        </div>
+                                        <div class="col-md-12 p-0 mt-3">
+                                            <div class="rating">
+                                                <div class="stars">
+                                                    <span class="fa fa-star-o"></span>
+                                                    <span class="fa fa-star-o"></span>
+                                                    <span class="fa fa-star-o"></span>
+                                                    <span class="fa fa-star-o"></span>
+                                                    <span class="fa fa-star-o"></span>
+                                                    <span class="mx-2 reviewtitle"
+                                                        style="font-size: 15px !important;">Helped my
+                                                        skin</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-12 p-0">
+                                            <p>Contains good stuff that i am using daily in my care routine. Now these
+                                                capsules help my skin from within
+                                                <br><br>
+                                                Skin Meister Komplex <br>
+                                                Anti Aging Complex Enriched With Q10 & Hyaluronic Acid
+                                            </p>
+                                        </div>
+                                        <div class="col-md-12 p-0">
+                                            <div class="rating float-start reviewShare">
+                                                <div class="stars">
+                                                    <span class="fa fa-share-square-o"></span>
+                                                    <span class="mx-2">Share</span>
+                                                </div>
+                                            </div>
+                                            <div class="rating float-end reviewShare">
+                                                <div class="stars">
+                                                    <span class="mx-3">Was this helpful?</span>
+                                                    <span class="fa fa-thumbs-up"></span>
+                                                    <span class="mx-2">1</span>
+                                                    <span class="fa fa-thumbs-down"></span>
+                                                    <span class="mx-2">0</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <hr class="my-5">
+                                    <div class="row w-100 m-0">
+                                        <div class="col-md-12 p-0">
+                                            <div class="reviewsLis m-0">
+                                                <span class="float-start reviewtitle">Sebastiane</span>
+                                                <span class="float-end">08/26/2021</span>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-12 p-0">
+                                            <span class="text-muted">Germany</span>
+                                        </div>
+                                        <div class="col-md-12 p-0 mt-3">
+                                            <div class="rating">
+                                                <div class="stars">
+                                                    <span class="fa fa-star-o"></span>
+                                                    <span class="fa fa-star-o"></span>
+                                                    <span class="fa fa-star-o"></span>
+                                                    <span class="fa fa-star-o"></span>
+                                                    <span class="fa fa-star-o"></span>
+                                                    <span class="mx-2 reviewtitle"
+                                                        style="font-size: 15px !important;">Helped my
+                                                        skin</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-12 p-0">
+                                            <p>Contains good stuff that i am using daily in my care routine. Now these
+                                                capsules help my skin from within
+                                                <br><br>
+                                                Skin Meister Komplex <br>
+                                                Anti Aging Complex Enriched With Q10 & Hyaluronic Acid
+                                            </p>
+                                        </div>
+                                        <div class="col-md-12 p-0">
+                                            <div class="rating float-start reviewShare">
+                                                <div class="stars">
+                                                    <span class="fa fa-share-square-o"></span>
+                                                    <span class="mx-2">Share</span>
+                                                </div>
+                                            </div>
+                                            <div class="rating float-end reviewShare">
+                                                <div class="stars">
+                                                    <span class="mx-3">Was this helpful?</span>
+                                                    <span class="fa fa-thumbs-up"></span>
+                                                    <span class="mx-2">1</span>
+                                                    <span class="fa fa-thumbs-down"></span>
+                                                    <span class="mx-2">0</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </ng-template>
+                    </ngb-panel>
+                </ngb-accordion>
+            </div>
+        </div>
+        <section class="newin__Wrapper my-5">
+            <div class="container-xl">
+                <div class="row m-0 mb-4 text-center">
+                    <h2 class="section-Heading">YOU MAY ALSO LIKE</h2>
+                </div>
+                <div class="row m-0 mb-5">
+                    <div class="card-slider">
+                        <a href="/product-details" class="card">
+                            <h2 class="title">Okoko Cosmetiques</h2>
+                            <div class="image">
+                                <img class="img-fluid" src="assets/images/product-1.png" alt="">
+                            </div>
+                            <div class="popup_btn_addtocart">
+                                <form action="" method="post" enctype="">
+                                    <button class="tdcart" type="submit" name="add" data-add-to-cart="">
+                                        Add to cart
+                                    </button>
+                                </form>
+                            </div>
+                            <p class="description">La Boue De Beaute Black Label Brightening, Anti-Aging Face Mask</p>
+                            <div class="description mb-0">
+                                <ul class="list-unstyled d-flex star-ul mb-2">
+                                    <li><img class="img-fluid" src="assets/images/star-outline.png" alt="" width="16" />
+                                    </li>
+                                    <li><img class="img-fluid" src="assets/images/star-outline.png" alt="" width="16" />
+                                    </li>
+                                    <li><img class="img-fluid" src="assets/images/star-outline.png" alt="" width="16" />
+                                    </li>
+                                    <li><img class="img-fluid" src="assets/images/star-outline.png" alt="" width="16" />
+                                    </li>
+                                    <li><img class="img-fluid" src="assets/images/star-outline.png" alt="" width="16" />
+                                    </li>
+                                </ul>
+                            </div>
+                            <!-- The badge is placed right next to prices so its read out by screen readers in a more logical way. -->
+                            <div class="favourite"><img class="img-fluid" src="assets/images/star-outline.png" alt=""
+                                    width="18" />
+                            </div>
+
+                            <div class="price mb-3">
+                                <span class="new-price">₴2,344.68</span>
+                            </div>
+                        </a>
+
+                        <a href="javascript:void(0);" class="card">
+                            <h2 class="title">Okoko Cosmetiques</h2>
+                            <div class="image">
+                                <img class="img-fluid" src="assets/images/product-2.png" alt="">
+                            </div>
+                            <div class="popup_btn_addtocart">
+                                <form action="" method="post" enctype="">
+                                    <button class="tdcart" type="submit" name="add" data-add-to-cart="">
+                                        Add to cart
+                                    </button>
+                                </form>
+                            </div>
+                            <p class="description">La Boue De Beaute Black Label Brightening, Anti-Aging Face Mask</p>
+                            <div class="description mb-0">
+                                <ul class="list-unstyled d-flex star-ul mb-2">
+                                    <li><img class="img-fluid" src="assets/images/star-outline.png" alt="" width="16" />
+                                    </li>
+                                    <li><img class="img-fluid" src="assets/images/star-outline.png" alt="" width="16" />
+                                    </li>
+                                    <li><img class="img-fluid" src="assets/images/star-outline.png" alt="" width="16" />
+                                    </li>
+                                    <li><img class="img-fluid" src="assets/images/star-outline.png" alt="" width="16" />
+                                    </li>
+                                    <li><img class="img-fluid" src="assets/images/star-outline.png" alt="" width="16" />
+                                    </li>
+                                </ul>
+                            </div>
+                            <!-- The badge is placed right next to prices so its read out by screen readers in a more logical way. -->
+                            <div class="favourite"><img class="img-fluid" src="assets/images/star-outline.png" alt=""
+                                    width="18" />
+                            </div>
+
+                            <div class="price mb-3">
+                                <span class="new-price">₴2,344.68</span>
+                            </div>
+                        </a>
+                        <a href="javascript:void(0);" class="card">
+                            <h2 class="title">Okoko Cosmetiques</h2>
+                            <div class="image">
+                                <img class="img-fluid" src="assets/images/product-3.png" alt="">
+                            </div>
+                            <div class="popup_btn_addtocart">
+                                <form action="" method="post" enctype="">
+                                    <button class="tdcart" type="submit" name="add" data-add-to-cart="">
+                                        Add to cart
+                                    </button>
+                                </form>
+                            </div>
+                            <p class="description">La Boue De Beaute Black Label Brightening, Anti-Aging Face Mask</p>
+                            <div class="description mb-0">
+                                <ul class="list-unstyled d-flex star-ul mb-2">
+                                    <li><img class="img-fluid" src="assets/images/star-outline.png" alt="" width="16" />
+                                    </li>
+                                    <li><img class="img-fluid" src="assets/images/star-outline.png" alt="" width="16" />
+                                    </li>
+                                    <li><img class="img-fluid" src="assets/images/star-outline.png" alt="" width="16" />
+                                    </li>
+                                    <li><img class="img-fluid" src="assets/images/star-outline.png" alt="" width="16" />
+                                    </li>
+                                    <li><img class="img-fluid" src="assets/images/star-outline.png" alt="" width="16" />
+                                    </li>
+                                </ul>
+                            </div>
+                            <!-- The badge is placed right next to prices so its read out by screen readers in a more logical way. -->
+                            <div class="favourite"><img class="img-fluid" src="assets/images/star-outline.png" alt=""
+                                    width="18" />
+                            </div>
+
+                            <div class="price mb-3">
+                                <span class="new-price">₴2,344.68</span>
+                            </div>
+                        </a>
+                        <a href="javascript:void(0);" class="card">
+                            <h2 class="title">Okoko Cosmetiques</h2>
+                            <div class="image">
+                                <img class="img-fluid" src="assets/images/product-4.png" alt="">
+                            </div>
+                            <div class="popup_btn_addtocart">
+                                <form action="" method="post" enctype="">
+                                    <button class="tdcart" type="submit" name="add" data-add-to-cart="">
+                                        Add to cart
+                                    </button>
+                                </form>
+                            </div>
+                            <p class="description">La Boue De Beaute Black Label Brightening, Anti-Aging Face Mask</p>
+                            <div class="description mb-0">
+                                <ul class="list-unstyled d-flex star-ul mb-2">
+                                    <li><img class="img-fluid" src="assets/images/star-outline.png" alt="" width="16" />
+                                    </li>
+                                    <li><img class="img-fluid" src="assets/images/star-outline.png" alt="" width="16" />
+                                    </li>
+                                    <li><img class="img-fluid" src="assets/images/star-outline.png" alt="" width="16" />
+                                    </li>
+                                    <li><img class="img-fluid" src="assets/images/star-outline.png" alt="" width="16" />
+                                    </li>
+                                    <li><img class="img-fluid" src="assets/images/star-outline.png" alt="" width="16" />
+                                    </li>
+                                </ul>
+                            </div>
+                            <!-- The badge is placed right next to prices so its read out by screen readers in a more logical way. -->
+                            <div class="favourite"><img class="img-fluid" src="assets/images/star-outline.png" alt=""
+                                    width="18" />
+                            </div>
+
+                            <div class="price mb-3">
+                                <span class="new-price">₴2,344.68</span>
+                            </div>
+                        </a>
+                        <a href="javascript:void(0);" class="card">
+                            <h2 class="title">Okoko Cosmetiques</h2>
+                            <div class="image">
+                                <img class="img-fluid" src="assets/images/product-5.png" alt="">
+                            </div>
+                            <div class="popup_btn_addtocart">
+                                <form action="" method="post" enctype="">
+                                    <button class="tdcart" type="submit" name="add" data-add-to-cart="">
+                                        Add to cart
+                                    </button>
+                                </form>
+                            </div>
+                            <p class="description">La Boue De Beaute Black Label Brightening, Anti-Aging Face Mask</p>
+                            <div class="description mb-0">
+                                <ul class="list-unstyled d-flex star-ul mb-2">
+                                    <li><img class="img-fluid" src="assets/images/star-outline.png" alt="" width="16" />
+                                    </li>
+                                    <li><img class="img-fluid" src="assets/images/star-outline.png" alt="" width="16" />
+                                    </li>
+                                    <li><img class="img-fluid" src="assets/images/star-outline.png" alt="" width="16" />
+                                    </li>
+                                    <li><img class="img-fluid" src="assets/images/star-outline.png" alt="" width="16" />
+                                    </li>
+                                    <li><img class="img-fluid" src="assets/images/star-outline.png" alt="" width="16" />
+                                    </li>
+                                </ul>
+                            </div>
+                            <!-- The badge is placed right next to prices so its read out by screen readers in a more logical way. -->
+                            <div class="favourite"><img class="img-fluid" src="assets/images/star-outline.png" alt=""
+                                    width="18" />
+                            </div>
+
+                            <div class="price mb-3">
+                                <span class="new-price">₴2,344.68</span>
+                            </div>
+                        </a>
+                        <a href="javascript:void(0);" class="card">
+                            <h2 class="title">Okoko Cosmetiques</h2>
+                            <div class="image">
+                                <img class="img-fluid" src="assets/images/product-1.png" alt="">
+                            </div>
+                            <div class="popup_btn_addtocart">
+                                <form action="" method="post" enctype="">
+                                    <button class="tdcart" type="submit" name="add" data-add-to-cart="">
+                                        Add to cart
+                                    </button>
+                                </form>
+                            </div>
+                            <p class="description">La Boue De Beaute Black Label Brightening, Anti-Aging Face Mask</p>
+                            <div class="description mb-0">
+                                <ul class="list-unstyled d-flex star-ul mb-2">
+                                    <li><img class="img-fluid" src="assets/images/star-outline.png" alt="" width="16" />
+                                    </li>
+                                    <li><img class="img-fluid" src="assets/images/star-outline.png" alt="" width="16" />
+                                    </li>
+                                    <li><img class="img-fluid" src="assets/images/star-outline.png" alt="" width="16" />
+                                    </li>
+                                    <li><img class="img-fluid" src="assets/images/star-outline.png" alt="" width="16" />
+                                    </li>
+                                    <li><img class="img-fluid" src="assets/images/star-outline.png" alt="" width="16" />
+                                    </li>
+                                </ul>
+                            </div>
+                            <!-- The badge is placed right next to prices so its read out by screen readers in a more logical way. -->
+                            <div class="favourite"><img class="img-fluid" src="assets/images/star-outline.png" alt=""
+                                    width="18" />
+                            </div>
+
+                            <div class="price mb-3">
+                                <span class="new-price">₴2,344.68</span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <hr>
+        <section class="newin__Wrapper my-5">
+            <div class="container-xl">
+                <div class="row m-0 mb-4 text-center">
+                    <h2 class="section-Heading">RECENTLY VIEWED</h2>
+                </div>
+                <div class="row m-0 mb-5">
+                    <div class="card-slider">
+                        <a href="/product-details" class="card">
+                            <h2 class="title">Okoko Cosmetiques</h2>
+                            <div class="image">
+                                <img class="img-fluid" src="assets/images/product-1.png" alt="">
+                            </div>
+                            <div class="popup_btn_addtocart">
+                                <form action="" method="post" enctype="">
+                                    <button class="tdcart" type="submit" name="add" data-add-to-cart="">
+                                        Add to cart
+                                    </button>
+                                </form>
+                            </div>
+                            <p class="description">La Boue De Beaute Black Label Brightening, Anti-Aging Face Mask</p>
+                            <div class="description mb-0">
+                                <ul class="list-unstyled d-flex star-ul mb-2">
+                                    <li><img class="img-fluid" src="assets/images/star-outline.png" alt="" width="16" />
+                                    </li>
+                                    <li><img class="img-fluid" src="assets/images/star-outline.png" alt="" width="16" />
+                                    </li>
+                                    <li><img class="img-fluid" src="assets/images/star-outline.png" alt="" width="16" />
+                                    </li>
+                                    <li><img class="img-fluid" src="assets/images/star-outline.png" alt="" width="16" />
+                                    </li>
+                                    <li><img class="img-fluid" src="assets/images/star-outline.png" alt="" width="16" />
+                                    </li>
+                                </ul>
+                            </div>
+                            <!-- The badge is placed right next to prices so its read out by screen readers in a more logical way. -->
+                            <div class="favourite"><img class="img-fluid" src="assets/images/star-outline.png" alt=""
+                                    width="18" />
+                            </div>
+
+                            <div class="price mb-3">
+                                <span class="new-price">₴2,344.68</span>
+                            </div>
+                        </a>
+
+                        <a href="javascript:void(0);" class="card">
+                            <h2 class="title">Okoko Cosmetiques</h2>
+                            <div class="image">
+                                <img class="img-fluid" src="assets/images/product-2.png" alt="">
+                            </div>
+                            <div class="popup_btn_addtocart">
+                                <form action="" method="post" enctype="">
+                                    <button class="tdcart" type="submit" name="add" data-add-to-cart="">
+                                        Add to cart
+                                    </button>
+                                </form>
+                            </div>
+                            <p class="description">La Boue De Beaute Black Label Brightening, Anti-Aging Face Mask</p>
+                            <div class="description mb-0">
+                                <ul class="list-unstyled d-flex star-ul mb-2">
+                                    <li><img class="img-fluid" src="assets/images/star-outline.png" alt="" width="16" />
+                                    </li>
+                                    <li><img class="img-fluid" src="assets/images/star-outline.png" alt="" width="16" />
+                                    </li>
+                                    <li><img class="img-fluid" src="assets/images/star-outline.png" alt="" width="16" />
+                                    </li>
+                                    <li><img class="img-fluid" src="assets/images/star-outline.png" alt="" width="16" />
+                                    </li>
+                                    <li><img class="img-fluid" src="assets/images/star-outline.png" alt="" width="16" />
+                                    </li>
+                                </ul>
+                            </div>
+                            <!-- The badge is placed right next to prices so its read out by screen readers in a more logical way. -->
+                            <div class="favourite"><img class="img-fluid" src="assets/images/star-outline.png" alt=""
+                                    width="18" />
+                            </div>
+
+                            <div class="price mb-3">
+                                <span class="new-price">₴2,344.68</span>
+                            </div>
+                        </a>
+                        <a href="javascript:void(0);" class="card">
+                            <h2 class="title">Okoko Cosmetiques</h2>
+                            <div class="image">
+                                <img class="img-fluid" src="assets/images/product-3.png" alt="">
+                            </div>
+                            <div class="popup_btn_addtocart">
+                                <form action="" method="post" enctype="">
+                                    <button class="tdcart" type="submit" name="add" data-add-to-cart="">
+                                        Add to cart
+                                    </button>
+                                </form>
+                            </div>
+                            <p class="description">La Boue De Beaute Black Label Brightening, Anti-Aging Face Mask</p>
+                            <div class="description mb-0">
+                                <ul class="list-unstyled d-flex star-ul mb-2">
+                                    <li><img class="img-fluid" src="assets/images/star-outline.png" alt="" width="16" />
+                                    </li>
+                                    <li><img class="img-fluid" src="assets/images/star-outline.png" alt="" width="16" />
+                                    </li>
+                                    <li><img class="img-fluid" src="assets/images/star-outline.png" alt="" width="16" />
+                                    </li>
+                                    <li><img class="img-fluid" src="assets/images/star-outline.png" alt="" width="16" />
+                                    </li>
+                                    <li><img class="img-fluid" src="assets/images/star-outline.png" alt="" width="16" />
+                                    </li>
+                                </ul>
+                            </div>
+                            <!-- The badge is placed right next to prices so its read out by screen readers in a more logical way. -->
+                            <div class="favourite"><img class="img-fluid" src="assets/images/star-outline.png" alt=""
+                                    width="18" />
+                            </div>
+
+                            <div class="price mb-3">
+                                <span class="new-price">₴2,344.68</span>
+                            </div>
+                        </a>
+                        <a href="javascript:void(0);" class="card">
+                            <h2 class="title">Okoko Cosmetiques</h2>
+                            <div class="image">
+                                <img class="img-fluid" src="assets/images/product-4.png" alt="">
+                            </div>
+                            <div class="popup_btn_addtocart">
+                                <form action="" method="post" enctype="">
+                                    <button class="tdcart" type="submit" name="add" data-add-to-cart="">
+                                        Add to cart
+                                    </button>
+                                </form>
+                            </div>
+                            <p class="description">La Boue De Beaute Black Label Brightening, Anti-Aging Face Mask</p>
+                            <div class="description mb-0">
+                                <ul class="list-unstyled d-flex star-ul mb-2">
+                                    <li><img class="img-fluid" src="assets/images/star-outline.png" alt="" width="16" />
+                                    </li>
+                                    <li><img class="img-fluid" src="assets/images/star-outline.png" alt="" width="16" />
+                                    </li>
+                                    <li><img class="img-fluid" src="assets/images/star-outline.png" alt="" width="16" />
+                                    </li>
+                                    <li><img class="img-fluid" src="assets/images/star-outline.png" alt="" width="16" />
+                                    </li>
+                                    <li><img class="img-fluid" src="assets/images/star-outline.png" alt="" width="16" />
+                                    </li>
+                                </ul>
+                            </div>
+                            <!-- The badge is placed right next to prices so its read out by screen readers in a more logical way. -->
+                            <div class="favourite"><img class="img-fluid" src="assets/images/star-outline.png" alt=""
+                                    width="18" />
+                            </div>
+
+                            <div class="price mb-3">
+                                <span class="new-price">₴2,344.68</span>
+                            </div>
+                        </a>
+                        <a href="javascript:void(0);" class="card">
+                            <h2 class="title">Okoko Cosmetiques</h2>
+                            <div class="image">
+                                <img class="img-fluid" src="assets/images/product-5.png" alt="">
+                            </div>
+                            <div class="popup_btn_addtocart">
+                                <form action="" method="post" enctype="">
+                                    <button class="tdcart" type="submit" name="add" data-add-to-cart="">
+                                        Add to cart
+                                    </button>
+                                </form>
+                            </div>
+                            <p class="description">La Boue De Beaute Black Label Brightening, Anti-Aging Face Mask</p>
+                            <div class="description mb-0">
+                                <ul class="list-unstyled d-flex star-ul mb-2">
+                                    <li><img class="img-fluid" src="assets/images/star-outline.png" alt="" width="16" />
+                                    </li>
+                                    <li><img class="img-fluid" src="assets/images/star-outline.png" alt="" width="16" />
+                                    </li>
+                                    <li><img class="img-fluid" src="assets/images/star-outline.png" alt="" width="16" />
+                                    </li>
+                                    <li><img class="img-fluid" src="assets/images/star-outline.png" alt="" width="16" />
+                                    </li>
+                                    <li><img class="img-fluid" src="assets/images/star-outline.png" alt="" width="16" />
+                                    </li>
+                                </ul>
+                            </div>
+                            <!-- The badge is placed right next to prices so its read out by screen readers in a more logical way. -->
+                            <div class="favourite"><img class="img-fluid" src="assets/images/star-outline.png" alt=""
+                                    width="18" />
+                            </div>
+
+                            <div class="price mb-3">
+                                <span class="new-price">₴2,344.68</span>
+                            </div>
+                        </a>
+                        <a href="javascript:void(0);" class="card">
+                            <h2 class="title">Okoko Cosmetiques</h2>
+                            <div class="image">
+                                <img class="img-fluid" src="assets/images/product-1.png" alt="">
+                            </div>
+                            <div class="popup_btn_addtocart">
+                                <form action="" method="post" enctype="">
+                                    <button class="tdcart" type="submit" name="add" data-add-to-cart="">
+                                        Add to cart
+                                    </button>
+                                </form>
+                            </div>
+                            <p class="description">La Boue De Beaute Black Label Brightening, Anti-Aging Face Mask</p>
+                            <div class="description mb-0">
+                                <ul class="list-unstyled d-flex star-ul mb-2">
+                                    <li><img class="img-fluid" src="assets/images/star-outline.png" alt="" width="16" />
+                                    </li>
+                                    <li><img class="img-fluid" src="assets/images/star-outline.png" alt="" width="16" />
+                                    </li>
+                                    <li><img class="img-fluid" src="assets/images/star-outline.png" alt="" width="16" />
+                                    </li>
+                                    <li><img class="img-fluid" src="assets/images/star-outline.png" alt="" width="16" />
+                                    </li>
+                                    <li><img class="img-fluid" src="assets/images/star-outline.png" alt="" width="16" />
+                                    </li>
+                                </ul>
+                            </div>
+                            <!-- The badge is placed right next to prices so its read out by screen readers in a more logical way. -->
+                            <div class="favourite"><img class="img-fluid" src="assets/images/star-outline.png" alt=""
+                                    width="18" />
+                            </div>
+
+                            <div class="price mb-3">
+                                <span class="new-price">₴2,344.68</span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+</div>
+
+
+<ng-template #longContent let-modal>
+	<div class="modal-header">
+		<h4 class="modal-title">SHOPPING BAG</h4>
+		<button type="button" class="btn-close" aria-label="Close" (click)="modal.dismiss('Cross click')"></button>
+	</div>
+	<div class="modal-body">
+		<div class="cart-item-container  cart-item-container-drawer ">
+            <div class="cart-item-shipping-details">
+              <span class="cart-shipping-country-icon"
+                style="background: url(https://hatscripts.github.io/circle-flags/flags/gb.svg) no-repeat 0 0;"></span>
+              &nbsp;&nbsp;Shipped from United Kingdom
+            </div>
+          
+            <div class="cart-item-product-details for-drawer">
+              <div class="cart-item-image">
+                <div class="AspectRatio" style="--aspect-ratio: 0.714">
+                  <img
+                    src="https://cdn.shopify.com/s/files/1/0403/8685/5073/products/mauli-rituals-product_14_1_100_3b745.png?v=1676618613"
+                    alt="3 Step Grow Strong Hair Range">
+                </div>
+              </div>
+              <div class="cart-details-for-drawer">
+                <div class="cart-item-name">
+                  <h2 class="CartItem__Title Heading">
+                    <a class="prt_name" href="/products/3-step-grow-strong-hair-range?variant=37774544273569">3 Step Grow Strong Hair Range</a>
+                  </h2>
+                  <p class="CartItem__Variant"></p>
+                </div>
+                <div class="cart-item-price">
+                  <span>
+                    ₹7460.93
+                  </span>
+                </div>
+                <div class="cart-item-specs">
+                  <span class="span_name">Quantity</span>
+                  <a href="javascript: void(0);" onclick="" class="cart_icon">
+                    <svg class="Icon Icon--minus" role="presentation" viewBox="0 0 16 2">
+                      <path d="M1,1 L15,1" stroke="currentColor" fill="none" fill-rule="evenodd" stroke-linecap="square"></path>
+                    </svg>
+                  </a>
+                  <input type="text" name="updates" class="cart_quantity" value="7">
+                  <a href="javascript: void(0);" onclick=""  class="cart_icon">
+                    <svg class="Icon Icon--plus" role="presentation" viewBox="0 0 16 16">
+                      <g stroke="currentColor" fill="none" fill-rule="evenodd" stroke-linecap="square">
+                        <path d="M8,1 L8,15"></path>
+                        <path d="M1,8 L15,8"></path>
+                      </g>
+                    </svg>
+                  </a>
+                  <div class="wish">
+                    <a class="iWishViews wish_star" href=""><img class="icon_star" src="https://cdn.shopify.com/s/files/1/0403/8685/5073/files/star-wish.svg?v=1594670747"></a>
+                    <a class="iWishView" href=""> Add to wishlist </a>
+                  </div>
+                </div>
+                <div class="cart-item-remove">
+                  <a href="javascript: void(0);" onclick=""
+                    class="text-link text-link--accent" aria-label="translation missing: en.cart.label.remove"
+                    data-cart-remove=""><i class="fa fa-trash" aria-hidden="true"></i></a>
+                </div>
+              </div>
+            </div>
+
+          </div>
+	</div>
+	<div class="modal-footer">
+		<p class="Cart__Taxes Text--subdued">Shipping &amp; taxes calculated at checkout</p>
+        <button type="button"  name="checkout" class="checkout_btn" [routerLink]="['../checkout-page']" (click)="close()">
+            <span>Checkout</span>
+            <span class="Button__SeparatorDot"></span>
+            <span>Rs. 83,823.61</span>
+          </button>
+	</div>
+</ng-template>
