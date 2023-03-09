@@ -91,15 +91,7 @@ a.shop-look-link-show{
     padding: 8px!important;
     text-decoration: underline;
 }
-div.PageLayout.PageLayout--breakLap
-{
-    line-height: 1.65;
-    box-sizing: border-box!important;
-    flex-wrap: nowrap;
-    display: grid;
-    grid-template-columns: 1fr 300px;
 
-}
 div.PageLayout__Section
 {
     max-width: 950px;
@@ -167,11 +159,7 @@ padding: 14px 28px!important;
 color: #f7f8f9;
 }
 
-div.PageLayout__Section.PageLayout__Section--secondary
-{    
-    max-width: 290px;
-    margin-bottom: 30px;
-}
+
 .AccountAddress{
     text-size-adjust: 100%;
     font-family: Futura,sans-serif;
@@ -258,3 +246,62 @@ div.Segment__ButtonWrapper{
     z-index: -1;
     background-color: #FFF;
 }
+
+@media only screen and (max-width: 720px) {
+    /* For mobile phones: */
+   
+    #Container{
+        display: block;
+    }
+   .PageHeader{
+    width: 100%;
+    text-align: center;
+    top: 29.7812px;
+    bottom: unset;
+    position: static;
+   }
+   .manage_class{
+    width: 100%;
+    position: static;
+    margin-bottom: 60px;
+   }
+  
+   div.PageLayout.PageLayout--breakLap {
+    line-height: 1.65;
+    box-sizing: border-box!important;
+    width: 100%;
+    text-align: center;
+    
+}
+div.PageLayout__Section.PageLayout__Section--secondary{
+    /* max-width: 290px; */
+    margin-bottom: 30px;
+}
+
+  }
+  @media only screen and (min-width: 720px) {
+    /* For mobile phones: */
+ 
+   .manage_class{
+    position: absolute; 
+    bottom: 0; 
+    right: 10px;
+   }
+
+   div.PageLayout.PageLayout--breakLap
+{
+    line-height: 1.65;
+    box-sizing: border-box!important;
+    flex-wrap: nowrap;
+    display: grid;
+    grid-template-columns: 1fr 300px;
+
+}
+div.PageLayout__Section.PageLayout__Section--secondary
+{    
+    max-width: 290px;
+    margin-bottom: 30px;
+}
+
+  }
+ 

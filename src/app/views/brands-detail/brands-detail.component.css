@@ -333,3 +333,48 @@ div.brand-names
     flex: 0 0 20%;
 
 }
+
+
+
+  @media only screen and (max-width: 1136px) {
+    /* For mobile phones: */
+   
+    #main{
+        display: block;
+    }
+    .brands-content-container {
+        width: 100%;
+        height: auto;
+      }
+      .brand-names{
+        font-size: 2vh;
+        text-align: center;
+        width: 100%;
+        padding-bottom: 20px;
+      }
+  
+div.brands-content-floating{
+   
+    width: 100%;
+    text-align: center;
+    top: 29.7812px;
+    bottom: unset;
+    position: static;
+}
+.brands-all-alphabets{
+    width: 100%;
+}
+
+
+
+  }
+  
+
+  * {
+    box-sizing: border-box;
+  }
+
+
+
+
+
