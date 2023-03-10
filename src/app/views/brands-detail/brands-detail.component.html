@@ -48,7 +48,7 @@
                         </div>
                         <div id="shopify-section-brand_advertisement" class="shopify-section">
                             <div class="advertisement-container brands" style="width: 255.46px;"><a
-                                    href="https://thenutricosmeticcompany.com/collections/baubo" target="_blank"><img
+                                    href="" target="_blank"><img
                                         src="https://thenutricosmeticcompany.co.uk/api/advertisements/uploads/brand/desktop.png?1677215153578"></a>
                             </div>
                         </div>
@@ -65,7 +65,7 @@
                   
                         <div class="brand-names">
                           
-                            <a href="/collections/{{ brand1.ID }}"  *ngFor="let brand1 of brand[1].record; let i=index">{{brand1.name}}</a>
+                            <a [routerLink]="['/collections/'+ brand1.ID]"  *ngFor="let brand1 of brand[1].record; let i=index">{{brand1.name}}</a>
                              </div>
                            
                     </div>

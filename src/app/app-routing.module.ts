@@ -17,6 +17,7 @@ import { CookiePolicyComponent } from './views/footer-pages/cookie-policy/cookie
 import { AccountPageComponent } from './views/account-pages/account-page/account-page.component';
 import { EditAddressComponent } from './views/account-pages/edit-address/edit-address.component';
 import { ShoppingCartComponent } from './views/shopping-cart/shopping-cart.component';
+import { CollectionsComponent } from './views/collections/collections.component';
 const routes: Routes = [
   {
     path: '',
@@ -138,6 +139,10 @@ const routes: Routes = [
       {
         path: 'checkout-page',
         component: ShoppingCartComponent
+      },
+      {
+        path: 'collections/:id',
+        component: CollectionsComponent
       },
      
      

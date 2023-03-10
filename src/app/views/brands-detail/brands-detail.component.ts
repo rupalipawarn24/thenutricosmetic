@@ -34,6 +34,8 @@ export class BrandsDetailComponent implements OnInit {
           // console.log(this.brands);
         });
   }
+
+  
  
 
 }

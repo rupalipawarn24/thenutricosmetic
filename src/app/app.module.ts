@@ -40,6 +40,7 @@ import { AccountPageComponent } from './views/account-pages/account-page/account
 import { EditAddressComponent } from './views/account-pages/edit-address/edit-address.component';
 import { ShoppingCartComponent } from './views/shopping-cart/shopping-cart.component';
 import { HttpClientModule } from '@angular/common/http';
+import { CollectionsComponent } from './views/collections/collections.component';
 
 
 const APP_CONTAINERS = [
@@ -75,6 +76,7 @@ const APP_CONTAINERS = [
     AccountPageComponent,
     EditAddressComponent,
     ShoppingCartComponent,
+    CollectionsComponent,
   ],
   imports: [
     BrowserModule,
