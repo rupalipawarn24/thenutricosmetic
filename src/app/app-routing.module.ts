@@ -40,7 +40,7 @@ const routes: Routes = [
 
       },
       {
-        path: 'product-catalog',
+        path: 'product-catalog/:id',
         component: ProductCatalogComponent
         // loadChildren: () => import('./views/product-details/product-details.module').then(m => m.ProductDetailsModule)
 

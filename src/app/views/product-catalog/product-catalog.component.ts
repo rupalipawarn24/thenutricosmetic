@@ -2,6 +2,8 @@ import { Component, OnInit } from '@angular/core';
 import { Options } from '@angular-slider/ngx-slider';
 import { FormControl, FormGroup } from '@angular/forms';
 import { ModalDismissReasons, NgbModal } from '@ng-bootstrap/ng-bootstrap';
+import { ActivatedRoute } from '@angular/router';
+import { BrandServiceService } from 'src/app/services/brand-service.service';
 @Component({
   selector: 'app-product-catalog',
   templateUrl: './product-catalog.component.html',
@@ -9,6 +11,8 @@ import { ModalDismissReasons, NgbModal } from '@ng-bootstrap/ng-bootstrap';
 })
 export class ProductCatalogComponent implements OnInit {
   closeResult = '';
+  brandId:any;
+  brandData: any;
 
   catlogLayout = [
     "mt-3", "col-12", "col-md-3", "card-slider"
@@ -24,10 +28,14 @@ export class ProductCatalogComponent implements OnInit {
     tickStep: 25
   };
   constructor(
-    private modalService: NgbModal
+    private modalService: NgbModal,
+    private route:ActivatedRoute,
+    private brandService: BrandServiceService
   ) { }
 
   ngOnInit(): void {
+    this.brandId=this.route.snapshot.params['id'];
+    this.getbrandListById();
   }
   changeLayout(data: any) {
     if (data == 'small') {
@@ -59,4 +67,14 @@ export class ProductCatalogComponent implements OnInit {
       return `with: ${reason}`;
     }
   }
+
+  getbrandListById() {
+    this.brandService.getbrandlistById(this.brandId)
+      .subscribe((data: any) => {
+        this.brandData=data;
+        console.log(this.brandData);
+      });
+  }
+
+
 }
