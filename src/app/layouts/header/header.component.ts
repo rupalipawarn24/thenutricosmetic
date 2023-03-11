@@ -14,20 +14,20 @@ export class HeaderComponent implements OnInit {
   ) { }
 
   ngOnInit(): void {
-    if (this.router.url == '/contact-us') {
-      this.is_pages = true;
-    } else {
-      this.is_pages = false;
-    }
-    this.router.events.subscribe((evt) => {
-      if ((evt instanceof NavigationStart)) {
-        if (evt.url == '/contact-us') {
-          this.is_pages = true;
-        } else {
-          this.is_pages = false;
-        }
-      }
-    });
+    // if (this.router.url == '/contact-us') {
+    //   this.is_pages = true;
+    // } else {
+    //   this.is_pages = false;
+    // }
+    // this.router.events.subscribe((evt) => {
+    //   if ((evt instanceof NavigationStart)) {
+    //     if (evt.url == '/contact-us') {
+    //       this.is_pages = true;
+    //     } else {
+    //       this.is_pages = false;
+    //     }
+    //   }
+    // });
   }
 
 }
