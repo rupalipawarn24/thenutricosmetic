@@ -18,6 +18,8 @@ import { AccountPageComponent } from './views/account-pages/account-page/account
 import { EditAddressComponent } from './views/account-pages/edit-address/edit-address.component';
 import { ShoppingCartComponent } from './views/shopping-cart/shopping-cart.component';
 import { CollectionsComponent } from './views/collections/collections.component';
+import { CareersComponent } from './views/footer-pages/careers/careers.component';
+import { AdvertisingComponent } from './views/footer-pages/advertising/advertising.component';
 const routes: Routes = [
   {
     path: '',
@@ -143,6 +145,14 @@ const routes: Routes = [
       {
         path: 'collections/:id',
         component: CollectionsComponent
+      },
+      {
+        path: 'careers',
+        component: CareersComponent
+      },
+      {
+        path: 'advertising',
+        component: AdvertisingComponent
       },
      
      

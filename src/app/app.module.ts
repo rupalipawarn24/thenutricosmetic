@@ -41,6 +41,8 @@ import { EditAddressComponent } from './views/account-pages/edit-address/edit-ad
 import { ShoppingCartComponent } from './views/shopping-cart/shopping-cart.component';
 import { HttpClientModule } from '@angular/common/http';
 import { CollectionsComponent } from './views/collections/collections.component';
+import { CareersComponent } from './views/footer-pages/careers/careers.component';
+import { AdvertisingComponent } from './views/footer-pages/advertising/advertising.component';
 
 
 const APP_CONTAINERS = [
@@ -77,6 +79,8 @@ const APP_CONTAINERS = [
     EditAddressComponent,
     ShoppingCartComponent,
     CollectionsComponent,
+    CareersComponent,
+    AdvertisingComponent,
   ],
   imports: [
     BrowserModule,
