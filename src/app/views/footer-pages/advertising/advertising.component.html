@@ -17,8 +17,8 @@
        
         <div class="col-md-auto">
 
-            Need Help? Call +44 203 855 5733 | <a href="">Email Customer Care</a> | <a href="">FAQ’s </a>| <a
-                href="">Orders & Shipping</a>
+            Need Help? Call +44 203 855 5733 | <a href="mailto:hello@thenutricosmeticcompany.com">Email Customer Care</a> | <a [routerLink]="['/faqs']">FAQ’s </a>| <a
+            [routerLink]="['/orders-shipping']">Orders & Shipping</a>
                 <br><br>
         </div>
     </div>    
@@ -53,7 +53,7 @@
 
 <div class="row justify-content-md-center">
     <div class="col-md-auto">
-        <button type="button" class="add-address-btn">contact us</button>
+        <button type="button" class="add-address-btn" [routerLink]="['/get-in-touch']">contact us</button>
         <br><br>
 </div>
 
@@ -61,7 +61,7 @@
 
 <div class="row justify-content-md-center">
     <div class="col-md-auto">
-     <p>For any other questions? Please read our <a href="">Terms & Conditions</a>.
+     <p>For any other questions? Please read our <a [routerLink]="['/term-conditions']">Terms & Conditions</a>.
     </p>
 
 </div>

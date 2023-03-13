@@ -43,6 +43,15 @@ import { HttpClientModule } from '@angular/common/http';
 import { CollectionsComponent } from './views/collections/collections.component';
 import { CareersComponent } from './views/footer-pages/careers/careers.component';
 import { AdvertisingComponent } from './views/footer-pages/advertising/advertising.component';
+import { AboutUsComponent } from './views/footer-pages/about-us/about-us.component';
+import { CustomerPromiseComponent } from './views/footer-pages/customer-promise/customer-promise.component';
+import { GiftCardsComponent } from './views/footer-pages/gift-cards/gift-cards.component';
+import { ReferAFriendComponent } from './views/footer-pages/refer-a-friend/refer-a-friend.component';
+import { BeautyBeneathTheSurfaceComponent } from './views/footer-pages/beauty-beneath-the-surface/beauty-beneath-the-surface.component';
+import { AffiliatesComponent } from './views/footer-pages/affiliates/affiliates.component';
+import { InvestorsComponent } from './views/footer-pages/investors/investors.component';
+import { AffiliatesFaqsComponent } from './views/footer-pages/affiliates-faqs/affiliates-faqs.component';
+import { GetInTouchComponent } from './views/footer-pages/get-in-touch/get-in-touch.component';
 
 
 const APP_CONTAINERS = [
@@ -81,6 +90,15 @@ const APP_CONTAINERS = [
     CollectionsComponent,
     CareersComponent,
     AdvertisingComponent,
+    AboutUsComponent,
+    CustomerPromiseComponent,
+    GiftCardsComponent,
+    ReferAFriendComponent,
+    BeautyBeneathTheSurfaceComponent,
+    AffiliatesComponent,
+    InvestorsComponent,
+    AffiliatesFaqsComponent,
+    GetInTouchComponent,
   ],
   imports: [
     BrowserModule,

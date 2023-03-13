@@ -20,6 +20,15 @@ import { ShoppingCartComponent } from './views/shopping-cart/shopping-cart.compo
 import { CollectionsComponent } from './views/collections/collections.component';
 import { CareersComponent } from './views/footer-pages/careers/careers.component';
 import { AdvertisingComponent } from './views/footer-pages/advertising/advertising.component';
+import { InvestorsComponent } from './views/footer-pages/investors/investors.component';
+import { AffiliatesComponent } from './views/footer-pages/affiliates/affiliates.component';
+import { BeautyBeneathTheSurfaceComponent } from './views/footer-pages/beauty-beneath-the-surface/beauty-beneath-the-surface.component';
+import { ReferAFriendComponent } from './views/footer-pages/refer-a-friend/refer-a-friend.component';
+import { GiftCardsComponent } from './views/footer-pages/gift-cards/gift-cards.component';
+import { CustomerPromiseComponent } from './views/footer-pages/customer-promise/customer-promise.component';
+import { AboutUsComponent } from './views/footer-pages/about-us/about-us.component';
+import { AffiliatesFaqsComponent } from './views/footer-pages/affiliates-faqs/affiliates-faqs.component';
+import { GetInTouchComponent } from './views/footer-pages/get-in-touch/get-in-touch.component';
 const routes: Routes = [
   {
     path: '',
@@ -154,12 +163,44 @@ const routes: Routes = [
         path: 'advertising',
         component: AdvertisingComponent
       },
-     
-     
+      {
+        path: 'about-us',
+        component: AboutUsComponent
+      },
+      {
+        path: 'customer-promise',
+        component: CustomerPromiseComponent
+      },
+      {
+        path: 'gift-cards',
+        component: GiftCardsComponent
+      },
+      {
+        path: 'refer-a-friend',
+        component: ReferAFriendComponent
+      },
+      {
+        path: 'beauty-beneath-the-surface',
+        component: BeautyBeneathTheSurfaceComponent
+      },
+      {
+        path: 'affiliates',
+        component: AffiliatesComponent
+      },
+      {
+        path: 'investors',
+        component: InvestorsComponent
+      },
+      {
+        path: 'affiliates-faqs',
+        component: AffiliatesFaqsComponent
+      },
+      {
+        path: 'get-in-touch',
+        component: GetInTouchComponent
+      },
       
       
-    
-
     ]
   }
 ];
