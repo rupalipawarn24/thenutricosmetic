@@ -6,7 +6,7 @@
         <ngb-accordion [closeOthers]="true" activeIds="tab-1">
             <ngb-panel id="tab-1" title="Buying an eGift Card">
                 <ng-template ngbPanelContent>
-                    <p>Simply go to our <a href="">eGift Cards</a> page, and select the design you want
+                    <p>Simply go to our <a [routerLink]="['/gift-cards']" target="_blank">eGift Cards</a> page, and select the design you want
                         <br><br>
                         Choose how much you would like to give
                         <br><br>
@@ -22,7 +22,7 @@
                         To purchase multiple gift cards, simply keep adding to your shopping bag.
                         <br><br>
                         <br><br>
-                        For more help, please email <a href="">hello@thenutricosmeticcompany.com</a> or call 0203 855
+                        For more help, please email <a href="mailto:hello@thenutricosmeticcompany.com">hello@thenutricosmeticcompany.com</a> or call 0203 855
                         5733 (UK) or +44
                         203 855 5733 (from a
                         mobile or internationally), 9am - 6pm GMT, Mon-Fri.
@@ -32,7 +32,7 @@
             <ngb-panel id="tab-2" title="How To Redeem">
                 <ng-template ngbPanelContent>
                     <p>
-                        If you haven't done so already, please <a href="">register</a> for The Nutricosmetic Company
+                        If you haven't done so already, please <a [routerLink]="['/register']" target="_blank">register</a> for The Nutricosmetic Company
                         account. Then sign
                         in, select ‘My Account’
                         and under ‘My eGift Cards’ enter your gift card code. Alternatively, you can redeem on the
@@ -66,7 +66,7 @@
                         <br><br>
                         <br><br>
                         To find out about extending gift card validation dates, please email
-                        <a href="">hello@thenutricosmeticcompany.com</a> or call 0203 855
+                        <a href="mailto:hello@thenutricosmeticcompany.com">hello@thenutricosmeticcompany.com</a> or call 0203 855
                         5733 (UK) or +44 203 855 5733 (from a mobile or internationally), 9am - 6pm GMT, Mon-Fri.
                     </p>
                 </ng-template>
@@ -82,9 +82,9 @@
                         credit card up to the amount
                         of your initial card payment and the remaining amount will be refunded as store credit.
                         <br><br>
-                        To return an item that you have purchased with a gift card, see <a href="">here</a>.
+                        To return an item that you have purchased with a gift card, see <a [routerLink]="['/faqs']" target="_blank">here</a>.
                         <br><br>
-                        For more information, please see our <a href="">Terms and Conditions</a>.
+                        For more information, please see our <a [routerLink]="['/term-conditions']" target="_blank">Terms and Conditions</a>.
                     </p>
                 </ng-template>
             </ngb-panel>
@@ -105,7 +105,7 @@
                         <br><br>
                         <br><br>
 
-                        For more help, please email <a href="">hello@thenutricosmeticcompany.com</a> or call 0203 855
+                        For more help, please email <a href="mailto:hello@thenutricosmeticcompany.com">hello@thenutricosmeticcompany.com</a> or call 0203 855
                         5733 (UK) or +44
                         203 855 5733 (from a
                         mobile or internationally), 9am - 6pm GMT, Mon-Fri.

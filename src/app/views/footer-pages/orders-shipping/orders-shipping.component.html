@@ -8,7 +8,8 @@
                 <ng-template ngbPanelContent>
                     <p>As every order is unique, shipping costs will vary depending on the size, weight and destination
                         of your chosen items,
-                        please see our <a href="">Delivery Terms & Conditions</a>. To ensure that the most accurate
+                        please see our <a [routerLink]="['/term-conditions']" target="_blank">Delivery Terms &
+                            Conditions</a>. To ensure that the most accurate
                         pricing, taxes and
                         delivery costs are
                         displayed, we recommend that you click on the menu at the top of our website and select your
@@ -73,7 +74,7 @@
                         this information before
                         your order is returned to The Nutricosmetic Company Brand Partner for a refund.
                         <br><br>
-                        Please view our <a href="">Terms & Conditions</a> for further information.
+                        Please view our <a [routerLink]="['/term-conditions']" target="_blank">Terms & Conditions</a> for further information.
                     </p>
                 </ng-template>
             </ngb-panel>
@@ -90,7 +91,7 @@
                         keep you updated with tracking information and an estimated delivery date. You can also follow
                         its journey by heading to
                         ‘My Orders’ in your account, or if you opted for guest checkout, you can track the status of
-                        your order <a href="">here</a>.
+                        your order <a [routerLink]="['/refer-a-friend']" target="_blank">here</a>.
                         <br><br>
                         If you order from multiple Partners, please bare in mind that your items will arrive separately.
                         While we aim to always
@@ -118,7 +119,7 @@
                         applies to your delivery
                         address, you can update your preference on the shipping page at checkout before proceeding to
                         purchase. By waiving the
-                        signature, you agree to our <a href="">Terms and Conditions</a> and take full responsibility for
+                        signature, you agree to our <a [routerLink]="['/term-conditions']" target="_blank">Terms and Conditions</a> and take full responsibility for
                         any loss or
                         damage that may occur.
                         <br><br>
@@ -136,7 +137,7 @@
                         <br><br>
                         To cancel your order:
                         <br><br>
-                        Go to 'Orders & Returns' if you have an account, or <a href="">click here</a> if you placed an
+                        Go to 'Orders & Returns' if you have an account, or <a [routerLink]="['/refer-a-friend']" target="_blank">click here</a> if you placed an
                         order as a
                         guest.
                         <br><br>
@@ -146,7 +147,7 @@
                         <br><br>
                         If your order's already been prepared, we can't cancel your order, but we do offer a Returns
                         service on certain
-                        products. You can find more info on cancelling and returning orders in our <a href="">Return &
+                        products. You can find more info on cancelling and returning orders in our <a [routerLink]="['/returns-exchanges']" target="_blank">Return &
                             Refunds
                             Policy</a>.
                     </p>
