@@ -128,7 +128,7 @@
               </a>
             </li>
             <li>
-              <a href="javascript:void(0);">
+              <a [routerLink]="['/login']">
                 <i class="bi bi-person fa-lg"></i>
                 
               </a>
@@ -1253,9 +1253,14 @@
       </nav>
     </header>
   </section>
-  <section id="section-announcement" *ngIf="is_pages">
-    <div>
-      <img src="assets/images/TNC_Banner.jpg" width="100%" alt="">
-    </div>
-  </section>
+
 </header>
+<section id="section-announcement" *ngIf="is_pages">
+  <div class="about_banner">
+    <img src="{{imgSrc}}" width="100%" alt="">
+    <div class="banner-title-container">
+      <p class="banner-caption-text">{{caption}}</p>
+      <p class="banner-title-text">{{title}}</p>
+    </div>
+  </div>
+</section>

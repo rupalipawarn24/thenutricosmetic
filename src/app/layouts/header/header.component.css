@@ -14,3 +14,24 @@ header {
   .bi{
     -webkit-text-stroke: 1px;
   }
+  .about_banner .banner-title-container {
+    position: absolute;
+    bottom: 75px;
+    left: 150px;
+    color: #ffffffe6;
+    cursor: default;
+}
+.about_banner .banner-title-container .banner-caption-text {
+  font-size: 16px;
+  letter-spacing: .1rem;
+  margin: 0 0 0.5rem;
+}
+.about_banner .banner-title-container .banner-title-text {
+  font-size: 32px;
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: .1rem;
+}
+.about_banner {
+  position: relative;
+}

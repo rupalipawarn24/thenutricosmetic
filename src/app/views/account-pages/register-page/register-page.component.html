@@ -1,25 +1,25 @@
   <div class="Container">
     <div class="row justify-content-md-center PageContent">
       <div class="col-md-4 col-md-offset-6">
-        <form>
+        <form #userSignUp="ngForm" (ngSubmit)="signUp(userSignUp.value)">
           <header class="Form__Header">
             <h1 class="Form__Title Heading u-h1">REGISTER</h1>
             <p class="Form__Legend">Please fill in the information below:</p>
           </header>
             <div class="Form__Item">
-              <input type="text" class="Form__Input" name="customer[first_name]" aria-label="First name" placeholder="First name">
+              <input type="text" class="Form__Input" name="first_name" aria-label="First name" placeholder="First name" ngModel>
               <label class="Form__FloatingLabel">First name</label>
             </div> 
             <div class="Form__Item">
-              <input type="text" class="Form__Input" name="customer[Last name]" aria-label="Last name" placeholder="Last name">
+              <input type="text" class="Form__Input" name="Last name" aria-label="Last name" placeholder="Last name" ngModel>
               <label class="Form__FloatingLabel">Last name</label>
             </div>
             <div class="Form__Item">
-              <input type="email" class="Form__Input" name="customer[email]" aria-label="Email" placeholder="Email">
+              <input type="email" class="Form__Input" name="email" aria-label="Email" placeholder="Email" ngModel>
               <label class="Form__FloatingLabel">Email</label>
             </div>
             <div class="Form__Item">
-              <input type="password" class="Form__Input" name="customer[password]" aria-label="Password" placeholder="Password" required="required">
+              <input type="password" class="Form__Input" name="password" aria-label="Password" placeholder="Password" required="required" ngModel>
               <label class="Form__FloatingLabel">Password</label>
             </div>
 
