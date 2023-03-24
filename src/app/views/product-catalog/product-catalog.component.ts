@@ -1,9 +1,11 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 import { Options } from '@angular-slider/ngx-slider';
 import { FormControl, FormGroup } from '@angular/forms';
 import { ModalDismissReasons, NgbModal } from '@ng-bootstrap/ng-bootstrap';
 import { ActivatedRoute } from '@angular/router';
 import { BrandServiceService } from 'src/app/services/brand-service.service';
+import { WishListService } from 'src/app/services/wish-list.service';
+import { addwishlist } from 'src/app/models/wishlist';
 @Component({
   selector: 'app-product-catalog',
   templateUrl: './product-catalog.component.html',
@@ -13,6 +15,11 @@ export class ProductCatalogComponent implements OnInit {
   closeResult = '';
   brandId:any;
   brandData: any;
+  @Input() addedToWishlist: boolean;
+  addressData:addwishlist[]|undefined
+  productId:number=0;
+
+
 
   catlogLayout = [
     "mt-3", "col-12", "col-md-3", "card-slider"
@@ -30,7 +37,9 @@ export class ProductCatalogComponent implements OnInit {
   constructor(
     private modalService: NgbModal,
     private route:ActivatedRoute,
-    private brandService: BrandServiceService
+    private brandService: BrandServiceService,
+    private wishlistService: WishListService
+
   ) { }
 
   ngOnInit(): void {
@@ -74,6 +83,22 @@ export class ProductCatalogComponent implements OnInit {
         this.brandData=data;
         console.log(this.brandData);
       });
+  }
+
+  handleAddToWishlist(variant_id:number,product_id:number) {
+    
+    let user = localStorage.getItem('user');
+    let customer_id = user && JSON.parse(user).data[0].id;
+
+    let wishlistData: addwishlist = {
+      product_id,
+      variant_id,
+      customer_id
+    }
+    this.wishlistService.addToWishlist(wishlistData).subscribe(() => {
+      this.addedToWishlist = true;
+      this.productId= product_id;
+    })
   }
 
 

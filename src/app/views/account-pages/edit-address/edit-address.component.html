@@ -9,7 +9,7 @@
         <div class="SectionHeader">
             <h1 class="SectionHeader__Heading Heading u-h1">My addresses</h1>
             <div class="SectionHeader__ButtonWrapper">
-                <button type="button" class="add-address-btn" (click)="open(add_address_modal)">Add a new
+                <button type="button" class="add-address-btn" (click)="openAdd(add_address_modal)">Add a new
                     address</button>
             </div>
         </div>
@@ -19,16 +19,34 @@
             <div class="Segment">
                 <h2 class="Segment__Title Heading u-h7 defaultfiled">Default address</h2>
                 <div class="Segment__Content">
-                    <p class="AccountAddress"><span>User full name</span><br>city</p>
+                    <p class="AccountAddress"><span>{{userName}}</span><br>city</p>
 
                     <div class="Segment__ActionList">
-                        <button class="Segment__ActionItem Link Link--underline"
-                            (click)="open(edit_address_modal)">Edit</button>
+                        <button class="Segment__ActionItem Link Link--underline">Edit</button>
                         <button class="Segment__ActionItem Link Link--underline">Delete</button>
                     </div>
                 </div>
             </div>
         </div>
+        <div class="Grid__Cell 1/2--tablet 1/3--lap-and-up gridcol" *ngFor="let address of addressList; let i=index;">
+            <div class="Segment">
+                <h2 class="Segment__Title Heading u-h7 defaultfiled">Address {{i+1}}</h2>
+                <div class="Segment__Content">
+                    <p class="AccountAddress"><span>{{address.first_name}}
+                            {{address.last_name}}</span><br>{{address.company}}<br>{{address.address_1}}
+                        <br>{{address.address_2}}<br>{{address.zip}} {{address.city}}
+                        {{address.state}}<br>{{address.country}}</p>
+                    <div class="Segment__ActionList">
+                        <button class="Segment__ActionItem Link Link--underline"
+                            (click)="openEdit(edit_address_modal,address.id)">Edit</button>
+                        <button class="Segment__ActionItem Link Link--underline"
+                            (click)="deleteAddress(address.id)">Delete</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
     </div>
 </div>
 
@@ -48,52 +66,52 @@
         </header>
 
         <div class="Modal__Content">
-            <form>
+            <form #AddressData="ngForm" (ngSubmit)="addAddress(AddressData.value)">
                 <div class="Form__Item">
-                    <input type="text" class="Form__Input" name="first_nam" value="" placeholder="First name"
-                        aria-label="First name" autofocus="">
+                    <input type="text" class="Form__Input" name="first_name" value="" placeholder="First name"
+                        aria-label="First name" autofocus="" ngModel>
                     <label class="Form__FloatingLabel">First name</label>
                 </div>
 
                 <div class="Form__Item">
-                    <input type="text" class="Form__Input" name="last_nam" value="" placeholder="Last name"
-                        aria-label="Last name">
+                    <input type="text" class="Form__Input" name="last_name" value="" placeholder="Last name"
+                        aria-label="Last name" ngModel>
                     <label class="Form__FloatingLabel">Last name</label>
                 </div>
                 <div class="Form__Item">
-                    <input type="text" class="Form__Input" name="compan" value="" placeholder="Company"
-                        aria-label="Company">
+                    <input type="text" class="Form__Input" name="company" value="" placeholder="Company"
+                        aria-label="Company" ngModel>
                     <label class="Form__FloatingLabel">Company</label>
                 </div>
 
                 <div class="Form__Item">
-                    <input type="text" class="Form__Input" name="phon" value="" placeholder="Phone"
-                        aria-label="Phone">
+                    <input type="text" class="Form__Input" name="phone" value="" placeholder="Phone" aria-label="Phone"
+                        ngModel>
                     <label class="Form__FloatingLabel">Phone</label>
                 </div>
 
                 <div class="Form__Item">
-                    <input type="text" class="Form__Input" name="address1" value="" placeholder="Address 1"
-                        aria-label="Address 1">
+                    <input type="text" class="Form__Input" name="address_1" value="" placeholder="Address 1"
+                        aria-label="Address 1" ngModel>
                     <label class="Form__FloatingLabel">Address 1</label>
                 </div>
 
                 <div class="Form__Item">
-                    <input type="text" class="Form__Input" name="address2" value="" placeholder="Address 2"
-                        aria-label="Address 2">
+                    <input type="text" class="Form__Input" name="address_2" value="" placeholder="Address 2"
+                        aria-label="Address 2" ngModel>
                     <label class="Form__FloatingLabel">Address 2</label>
                 </div>
 
                 <div class="Form__Item">
-                    <input type="text" class="Form__Input" name="cit" value="" placeholder="City"
-                        aria-label="City">
+                    <input type="text" class="Form__Input" name="city" value="" placeholder="City" aria-label="City"
+                        ngModel>
                     <label class="Form__FloatingLabel">City</label>
                 </div>
 
                 <div class="Form__Group">
                     <div class="Form__Item">
                         <div class="Form__Select Select Select--primary">
-                            <select name="countr" title="Country">
+                            <select name="country" title="Country" ngModel>
                                 <option value="United Kingdom"
                                     data-provinces="[[&quot;British Forces&quot;,&quot;British Forces&quot;],[&quot;England&quot;,&quot;England&quot;],[&quot;Northern Ireland&quot;,&quot;Northern Ireland&quot;],[&quot;Scotland&quot;,&quot;Scotland&quot;],[&quot;Wales&quot;,&quot;Wales&quot;]]">
                                     United Kingdom</option>
@@ -430,14 +448,14 @@
                     </div>
 
                     <div class="Form__Item">
-                        <input type="text" class="Form__Input" name="zip]" value="" placeholder="Zip code"
-                            aria-label="Zip code">
+                        <input type="text" class="Form__Input" name="zip" value="" placeholder="Zip code"
+                            aria-label="Zip code" ngModel>
                         <label class="Form__FloatingLabel">Zip code</label>
                     </div>
                 </div>
 
                 <div class="Form__Item Form__Select Select Select--primary" style="display: block;">
-                    <select name="provinc" title="Province">
+                    <select name="state" title="Province" ngModel>
                         <option value="British Forces">British Forces</option>
                         <option value="England">England</option>
                         <option value="Northern Ireland">Northern Ireland</option>
@@ -448,11 +466,11 @@
 
                 <div class="Form__Item">
                     <div class="Form__CheckboxWrapper">
-                        <input type="checkbox" class="Form__Checkbox" name="address" id="address-new" value="0">
+                        <input type="checkbox" class="Form__Checkbox" id="address-new" value="0">
                         <label for="address-new">Set as default address</label>
                     </div>
                 </div>
-                
+
 
                 <button class="save-address-btn">Add a new address</button>
             </form>
@@ -470,52 +488,56 @@
             <h3 class="Modal__Title Heading u-h2">EDIT AN ADDRESS</h3>
             <p class="Modal__Description">Please fill in the information below:</p>
         </header>
-        <form>
+        <form #addressEdit="ngForm" (ngSubmit)="editAddress(addressEdit.value)">
+            <input type="text" class="Form__Input" name="id" value="{{editaddressData[0]?.id}}" ngModel="{{editaddressData[0]?.id}}" style="
+                display: none;">
             <div class="Form__Item">
-                <input type="text" class="Form__Input" name="first_name" value=""
-                    placeholder="First name" aria-label="First name" autofocus="">
+                <input type="text" class="Form__Input" name="first_name" value="{{editaddressData[0]?.first_name}}"
+                    placeholder="First name" aria-label="First name" autofocus=""
+                    ngModel="{{editaddressData[0]?.first_name}}">
                 <label class="Form__FloatingLabel">First name</label>
             </div>
 
             <div class="Form__Item">
-                <input type="text" class="Form__Input" name="last_name" value="" placeholder="Last name"
-                    aria-label="Last name">
+                <input type="text" class="Form__Input" name="last_name" value="{{editaddressData[0]?.last_name}}"
+                    placeholder="Last name" aria-label="Last name" ngModel="{{editaddressData[0]?.last_name}}">
                 <label class="Form__FloatingLabel">Last name</label>
             </div>
             <div class="Form__Item">
-                <input type="text" class="Form__Input" name="company" value="" placeholder="Company"
-                    aria-label="Company">
+                <input type="text" class="Form__Input" name="company" value="{{editaddressData[0]?.company}}"
+                    placeholder="Company" aria-label="Company" ngModel="{{editaddressData[0]?.company}}">
                 <label class="Form__FloatingLabel">Company</label>
             </div>
 
             <div class="Form__Item">
-                <input type="text" class="Form__Input" name="phone" value="" placeholder="Phone"
-                    aria-label="Phone">
+                <input type="text" class="Form__Input" name="phone" value="{{editaddressData[0]?.phone}}"
+                    placeholder="Phone" aria-label="Phone" ngModel="{{editaddressData[0]?.phone}}">
                 <label class="Form__FloatingLabel">Phone</label>
             </div>
 
             <div class="Form__Item">
-                <input type="text" class="Form__Input" name="address1" value="" placeholder="Address 1"
-                    aria-label="Address 1">
+                <input type="text" class="Form__Input" name="address_1" value="{{editaddressData[0]?.address_1}}"
+                    placeholder="Address 1" aria-label="Address 1" ngModel="{{editaddressData[0]?.address_1}}">
                 <label class="Form__FloatingLabel">Address 1</label>
             </div>
 
             <div class="Form__Item">
-                <input type="text" class="Form__Input" name="address2" value="" placeholder="Address 2"
-                    aria-label="Address 2">
+                <input type="text" class="Form__Input" name="address_2" value="{{editaddressData[0]?.address_2}}"
+                    placeholder="Address 2" aria-label="Address 2" ngModel="{{editaddressData[0]?.address_2}}">
                 <label class="Form__FloatingLabel">Address 2</label>
             </div>
 
             <div class="Form__Item">
-                <input type="text" class="Form__Input" name="city" value="" placeholder="City"
-                    aria-label="City">
+                <input type="text" class="Form__Input" name="city" value="{{editaddressData[0]?.city}}"
+                    placeholder="City" aria-label="City" ngModel="{{editaddressData[0]?.city}}">
                 <label class="Form__FloatingLabel">City</label>
             </div>
 
             <div class="Form__Group">
                 <div class="Form__Item">
                     <div class="Form__Select Select Select--primary">
-                        <select name="country" title="Country" data-default="India">
+                        <select name="country" title="Country" data-default="India" ngModel="{{editaddressData[0]?.country}}">
+                            <option  selected value="{{editaddressData[0]?.country}}">{{editaddressData[0]?.country}}</option>
                             <option value="United Kingdom"
                                 data-provinces="[[&quot;British Forces&quot;,&quot;British Forces&quot;],[&quot;England&quot;,&quot;England&quot;],[&quot;Northern Ireland&quot;,&quot;Northern Ireland&quot;],[&quot;Scotland&quot;,&quot;Scotland&quot;],[&quot;Wales&quot;,&quot;Wales&quot;]]">
                                 United Kingdom</option>
@@ -846,14 +868,15 @@
                 </div>
 
                 <div class="Form__Item">
-                    <input type="text" class="Form__Input" name="zip]" value="" placeholder="Zip code"
-                        aria-label="Zip code">
+                    <input type="text" class="Form__Input" name="zip" value="{{editaddressData[0]?.zip}}"
+                        placeholder="Zip code" aria-label="Zip code" ngModel="{{editaddressData[0]?.zip}}">
                     <label class="Form__FloatingLabel">Zip code</label>
                 </div>
             </div>
 
             <div class="Form__Item Form__Select Select Select--primary" style="display: block;">
-                <select name="provinc" title="Province" data-default="">
+                <select name="state" title="Province" ngModel="{{editaddressData[0]?.state}}">
+                    <option  selected value="{{editaddressData[0]?.state}}">{{editaddressData[0]?.state}}</option>
                     <option value="Andaman and Nicobar Islands">Andaman and Nicobar Islands</option>
                     <option value="Andhra Pradesh">Andhra Pradesh</option>
                     <option value="Arunachal Pradesh">Arunachal Pradesh</option>
@@ -896,8 +919,7 @@
 
             <div class="Form__Item">
                 <div class="Form__CheckboxWrapper">
-                    <input type="checkbox" class="Form__Checkbox" id="address"
-                        name="default" value="1" checked="">
+                    <input type="checkbox" class="Form__Checkbox" id="address" name="default" value="1" >
                     <svg class="Icon Icon--checkmark" role="presentation" viewBox="0 0 24 24">
                         <polygon fill="currentColor" points="9,20 2,13 5,10 9,14 19,4 22,7 "></polygon>
                     </svg>
@@ -906,12 +928,11 @@
                 </div>
             </div>
 
+            <div class="modal-footer">
+                <button class="save-edit-address-btn">Edit an address</button>
+
+                <input type="hidden" name="_method" value="put">
+            </div>
         </form>
     </div>
-    <div class="modal-footer">
-        <button class="save-edit-address-btn">Edit an address</button>
-
-        <input type="hidden" name="_method" value="put">
-    </div>
-
 </ng-template>

@@ -4,7 +4,7 @@
 
 export const environment = {
   production: false,
-  apiUrl: 'https://tanajidinde.com/tncapi/public/api'
+  apiUrl: 'https://tncapi.tanajidinde.com/public/api'
 };
 
 /*

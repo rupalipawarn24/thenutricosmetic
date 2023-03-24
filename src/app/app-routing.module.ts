@@ -140,7 +140,7 @@ const routes: Routes = [
         component: FooterPagesComponent
       },
       {
-        path: 'account-page',
+        path: 'account',
         component: AccountPageComponent
       },
       {

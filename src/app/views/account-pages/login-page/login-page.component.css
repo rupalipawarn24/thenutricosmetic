@@ -426,3 +426,26 @@ i.fa.fa-linkedin.oxi_icon.oxi_icon_linkedin{
   border-radius: 0px 0px 0px 0px;
   background-color: rgba(255, 255, 255, 0.1);
 }
+
+.Form--spacingTight .Form__Alert{
+  margin-bottom: 20px;
+}
+
+.Alert--error{
+  background: #e4c4c4;
+  color: #cb2b2b;
+}
+.Alert{
+  display: block;
+  padding: 10px 20px;
+  white-space: normal;
+  font-size: 1rem;
+  word-break: break-all;
+  word-break: break-word;
+  text-shadow: none;
+}
+@media screen and (min-width: 641px){
+ .Form__Alert{
+    margin-bottom: 30px;
+}
+}

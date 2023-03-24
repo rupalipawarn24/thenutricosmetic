@@ -1,0 +1,151 @@
+.NewsletterPopup[aria-hidden=false] {
+    transform: translateY(0);
+    opacity: 1;
+    visibility: visible;
+}
+@media screen and (min-width: 641px){
+.NewsletterPopup {
+    max-width: 385px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%)!important;
+    right: 75px;
+    padding-top: 35px;
+}
+}
+
+.NewsletterPopup {
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%)!important;
+    width: calc(100% - 30px);
+    padding: 24px 30px 30px;
+    background: #000;
+    color: #fff;
+    z-index: 50;
+    text-align: center;
+    box-shadow: 0 1px 4px #0000004d;
+    visibility: hidden;
+    transform: translateY(25px);
+    opacity: 0;
+    transition: all .5s cubic-bezier(.645,.045,.355,1);
+}
+
+ aside{
+    display: none;
+}
+.NewsletterPopup__Close {
+    position: absolute;
+    right: 15px;
+    top: 15px;
+}
+.NewsletterPopup__Heading .Heading {
+    color: inherit;
+}
+
+@media screen and (min-width: 641px){
+    .NewsletterPopup__Heading .u-h2{
+    font-size: 20px;
+}
+}
+.NewsletterPopup__Heading .u-h2{
+    font-size: 20px;
+}
+.NewsletterPopup .Heading {
+    font-family: Futura,sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    color: #454545;
+    transition: color .2s ease-in-out;
+    letter-spacing: .2em;
+    text-transform: uppercase;
+}
+.NewsletterPopup h2{
+    margin-top: 0;
+    font-size: inherit;
+    font-weight: inherit;
+}
+
+.NewsletterPopup p:last-child{
+    margin-bottom: 0;
+}
+
+.NewsletterPopup p{
+    margin-top: 0;
+    font-size: inherit;
+    font-weight: inherit;
+}
+.NewsletterPopup .discount-section {
+    font-weight: 700;
+    font-style: normal;
+    font-size: 22px;
+    text-transform: none;
+    line-height: 1.5;
+    margin: 0;
+    text-align: center;
+}
+.NewsletterPopup__Heading h2 {
+    display: block;
+    font-size: 1.5em;
+    margin-block-start: 0.83em;
+    margin-block-end: 0.83em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+}
+.NewsletterPopup .discount-section .numric-style {
+    font-size: 50px;
+    font-weight: 100;
+    font-style: italic;
+    padding: 0;
+    margin: 0;
+}
+.NewsletterPopup__Form {
+    margin-top: 14px;
+}
+
+.NewsletterPopup .Form__Input{
+    border-color: #fff6;
+}
+
+.NewsletterPopup .Form__Input {
+    -webkit-appearance: none;
+    display: block;
+    padding: 12px 14px;
+    border-radius: 0;
+    border: 1px solid #e3e3e3;
+    width: 100%;
+    line-height: normal;
+    resize: none;
+    transition: border-color .1s ease-in-out;
+    background: transparent;
+}
+.NewsletterPopup .NewsletterPopup .Button{
+    color: #454545;
+    border-color: #fff
+}
+.NewsletterPopup .Form__Submit {
+    display: block;
+    margin-top: 20px;
+}
+
+.NewsletterPopup .Button--full {
+    width: 100%;
+}
+.NewsletterPopup .discount-section {
+    font-weight: 700;
+    font-style: normal;
+    font-size: 22px;
+    text-transform: none;
+    line-height: 1.5;
+    margin: 0;
+    text-align: center;
+}
+.NewsletterPopup .discount-section .discount_lable_3 {
+    font-size: 12px;
+    font-weight: 100;
+}
+.NewsletterPopup .discount-section p {
+    margin: 0;
+}

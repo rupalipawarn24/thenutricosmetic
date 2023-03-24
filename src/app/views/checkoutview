@@ -1,50 +1,76 @@
-<div class="Grid__Cell 1/2--phone 1/3--tablet-and-up 1/4--desk" >
-    <div class="ProductItem ">
-        <div class="ProductItem__Wrapper">
-            <a href="" class="effect-goliath ProductItem__ImageWrapper ">
-                <div class="AspectRatio AspectRatio--withFallback"
-                    style="max-width: 1500px;padding-bottom: 140%; --aspect-ratio: 0.7142857142857143">
-                    <img
-                        class="ProductItem__Image Image--fadeIn lazyautosizes Image--lazyLoaded"
-                        data-widths="[200,400,600,700,800,900,1000,1200]" data-sizes="auto" alt="Baume Infini"
-                        data-image-id="30518940270753"
-                        data-srcset="https://cdn.shopify.com/s/files/1/0403/8685/5073/products/bi2-png_f565e_200x.png?v=1677759959 200w, https://cdn.shopify.com/s/files/1/0403/8685/5073/products/bi2-png_f565e_400x.png?v=1677759959 400w, https://cdn.shopify.com/s/files/1/0403/8685/5073/products/bi2-png_f565e_600x.png?v=1677759959 600w, https://cdn.shopify.com/s/files/1/0403/8685/5073/products/bi2-png_f565e_700x.png?v=1677759959 700w, https://cdn.shopify.com/s/files/1/0403/8685/5073/products/bi2-png_f565e_800x.png?v=1677759959 800w, https://cdn.shopify.com/s/files/1/0403/8685/5073/products/bi2-png_f565e_900x.png?v=1677759959 900w, https://cdn.shopify.com/s/files/1/0403/8685/5073/products/bi2-png_f565e_1000x.png?v=1677759959 1000w, https://cdn.shopify.com/s/files/1/0403/8685/5073/products/bi2-png_f565e_1200x.png?v=1677759959 1200w"
-                        sizes="245px"
-                        srcset="https://cdn.shopify.com/s/files/1/0403/8685/5073/products/bi2-png_f565e_200x.png?v=1677759959 200w, https://cdn.shopify.com/s/files/1/0403/8685/5073/products/bi2-png_f565e_400x.png?v=1677759959 400w, https://cdn.shopify.com/s/files/1/0403/8685/5073/products/bi2-png_f565e_600x.png?v=1677759959 600w, https://cdn.shopify.com/s/files/1/0403/8685/5073/products/bi2-png_f565e_700x.png?v=1677759959 700w, https://cdn.shopify.com/s/files/1/0403/8685/5073/products/bi2-png_f565e_800x.png?v=1677759959 800w, https://cdn.shopify.com/s/files/1/0403/8685/5073/products/bi2-png_f565e_900x.png?v=1677759959 900w, https://cdn.shopify.com/s/files/1/0403/8685/5073/products/bi2-png_f565e_1000x.png?v=1677759959 1000w, https://cdn.shopify.com/s/files/1/0403/8685/5073/products/bi2-png_f565e_1200x.png?v=1677759959 1200w">
-                        <span
-                        class="Image__Loader">
-                    </span>
-                    
-                    </div>
-                <div class="popup_btn_addtocart">
-                    <form action="/cart/add" method="post" enctype="multipart/form-data"><input type="hidden" name="id"
-                            value="37671517814945"><button class="tdcart" type="submit" name="add"
-                            data-add-to-cart="">Add to cart</button></form>
-                </div>
-            </a>
-            <div class="ProductItem__Info ProductItem__Info--left ">
-                <p class="ProductItem__Vendor Heading">BAUBO</p>
-                <h2 class="ProductItem__Title Heading"><a href="/collections/baubo/products/baume-infini">Baume
-                        Infini</a></h2><span class="stamped-product-reviews-badge" data-id="6057121251489"><span
-                        class="stamped-badge" data-rating="0.0" data-lang=""
-                        aria-label="Rated 0.0 out of 5 stars 0reviews"><span
-                            class="stamped-starrating stamped-badge-starrating" aria-hidden="true"><i
-                                class="stamped-fa stamped-fa-star-o" aria-hidden="true"></i><i
-                                class="stamped-fa stamped-fa-star-o" aria-hidden="true"></i><i
-                                class="stamped-fa stamped-fa-star-o" aria-hidden="true"></i><i
-                                class="stamped-fa stamped-fa-star-o" aria-hidden="true"></i><i
-                                class="stamped-fa stamped-fa-star-o" aria-hidden="true"></i></span><span
-                            class="stamped-badge-caption" data-reviews="0" data-rating="0.0" data-label="reviews"
-                            data-version="2"></span></span></span>
-                <div class="ProductItem__PriceList Heading"><span data-original-price="Rs. 3,297.83"
-                        class="ProductItem__Price Price Text--subdued">Rs. 3,297.83</span><span
-                        class="ProductItem__Price__Tax" data-vendor="BAUBO"></span>
-                </div>
-            </div>
-            <a class="iWishAddColl iwishAdded" data-variant="37671517814945" data-product="6057121251489"
-                data-ptitle="Baume Infini">
-                <img
-                    src="https://cdn.shopify.com/s/files/1/0403/8685/5073/files/star.png?v=1607613536"></a>
-        </div>
+<aside class="NewsletterPopup" data-section-id="popup" data-section-type="newsletter-popup" data-section-settings="
+        {
+          &quot;apparitionDelay&quot;: 15,
+          &quot;showOnlyOnce&quot;: false
+        }
+      " aria-hidden="false">
+  <button class="NewsletterPopup__Close" data-action="close-popup" aria-label="Close"><svg class="Icon Icon--close"
+      role="presentation" viewBox="0 0 16 14">
+      <path d="M15 0L1 14m14 0L1 0" stroke="currentColor" fill="none" fill-rule="evenodd"></path>
+    </svg></button>
+  <h2 class="NewsletterPopup__Heading Heading u-h2">WHY, HELLO THERE</h2>
+  <div class="NewsletterPopup__Content">
+    <p>Want in on new arrivals, exclusive collabs, sales and more - Plus 15% off your first purchase when you subscribe?
+    </p>
+  </div>
+  <div class="discount-section">
+    <h2 class=""><span class="numric-style">
+        <p>15% OFF</p>
+      </span></h2>
+  </div>
+  <form method="post" action="/contact#newsletter-popup" id="newsletter-popup" accept-charset="UTF-8"
+    class="NewsletterPopup__Form"><input type="hidden" name="form_type" value="customer"><input type="hidden"
+      name="utf8" value="✓"><input type="hidden" name="contact[tags]" value="newsletter, Shopify">
+
+    <input type="email" name="contact[email]" class="Form__Input" required="required" aria-label="Enter your email"
+      placeholder="Enter your email">
+    <button class="Form__Submit Button Button--primary Button--full" type="submit">Subscribe</button>
+  </form>
+  <div class="discount-section">
+    <h2 class="">
+      <span class="discount_lable_3">
+        <p></p>
+        <p>To see how we may use your information, take a look at our <a href="/pages/privacy-policy" target="_blank"
+            title="Privacy Policy">Privacy Policy</a>. </p>
+        <p></p>
+      </span>
+    </h2>
+  </div>
+</aside>
+
+
+
+
+
+<div class="recommendation-modal__container" tabindex="-1" style="background-color: rgb(255, 255, 255);">
+  <div class="recommendation-modal__close-button-container">
+    <form action="/localization" method="POST"><input name="_method" type="hidden" value="PUT"><input name="source"
+        type="hidden" value="geolocation_recommendation"><input name="return_to" type="hidden" value="/"><input
+        name="country_code" type="hidden" value="IN"><button class="recommendation-modal__close-button"
+        type="submit"><svg aria-label="Dismiss" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"
+          style="height: 1em; width: 1em;">
+          <path
+            d="M11.414 10l6.293-6.293a.999.999 0 1 0-1.414-1.414L10 8.586 3.707 2.293a.999.999 0 1 0-1.414 1.414L8.586 10l-6.293 6.293a.999.999 0 1 0 1.414 1.414L10 11.414l6.293 6.293a.997.997 0 0 0 1.414 0 .999.999 0 0 0 0-1.414L11.414 10z"
+            fill="#333333"></path>
+        </svg></button></form>
+  </div>
+  <div class="recommendation-modal__content">
+    <div class="recommendation-modal__flag"><img src="https://cdn.shopify.com/static/images/flags/in.svg" width="75"
+        height="48"></div>
+    <h2 class="recommendation-modal__message" style="color: rgb(51, 51, 51);">Your location is set to <span
+        class="recommendation-modal__message--bold">India</span></h2>
+    <div class="recommendation-modal__benefits">
+      <ul>
+        <li style="color: rgb(51, 51, 51);">Shop in INR ₹</li>
+        <li style="color: rgb(51, 51, 51);">Get shipping options for India</li>
+      </ul>
     </div>
+    <form action="/localization" method="POST" class="recommendation-modal__form"><input name="_method" type="hidden"
+        value="PUT"><input name="source" type="hidden" value="geolocation_recommendation"><input name="return_to"
+        type="hidden" value="/"><input name="country_code" type="hidden" value="IN"><button
+        class="recommendation-modal__button" type="submit"
+        style="background-color: rgb(69, 69, 69); color: rgb(255, 255, 255);">Continue</button></form><button
+      class="recommendation-modal__button--minimal" type="button"
+      style="background-color: transparent; color: rgb(51, 51, 51);">Change country</button>
+  </div>
 </div>
