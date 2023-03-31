@@ -253,12 +253,13 @@
             <div class="col-12 col-lg-9">
                 <section class="newin__Wrapper my-5">
                     <div class="container-xl">
-                        <div class="row m-0 mb-5 product-catalog" >
+                        <div class="row m-0 mb-5 product-catalog">
                             <div [class]="catlogLayout" *ngFor="let brand of brandData; let i=index">
-                                <a  class="card">
+                                <a class="card">
                                     <h2 class="title">{{brand.vendor}}</h2>
                                     <div class="image">
-                                        <img class="img-fluid"  src="{{brand.images[0].src}}" alt="" [routerLink]="['/product-details']">
+                                        <img class="img-fluid" src="{{brand.images[0].src}}" alt=""
+                                             [routerLink]="['/product-details/'+ brand.product_id]">
                                     </div>
                                     <div class="popup_btn_addtocart">
                                         <form action="" method="post" enctype="">
@@ -287,13 +288,22 @@
                                             </li>
                                         </ul>
                                     </div>
-                                    
+
                                     <div class="favourite">
-                                        <img class="img-fluid" src="assets/images/star-solid.png"
-                                            alt="" width="18" *ngIf="addedToWishlist && productId ===brand.product_id" />
-                                            <img class="img-fluid" src="assets/images/star-outline.png"
-                                            alt="" width="18" *ngIf="productId !== brand.product_id" (click)="handleAddToWishlist(brand.variants[0].variant_id,brand.product_id)" />
-                                            
+                                        <!-- <img class="img-fluid" src="assets/images/star-solid.png" alt="" width="18"
+                                            *ngIf="!star_clicked"
+                                            (click)="handleAddToWishlist(brand,brand.variants[0].variant_id,brand.product_id)" />
+                                        <img class="img-fluid" src="assets/images/star-outline.png" alt="" width="18"
+                                            *ngIf="star_clicked"
+                                            (click)="handleAddToWishlist(brand,brand.variants[0].variant_id,brand.product_id)" /> -->
+
+                                        <img class="img-fluid"
+                                            [src]="brand.onWishlist ? 'assets/images/star-solid.png' : 'assets/images/star-outline.png'"
+                                            alt="" width="18"
+                                            (click)="handleAddToWishlist(brand,brand.variants[0].variant_id,brand.product_id)" />
+
+
+
                                     </div>
 
                                     <div class="price mb-3">
@@ -744,7 +754,7 @@
                                         </li>
                                     </ul>
                                 </div>
-                                
+
                                 <div class="favourite"><img class="img-fluid" src="assets/images/star-outline.png"
                                         alt="" width="18" />
                                 </div>
@@ -787,7 +797,7 @@
                                         </li>
                                     </ul>
                                 </div>
-                                
+
                                 <div class="favourite"><img class="img-fluid" src="assets/images/star-outline.png"
                                         alt="" width="18" />
                                 </div>
@@ -829,7 +839,7 @@
                                         </li>
                                     </ul>
                                 </div>
-                                
+
                                 <div class="favourite"><img class="img-fluid" src="assets/images/star-outline.png"
                                         alt="" width="18" />
                                 </div>
@@ -871,7 +881,7 @@
                                         </li>
                                     </ul>
                                 </div>
-                                
+
                                 <div class="favourite"><img class="img-fluid" src="assets/images/star-outline.png"
                                         alt="" width="18" />
                                 </div>
@@ -913,7 +923,7 @@
                                         </li>
                                     </ul>
                                 </div>
-                                
+
                                 <div class="favourite"><img class="img-fluid" src="assets/images/star-outline.png"
                                         alt="" width="18" />
                                 </div>
@@ -955,7 +965,7 @@
                                         </li>
                                     </ul>
                                 </div>
-                                
+
                                 <div class="favourite"><img class="img-fluid" src="assets/images/star-outline.png"
                                         alt="" width="18" />
                                 </div>

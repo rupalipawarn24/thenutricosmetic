@@ -29,6 +29,7 @@ import { CustomerPromiseComponent } from './views/footer-pages/customer-promise/
 import { AboutUsComponent } from './views/footer-pages/about-us/about-us.component';
 import { AffiliatesFaqsComponent } from './views/footer-pages/affiliates-faqs/affiliates-faqs.component';
 import { GetInTouchComponent } from './views/footer-pages/get-in-touch/get-in-touch.component';
+import { IwishComponent } from './views/iwish/iwish.component';
 const routes: Routes = [
   {
     path: '',
@@ -45,7 +46,7 @@ const routes: Routes = [
         // loadChildren: () => import('./views/home/home.module').then(m => m.HomeModule)
       },
       {
-        path: 'product-details',
+        path: 'product-details/:id',
         component: ProductDetailsComponent
         // loadChildren: () => import('./views/product-details/product-details.module').then(m => m.ProductDetailsModule)
 
@@ -198,6 +199,10 @@ const routes: Routes = [
       {
         path: 'get-in-touch',
         component: GetInTouchComponent
+      },
+      {
+        path: 'iwish',
+        component: IwishComponent
       },
       
       

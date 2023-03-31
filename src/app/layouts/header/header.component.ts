@@ -1,5 +1,6 @@
 import { Component, Input, OnInit } from '@angular/core';
 import { ActivatedRoute, NavigationEnd, NavigationStart, Router } from '@angular/router';
+import { BrandServiceService } from 'src/app/services/brand-service.service';
 
 @Component({
   selector: 'app-header',
@@ -37,10 +38,15 @@ export class HeaderComponent implements OnInit {
 
   // urls: string[] = [ '/orders-shipping','/payment-pricing','/returns-exchanges','/term-conditions','/faqs','/privacy-policy','/cookie','/disclaimer','/accessibility']; 
 
+  menu_list: any;
+
 
   constructor(
-    private router: Router
+    private router: Router,
+    private brandService: BrandServiceService
     ) { }
+
+   
 
   ngOnInit(): void {
     for (var url of this.urls) 
@@ -71,8 +77,17 @@ export class HeaderComponent implements OnInit {
       }
       }
     });
-    
+    this.getmenuList();
 
    }
+
+   getmenuList(){
+    this.brandService.getmenuList()
+      .subscribe((data: any) => {
+        this.menu_list=data;
+        console.log(this.menu_list);
+
+      });
+  }
 
 }

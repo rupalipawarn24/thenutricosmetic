@@ -67,6 +67,7 @@ export class AccountServiceService {
     return this.http.post('https://tncapi.tanajidinde.com/public/api/getalladdress', data);
 
   }
+  
 
   deleteAddress(data:deleteAddress){
     //console.log(data);

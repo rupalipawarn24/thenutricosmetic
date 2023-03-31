@@ -53,6 +53,7 @@ import { InvestorsComponent } from './views/footer-pages/investors/investors.com
 import { AffiliatesFaqsComponent } from './views/footer-pages/affiliates-faqs/affiliates-faqs.component';
 import { GetInTouchComponent } from './views/footer-pages/get-in-touch/get-in-touch.component';
 import { NotfoundComponent } from './views/notfound/notfound.component';
+import { IwishComponent } from './views/iwish/iwish.component';
 
 
 const APP_CONTAINERS = [
@@ -101,6 +102,7 @@ const APP_CONTAINERS = [
     AffiliatesFaqsComponent,
     GetInTouchComponent,
     NotfoundComponent,
+    IwishComponent,
   ],
   imports: [
     BrowserModule,

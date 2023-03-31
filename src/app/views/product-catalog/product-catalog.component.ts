@@ -18,6 +18,8 @@ export class ProductCatalogComponent implements OnInit {
   @Input() addedToWishlist: boolean;
   addressData:addwishlist[]|undefined
   productId:number=0;
+  star_clicked: boolean = false;
+  @Input() isDisabled: boolean = false;
 
 
 
@@ -85,20 +87,36 @@ export class ProductCatalogComponent implements OnInit {
       });
   }
 
-  handleAddToWishlist(variant_id:number,product_id:number) {
-    
-    let user = localStorage.getItem('user');
-    let customer_id = user && JSON.parse(user).data[0].id;
+  handleAddToWishlist(brand:any,variant_id:number,product_id:number) {
 
-    let wishlistData: addwishlist = {
-      product_id,
-      variant_id,
-      customer_id
+    // brand.onWishlist = !brand.onWishlist;
+
+    if (!brand.onWishlist) {
+      let user = localStorage.getItem('user');
+      let customer_id = user && JSON.parse(user).data[0].id;
+  
+      let wishlistData: addwishlist = {
+        product_id,
+        variant_id,
+        customer_id
+      }
+      this.wishlistService.addToWishlist(wishlistData).subscribe(() => {
+    
+        this.productId= product_id;
+      })
+      brand.onWishlist = !brand.onWishlist;      
+
     }
-    this.wishlistService.addToWishlist(wishlistData).subscribe(() => {
-      this.addedToWishlist = true;
-      this.productId= product_id;
-    })
+    else{
+      brand.onWishlist = true;
+     // console.log("remove");
+
+    }
+
+    
+    
+    
+
   }
 
 

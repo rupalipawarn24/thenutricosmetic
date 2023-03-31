@@ -123,7 +123,7 @@
         <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-12">
           <ul class="list-unstyled d-flex header-cart justify-content-end mb-0">
             <li>
-              <a href="javascript:void(0);">
+              <a [routerLink]="['/iwish']">
                 <i class="bi bi-star-fill fa-lg"></i>
               </a>
             </li>
@@ -158,21 +158,111 @@
         </a>
         <a href="javascript:void(0);" class="ic close"></a>
         <ul class="main-nav">
-          <li class="top-level-link">
-            <a class="mega-menu"><span>WHAT'S NEW</span></a>
+          <li class="top-level-link" *ngFor="let menu of menu_list; let i=index">
+            <a class="mega-menu" routerLink="/brands-detail"><span>{{menu.menu_name}}</span></a>
             <div class="sub-menu-block">
               <div class="row row-cols-lg-5">
-                <div class="col-md-6 col-sm-12">
-                  <h2 class="sub-menu-head">WHAT'S NEW</h2>
+                <div class="col-md-6 col-sm-12" *ngFor="let megamenu of menu.custom_site_navigation_menu_items; let i=index">
+                  <h2 class="sub-menu-head">{{megamenu.menu_name}}</h2>
                   <ul class="sub-menu-lists">
-                    <li><a href="javascript:void(0);">Bestsellers</a></li>
-                    <li><a href="javascript:void(0);">This Month</a></li>
+                    <li *ngFor="let submenu of megamenu.custom_site_navigation_menu_items; let i=index">
+                      <a href="javascript:void(0);">{{submenu.menu_name}}</a>
+                    </li>
+                    <!-- <li><a href="javascript:void(0);">This Month</a></li>
                     <li><a href="javascript:void(0);">The Edit</a></li>
                     <li><a href="javascript:void(0);">Most Wanted</a></li>
-                    <li><a href="javascript:void(0);">Back In stock</a></li>
+                    <li><a href="javascript:void(0);">Back In stock</a></li> -->
                   </ul>
                 </div>
-                <div class="col-md-6 col-sm-12">
+      
+                <div class="col-md-6 col-sm-12" *ngIf="i===1">
+                  <h2 class="sub-menu-head">BRANDS A-Z</h2>
+                  <ul class="Linklist atoz">
+                    <li class="brand-atoz">
+                      <a  routerLink="/brands-detail">0-9</a>
+                    </li>
+                    <li class="brand-atoz">
+                      <a  routerLink="/brands-detail">A</a>
+                    </li>
+                    <li class="brand-atoz">
+                      <a  routerLink="/brands-detail">B</a>
+                    </li>
+                    <li class="brand-atoz">
+                      <a routerLink="/brands-detail">C</a>
+                    </li>
+                    <li class="brand-atoz">
+                      <a  routerLink="/brands-detail">D</a>
+                    </li>
+                    <li class="brand-atoz">
+                      <a  routerLink="/brands-detail">E</a>
+                    </li>
+                    <li class="brand-atoz">
+                      <a  routerLink="/brands-detail">F</a>
+                    </li>
+                    <li class="brand-atoz">
+                      <a  routerLink="/brands-detail">G</a>
+                    </li>
+                    <li class="brand-atoz">
+                      <a  routerLink="/brands-detail">H</a>
+                    </li>
+                    <li class="brand-atoz">
+                      <a  routerLink="/brands-detail">I</a>
+                    </li>
+                    <li class="brand-atoz">
+                      <a  routerLink="/brands-detail">J</a>
+                    </li>
+                    <li class="brand-atoz">
+                      <a routerLink="/brands-detail">K</a>
+                    </li>
+                    <li class="brand-atoz">
+                      <a  routerLink="/brands-detail">L</a>
+                    </li>
+                    <li class="brand-atoz">
+                      <a routerLink="/brands-detail">M</a>
+                    </li>
+                    <li class="brand-atoz">
+                      <a routerLink="/brands-detail">N</a>
+                    </li>
+                    <li class="brand-atoz">
+                      <a routerLink="/brands-detail">O</a>
+                    </li>
+                    <li class="brand-atoz">
+                      <a routerLink="/brands-detail">P</a>
+                    </li>
+                    <li class="brand-atoz">
+                      <a routerLink="/brands-detail">Q</a>
+                    </li>
+                    <li class="brand-atoz">
+                      <a routerLink="/brands-detail">R</a>
+                    </li>
+                    <li class="brand-atoz">
+                      <a routerLink="/brands-detail">S</a>
+                    </li>
+                    <li class="brand-atoz">
+                      <a routerLink="/brands-detail">T</a>
+                    </li>
+                    <li class="brand-atoz">
+                      <a routerLink="/brands-detail">U</a>
+                    </li>
+                    <li class="brand-atoz">
+                      <a routerLink="/brands-detail">V</a>
+                    </li>
+                    <li class="brand-atoz">
+                      <a routerLink="/brands-detail">W</a>
+                    </li>
+                    <li class="brand-atoz">
+                      <a routerLink="/brands-detail">X</a>
+                    </li>
+                    <li class="brand-atoz">
+                      <a routerLink="/brands-detail">Y</a>
+                    </li>
+                    <li class="brand-atoz">
+                      <a routerLink="/brands-detail">Z</a>
+                    </li>
+                  </ul>
+                </div>
+                
+                <!-- <div class="col-md-6 col-sm-12">
                   <h2 class="sub-menu-head">Trending Now</h2>
                   <ul class="sub-menu-lists">
                     <li><a href="javascript:void(0);">Simone Thomas Wellness</a></li>
@@ -216,12 +306,12 @@
                     <li><a href="javascript:void(0);">Plastic-Free</a></li>
                     <li><a href="javascript:void(0);">Refillable</a></li>
                   </ul>
-                </div>
+                </div> -->
               </div>
             </div>
           </li>
 
-          <li class="top-level-link">
+          <!-- <li class="top-level-link">
             <a class="mega-menu" routerLink="/brands-detail"><span>BRANDS</span></a>
             <div class="sub-menu-block">
               <div class="row row-cols-lg-5">
@@ -1248,7 +1338,7 @@
                 </div>
               </div>
             </div>
-          </li>
+          </li> -->
         </ul>
       </nav>
     </header>

@@ -1,6 +1,6 @@
-  <div class="PageContainer  collection_inner ">
+<div class="PageContainer  collection_inner ">
 
-  <main id="main" class="alyssa_inner_page" role="main">
+    <main id="main" class="alyssa_inner_page" role="main">
         <div id="shopify-section-brand_all" class="shopify-section">
             <header class="brands-header">
                 <h1>BRANDS</h1>
@@ -43,12 +43,12 @@
                 <div class="brands-content-left">
                     <div class="brands-content-floating" style="top: 0px; bottom: unset;">
                         <div>
-                         
+
                             <input type="text" placeholder="Search..." class="right">
                         </div>
                         <div id="shopify-section-brand_advertisement" class="shopify-section">
-                            <div class="advertisement-container brands" style="width: 255.46px;"><a
-                                    href="" target="_blank"><img
+                            <div class="advertisement-container brands" style="width: 255.46px;"><a href=""
+                                    target="_blank"><img
                                         src="https://thenutricosmeticcompany.co.uk/api/advertisements/uploads/brand/desktop.png?1677215153578"></a>
                             </div>
                         </div>
@@ -62,12 +62,13 @@
                     </div> -->
                     <div class="brands-alphabetical" *ngFor="let brand of brands; let i=index">
                         <div class="brand-alphabet">{{brand[1].alphaate}}</div>
-                  
+
                         <div class="brand-names">
-                          
-                            <a [routerLink]="['/product-catalog/'+ brand1.ID]"  *ngFor="let brand1 of brand[1].record; let i=index">{{brand1.name}}</a>
-                             </div>
-                           
+
+                            <a [routerLink]="['/product-catalog/'+ brand1.ID]"
+                                *ngFor="let brand1 of brand[1].record; let i=index">{{brand1.name}}</a>
+                        </div>
+
                     </div>
                     <!-- <div class="brands-alphabetical">
                         <div class="brand-alphabet" data-scroll-spy="C">C</div>

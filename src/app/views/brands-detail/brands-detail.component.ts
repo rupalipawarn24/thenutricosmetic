@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
 import { BrandList } from 'src/app/models/brand-list.model';
 import { BrandServiceService } from 'src/app/services/brand-service.service';
 
@@ -10,6 +11,9 @@ import { BrandServiceService } from 'src/app/services/brand-service.service';
 export class BrandsDetailComponent implements OnInit {
 
   brands: any;
+
+
+
 
   constructor(private brandService: BrandServiceService) { }
 
@@ -31,9 +35,11 @@ export class BrandsDetailComponent implements OnInit {
             return r;
           },{});
           this.brands=Object.entries(this.brands)
-          // console.log(this.brands);
+          //console.log(this.brands);
         });
   }
+
+ 
 
   
  

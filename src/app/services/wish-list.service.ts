@@ -2,7 +2,7 @@ import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Router } from '@angular/router';
 import { environment } from 'src/environments/environment';
-import { addwishlist } from '../models/wishlist';
+import { addwishlist, deletewishlist, getwishlist } from '../models/wishlist';
 
 @Injectable({
   providedIn: 'root'
@@ -31,8 +31,14 @@ export class WishListService {
     return this.http.post(environment.apiUrl + endPoints, data)
   }
 
-  // removeFromWishlist(productId) {
-  //   return this.http.delete(wishlistUrl + '/' + productId);
-  // }
+  getWishlist(data:getwishlist) {
+    let endPoints = "/getwishlist"
+    return this.http.post(environment.apiUrl + endPoints, data)
+  }
+
+  removeFromWishlist(data:deletewishlist) {
+    let endPoints = "/deletewishlist"
+    return this.http.post(environment.apiUrl + endPoints, data);
+  }
 
 }

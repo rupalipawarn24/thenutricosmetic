@@ -1,6 +1,6 @@
 <div class="container">
     <div class="container-fliud">
-        <div class="wrapper row">
+        <div class="wrapper row" *ngFor="let product of productData; let i=index">
             <div class="col-md-8">
                 <div class="preview">
                     <ngx-gallery [options]="galleryOptions" [images]="galleryImages" class="align-self-center">
@@ -10,78 +10,38 @@
                     <ngb-accordion [closeOthers]="true" activeIds="tab-1">
                         <ngb-panel id="tab-1" title="DESCRIPTION">
                             <ng-template ngbPanelContent>
-                                <p>Gommage Extraordinaire is a sugar ester emulsion that progressively changes into an
-                                    oil during the massage releasing its
-                                    natural exfoliation and a slight nourishing heated sensation to reveal smoother,
-                                    nourished skin. Enriched with
-                                    Australian fruits complex like tropical AHAs and macadamia extract, Gommage
-                                    Extraordinaire can be applied as a mask for
-                                    regenerated and radiant skin. Its intoxicating bespoke natural fragrance calms the
-                                    senses for a relaxing self-care
-                                    ritual.</p>
+                                <p>{{product.metafields_global_description_tag}}</p>
                             </ng-template>
                         </ngb-panel>
                         <ngb-panel id="tab-2" title="BENEFITS & FEATURES">
                             <ng-template ngbPanelContent>
-                                <p>Macadamia seeds powder, combined with natural sand and organic sugar gently
-                                    exfoliates, eliminating impurities and
-                                    irregularities caused by dead skin cells to reveal soft, supple, smooth skin. It
-                                    helps to moisturize and accelerates
-                                    skin desquamation to fade away uneven skin pigmentation.
-                                    <br>
-                                    <br>
-                                    Enriched with mineral-rich seawater and Palmaria Palmata seaweed extract, it gently
-                                    cleanses and stimulates cell
-                                    renewal. It acts as a tightener and purifier to gently capture and eliminate all
-                                    impurities including polluting
-                                    particles and sebum with a formula that combines the benefits of vegetable charcoal
-                                    with natural exfoliants. The expert
-                                    blend contains tropical fruit extracts grown in Australia including mango, pineapple
-                                    and papaya. Its complex is rich in
-                                    proteolytic enzymes and works as an antioxidant to fight free radicals and protect
-                                    your skin from aging. Use before
-                                    Eclat Extraordinaire in your skincare routine to buff away dead skin cells for
-                                    fresh, revitalized skin that is ready for
-                                    hydration from Eclat Extraordinaire.
+                                <p>{{product.other_data.benefits_features}}
                                 </p>
                             </ng-template>
                         </ngb-panel>
                         <ngb-panel id="tab-3" title="HOW TO USE">
                             <ng-template ngbPanelContent>
-                                <p>Apply a thin layer to clean, dry face and neck, avoiding the eye area. Leave for at
-                                    least 10 minutes. Massage in
-                                    circular motions with lightly moistened hands until the emulsion turns into
-                                    delicately scented milky bath. Rinse with
-                                    water. Use 1 or 2 times a week to buff away dead skin cells gently. This ritual may
-                                    be followed with a thin layer of the
-                                    Eclat Extraordinaire for a healthy and hydrated glow.</p>
+                                <p>{{product.other_data.how_to_use}}</p>
                             </ng-template>
                         </ngb-panel>
                         <ngb-panel id="tab-4" title="INGREDIENTS">
                             <ng-template ngbPanelContent>
-                                <p>Australian Macadamia extract, Vegetable charcoal (from silica rich Bamboo), Natural
-                                    exfoliants (French quartz sand
-                                    powder, olive stones from Provence), enriched with pure seawater and French Red
-                                    Algae (Palmaria seaweed) extract, it
-                                    provides a wealth of magnesium, potassium, calcium, trace elements with balancing,
-                                    purifying and remineralizing virtues.</p>
+                                <p>{{product.other_data.ingredients}}</p>
                             </ng-template>
                         </ngb-panel>
                         <ngb-panel id="tab-5" title="DETAILS">
                             <ng-template ngbPanelContent>
-                                <p>Gommage Extraordinaire is 100% natural, clinically proven, COSMOS certified and made
-                                    in France as part of La Fervance’s
-                                    Fusionistique Skincare.</p>
+                                <p>{{product.other_data.details}}</p>
                             </ng-template>
                         </ngb-panel>
                     </ngb-accordion>
                 </div>
             </div>
             <div class="details col-md-4">
-                <h3 class="product-title">La Fervance</h3>
-                <small>LAF-002</small>
-                <p class="mt-2 product-description">Gommage Extraordinaire <br>
-                    Exfoliating Sugar Emulsion</p>
+                <h3 class="product-title">{{product.vendor}}</h3>
+                <small>{{product.variants[0].sku}}</small>
+                <p class="mt-2 product-description">{{product.title}} <br>
+                    {{product.subtitle}}</p>
                 <div class="rating my-3">
                     <div class="stars">
                         <span class="fa fa-star-o checked"></span>
@@ -95,16 +55,14 @@
                 <h4 class="price">RS. <span>8,275.36</span></h4>
                 <ng-template #popContent>
                     <div class="list-group">
-                        <a class="list-group-item list-group-item-action active">50ML
+                        <a class="list-group-item list-group-item-action active" *ngFor="let opt of product.options; let i=index">{{opt.values}}
                         </a>
-                        <a class="list-group-item list-group-item-action">100ML</a>
-                        <a class="list-group-item list-group-item-action">200ML</a>
-                        <a class="list-group-item list-group-item-action">300ML</a>
+                     
                     </div>
                 </ng-template>
                 <button type="button" class="btn mt-3" placement="left" [ngbPopover]="popContent">
-                    <span class="float-start">
-                        Size: 100ML
+                    <span class="float-start" *ngFor="let opt of product.options; let i=index">
+                        Size: {{opt.values}}
                     </span>
                     <span class="float-end">
                         <i class="fa fa-chevron-down"></i>
