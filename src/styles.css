@@ -5,3 +5,12 @@
     box-sizing: border-box;
   }
 
+  @font-face {
+    font-family: Futura LT;
+    src: url(assets/font/futura/FuturaLT.ttf);
+}
+
+body {
+    font-family: 'Futura LT', sans-serif !important;
+}
+

@@ -1,14 +1,12 @@
-@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;600;700;800;900&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;600;700;800;900&display=swap'); */
 
 @font-face {
     font-family: Futura LT;
-    src: url('../font/FuturaLT.eot'), url('../font/FuturaLT.ttf') format('truetype'), url('../font/FuturaLT.woff') format('svg');
-    /* font-weight: normal;
-    font-style: normal; */
+    src: url(../font/FuturaLT.ttf);
 }
 
 body {
-    /* font-family: 'Nunito', sans-serif; */
+    font-family: 'Futura LT', sans-serif !important;
     font-family: 'Futura LT';
     font-weight: 400;
     font-style: normal;
