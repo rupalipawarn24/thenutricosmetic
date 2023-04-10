@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs';
-import { BrandList } from '../models/brand-list.model';
+import { BrandList, addReview } from '../models/brand-list.model';
 
 const baseUrl = 'https://demo.thenutricosmeticcompany.co.uk/api/public/api/getAllBrandsForCustomSite';
 const brandlisturl ='https://thenutricosmeticcompany.co.uk/live-api/API/public/api/getProductDetailsByBrandForCustomSite?brand_id';
@@ -30,5 +30,14 @@ export class BrandServiceService {
 
   getmenuList(){
     return this.http.get('https://demo.thenutricosmeticcompany.co.uk/api/public/api/getNavigationMenusForCustomSite');
+  }
+  addReview(data: addReview) {
+    return this.http.post(' https://tncapi.tanajidinde.com/public/api/givereview', data);
+  }
+  getReview(data:any){
+    return this.http.get(' https://tncapi.tanajidinde.com/public/api/getreviews', data);
+
+    // let endPoints = " https://tncapi.tanajidinde.com/public/api/getreviews?product_id"
+    // return this.http.get(`${endPoints}=${id}`);
   }
 }

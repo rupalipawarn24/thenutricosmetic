@@ -142,7 +142,7 @@
                     <ngb-panel id="pannel-1" title="REVIEWS">
                         <ng-template ngbPanelContent>
                             <div class="row w-100 reviews">
-                                <div class="col-12 text-center">
+                                <!-- <div class="col-12 text-center">
                                     <div class="rating">
                                         <div class="stars">
                                             <span class="fa fa-star-o checked"></span>
@@ -151,11 +151,11 @@
                                             <span class="fa fa-star-o"></span>
                                             <span class="fa fa-star-o"></span>
                                         </div>
-                                        <!-- <span class="review-no">41 reviews</span> -->
+                                        <span class="review-no">41 reviews</span> 
                                     </div>
-                                </div>
+                                </div> -->
                                 <div class="row mt-3">
-                                    <div class="col-md-8 reviews">
+                                    <!-- <div class="col-md-8 reviews">
                                         <div class="row w-100">
                                             <div class="col-md-5"
                                                 style="border-right: var(--bs-accordion-border-width) solid var(--bs-accordion-border-color) !important;">
@@ -257,7 +257,7 @@
                                                 </div>
                                             </div>
                                         </div>
-                                    </div>
+                                    </div> -->
                                     <div class="col-md-4 reviews">
                                         <button type="button" class="btn float-end">
                                             <i class='fa fa-edit'></i><span style="margin-left: 5px;">Write a
@@ -273,15 +273,16 @@
                                             <a ngbNavLink>REVIEWS</a>
                                             <ng-template ngbNavContent>
                                                 <div class="row mt-3">
+                                                    <form #reviewForm="ngForm">
                                                     <div class="col-md-3">
                                                         <span>Name</span>
-                                                        <input type="text" id="name" name="name" class="form-control"
-                                                            placeholder="Enter your name">
+                                                        <input type="text" id="name" name="customer_name" class="form-control"
+                                                            placeholder="Enter your name"  ngModel>
                                                     </div>
                                                     <div class="col-md-3">
                                                         <span>Email</span>
-                                                        <input type="text" id="email" name="email" class="form-control"
-                                                            placeholder="john.smit@example.com">
+                                                        <input type="text" id="email" name="customer_email" class="form-control"
+                                                            placeholder="john.smit@example.com"  ngModel>
                                                     </div>
                                                     <div class="col-md-12 mt-3">
                                                         <span>Rating</span>
@@ -297,18 +298,20 @@
                                                     </div>
                                                     <div class="col-md-12 mt-3">
                                                         <span>Title of Review</span>
-                                                        <input type="text" id="review" name="review"
-                                                            class="form-control" placeholder="Give your review a title">
+                                                        <input type="text" id="review" name="comment_title"
+                                                            class="form-control" placeholder="Give your review a title"  ngModel>
                                                     </div>
                                                     <div class="col-md-12 mt-3">
                                                         <span>How was your overall experience?</span>
-                                                        <textarea name="review_description" id="review_description"
-                                                            class="form-control" cols="30" rows="10"></textarea>
+                                                        <textarea name="review_description" name="comment"
+                                                            class="form-control" cols="30" rows="10" ngModel></textarea>
                                                     </div>
                                                     <div class="col-md-12 mt-3">
                                                         <button type="button"
-                                                            class="shop-now-btn float-end m-0">SUBMIT</button>
+                                                            class="shop-now-btn float-end m-0" (click)="submitReview(reviewForm.value)">SUBMIT</button>
                                                     </div>
+                                                </form>
+
                                                 </div>
                                             </ng-template>
                                         </li>
@@ -384,56 +387,7 @@
                                         </div>
                                     </div>
                                     <hr class="my-5">
-                                    <div class="row w-100 m-0">
-                                        <div class="col-md-12 p-0">
-                                            <div class="reviewsLis m-0">
-                                                <span class="float-start reviewtitle">Sebastiane</span>
-                                                <span class="float-end">08/26/2021</span>
-                                            </div>
-                                        </div>
-                                        <div class="col-md-12 p-0">
-                                            <span class="text-muted">Germany</span>
-                                        </div>
-                                        <div class="col-md-12 p-0 mt-3">
-                                            <div class="rating">
-                                                <div class="stars">
-                                                    <span class="fa fa-star-o"></span>
-                                                    <span class="fa fa-star-o"></span>
-                                                    <span class="fa fa-star-o"></span>
-                                                    <span class="fa fa-star-o"></span>
-                                                    <span class="fa fa-star-o"></span>
-                                                    <span class="mx-2 reviewtitle"
-                                                        style="font-size: 15px !important;">Helped my
-                                                        skin</span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-md-12 p-0">
-                                            <p>Contains good stuff that i am using daily in my care routine. Now these
-                                                capsules help my skin from within
-                                                <br><br>
-                                                Skin Meister Komplex <br>
-                                                Anti Aging Complex Enriched With Q10 & Hyaluronic Acid
-                                            </p>
-                                        </div>
-                                        <div class="col-md-12 p-0">
-                                            <div class="rating float-start reviewShare">
-                                                <div class="stars">
-                                                    <span class="fa fa-share-square-o"></span>
-                                                    <span class="mx-2">Share</span>
-                                                </div>
-                                            </div>
-                                            <div class="rating float-end reviewShare">
-                                                <div class="stars">
-                                                    <span class="mx-3">Was this helpful?</span>
-                                                    <span class="fa fa-thumbs-up"></span>
-                                                    <span class="mx-2">1</span>
-                                                    <span class="fa fa-thumbs-down"></span>
-                                                    <span class="mx-2">0</span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
+                                    
                                 </div>
                             </div>
                         </ng-template>
