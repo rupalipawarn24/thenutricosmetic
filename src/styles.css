@@ -14,3 +14,7 @@ body {
     font-family: 'Futura LT', sans-serif !important;
 }
 
+button {
+  font-size: 9px !important;
+  letter-spacing: 3px;
+}

@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { FormGroup } from '@angular/forms';
+import { FormGroup, NgForm } from '@angular/forms';
 import { ActivatedRoute } from '@angular/router';
 import { NgxGalleryOptions } from '@kolkov/ngx-gallery';
 import { NgxGalleryImage } from '@kolkov/ngx-gallery';
@@ -15,6 +15,7 @@ import { BrandServiceService } from 'src/app/services/brand-service.service';
 export class ProductDetailsComponent implements OnInit {
   galleryOptions: NgxGalleryOptions[];
   galleryImages: NgxGalleryImage[];
+  res: any;
   constructor(private modalService: NgbModal, private route: ActivatedRoute, private brandService: BrandServiceService) { }
 
   displaystyle: boolean = false;
@@ -23,6 +24,9 @@ export class ProductDetailsComponent implements OnInit {
   imageData:any;
   addreview!: FormGroup;
   variantId:any;
+  reviewData:any;
+  reviewValuedata:any;
+  starRating = 0; 
   
 
   ngOnInit(): void {
@@ -116,41 +120,45 @@ export class ProductDetailsComponent implements OnInit {
   close() {
 
   }
-  submitReview(data:any) {
+  submitReview(reviewForm:NgForm) {
+
     let user = localStorage.getItem('user');
     let customer_id = user && JSON.parse(user).data[0].id;
 
+    this.reviewValuedata=reviewForm.value;
+
+
     let product_id=this.productId;
      let variant_id=this.variantId;
-     let ratings=3;
+     let ratings=this.starRating;
 
     let addreview: addReview = {
       product_id,
       customer_id,
       variant_id,
       ratings,
-      ...data
+      ...this.reviewValuedata
     }
 
-     console.log(addreview);
 
      this.brandService.addReview(addreview).subscribe((result) => {
       this.getReviewList();
    
     })
+    reviewForm.resetForm();
+
+
   }
 
   getReviewList() {   
-
     let product_id  = this.productId;
-
-    let getreviewData: getReview = {
-      product_id
-    }
- 
-    this.brandService.getReview(getreviewData).subscribe((result) => {
+    this.brandService.getReview(product_id).subscribe((result) => {
+      this.res = result;
+      this.reviewData = this.res.data;
       
-       console.log(result);
+       console.log(this.reviewData);
+      //  console.log(result);
+       
     });
   }
 

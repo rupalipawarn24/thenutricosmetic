@@ -1,0 +1,404 @@
+<div class="Polaris-Page-Header__Row_375v7">
+    <div class="Polaris-Page-Header__TitleWrapper_bejfn">
+        <h1 class="Polaris-Header-Title_2qj8j">Collections</h1>
+    </div>
+    <div class="Polaris-Page-Header__RightAlign_1ok1p">
+        <div class="Polaris-Page-Header__PrimaryActionWrapper_w8or9">
+            <div class="Polaris-Box_375yx Polaris-Box--printHidden_15ag0"><a data-polaris-unstyled="true"
+                    class="Polaris-Button_r99lw Polaris-Button--primary_7k9zs"
+                    href="/store/a2a2ee-2/collections/new"><span class="Polaris-Button__Content_xd1mk"><span
+                            class="Polaris-Button__Text_yj3uv">Create collection</span></span></a></div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+<div class="">
+    <div>
+        <div class="Polaris-LegacyCard_l5l93">
+            <div>
+                <div class="h9Dt5">
+                    <div class="Polaris-IndexFilters__IndexFiltersWrapper_m4vfy" style="height: 48.8px;">
+                        <div></div>
+                        <div class="Polaris-IndexFilters_1t8qs">
+                            <div>
+                                <div class="Polaris-IndexFilters-Container_13mbo">
+                                    <div class="Polaris-Inline_j8r4v"
+                                        style="--pc-inline-align:start; --pc-inline-block-align:center; --pc-inline-wrap:wrap; --pc-inline-gap-xs:var(--p-space-0); --pc-inline-gap-md:var(--p-space-2);">
+                                        <div class="Polaris-IndexFilters__TabsWrapper_1kaqz">
+                                            <div style="transition: opacity 150ms var(--p-ease); opacity: 1;">
+                                                <div class="Polaris-AlphaTabs__Outer_37t24">
+                                                    <div class="Polaris-Box_375yx"
+                                                        style="--pc-box-background:var(--p-color-bg); --pc-box-border-block-end:var(--p-border-divider); --pc-box-border-radius-start-start:var(--p-border-radius-2); --pc-box-border-radius-start-end:var(--p-border-radius-2); --pc-box-padding-block-end-md:var(--p-space-2); --pc-box-padding-block-start-md:var(--p-space-2); --pc-box-padding-inline-start-md:var(--p-space-2); --pc-box-padding-inline-end-md:var(--p-space-2);">
+                                                        <div
+                                                            class="Polaris-AlphaTabs_1olnk Polaris-AlphaTabs__TabsMeasurer_15ef4">
+                                                            <li class="Polaris-AlphaTabs__TabContainer_dsj6d"
+                                                                role="presentation"><button id="ALL_SEARCHMeasurer"
+                                                                    class="Polaris-AlphaTabs__Tab_375k2 Polaris-AlphaTabs__Tab--active_2tfyj"
+                                                                    role="tab" type="button" tabindex="-1"
+                                                                    aria-selected="true">
+                                                                    <div class="Polaris-Inline_j8r4v"
+                                                                        style="--pc-inline-align:center; --pc-inline-block-align:center; --pc-inline-wrap:nowrap; --pc-inline-gap-xs:var(--p-space-2);">
+                                                                        <span
+                                                                            class="Polaris-Text--root_yj4ah Polaris-Text--bodySm_nvqxj Polaris-Text--semibold_k1k0m">All</span>
+                                                                    </div>
+                                                                </button></li><button
+                                                                class="Polaris-AlphaTabs__DisclosureActivator_1mita"
+                                                                aria-label="More views" aria-disabled="false"
+                                                                type="button"><span
+                                                                    class="Polaris-Text--root_yj4ah Polaris-Text--bodySm_nvqxj Polaris-Text--semibold_k1k0m">More
+                                                                    views</span>
+                                                                <div class=""><span
+                                                                        class="Polaris-Icon_yj27d Polaris-Icon--colorSubdued_113xs Polaris-Icon--applyColor_2y25n"><span
+                                                                            class="Polaris-Text--root_yj4ah Polaris-Text--visuallyHidden_yrtt6"></span><svg
+                                                                            viewBox="0 0 20 20"
+                                                                            class="Polaris-Icon__Svg_375hu"
+                                                                            focusable="false" aria-hidden="true">
+                                                                            <path
+                                                                                d="M13.098 8h-6.196c-.751 0-1.172.754-.708 1.268l3.098 3.432c.36.399 1.055.399 1.416 0l3.098-3.433c.464-.513.043-1.267-.708-1.267Z">
+                                                                            </path>
+                                                                        </svg></span></div>
+                                                            </button>
+                                                        </div>
+                                                        <div
+                                                            class="Polaris-AlphaTabs__Wrapper_mkrm3 Polaris-AlphaTabs__WrapperWithNewButton_n10tb">
+                                                            <div class="Polaris-AlphaTabs__ButtonWrapper_mxqbe">
+                                                                <ul class="Polaris-AlphaTabs_1olnk"
+                                                                    data-tabs-focus-catchment="true" role="tablist">
+                                                                    <li class="Polaris-AlphaTabs__TabContainer_dsj6d"
+                                                                        role="presentation"><button id="ALL_SEARCH"
+                                                                            class="Polaris-AlphaTabs__Tab_375k2 Polaris-AlphaTabs__Tab--active_2tfyj"
+                                                                            aria-label="All collections" role="tab"
+                                                                            aria-disabled="false" type="button"
+                                                                            tabindex="0" aria-selected="true">
+                                                                            <div class="Polaris-Inline_j8r4v"
+                                                                                style="--pc-inline-align:center; --pc-inline-block-align:center; --pc-inline-wrap:nowrap; --pc-inline-gap-xs:var(--p-space-2);">
+                                                                                <span
+                                                                                    class="Polaris-Text--root_yj4ah Polaris-Text--bodySm_nvqxj Polaris-Text--semibold_k1k0m">All</span>
+                                                                            </div>
+                                                                        </button></li>
+                                                                    <li class="Polaris-AlphaTabs__DisclosureTab_1qbhg"
+                                                                        role="presentation">
+                                                                        <div><button
+                                                                                class="Polaris-AlphaTabs__DisclosureActivator_1mita"
+                                                                                aria-label="More views"
+                                                                                aria-disabled="false" type="button"
+                                                                                tabindex="0"
+                                                                                aria-controls="Polarispopover21"
+                                                                                aria-owns="Polarispopover21"
+                                                                                aria-expanded="false"><span
+                                                                                    class="Polaris-Text--root_yj4ah Polaris-Text--bodySm_nvqxj Polaris-Text--semibold_k1k0m">More
+                                                                                    views</span>
+                                                                                <div class=""><span
+                                                                                        class="Polaris-Icon_yj27d Polaris-Icon--colorSubdued_113xs Polaris-Icon--applyColor_2y25n"><span
+                                                                                            class="Polaris-Text--root_yj4ah Polaris-Text--visuallyHidden_yrtt6"></span><svg
+                                                                                            viewBox="0 0 20 20"
+                                                                                            class="Polaris-Icon__Svg_375hu"
+                                                                                            focusable="false"
+                                                                                            aria-hidden="true">
+                                                                                            <path
+                                                                                                d="M13.098 8h-6.196c-.751 0-1.172.754-.708 1.268l3.098 3.432c.36.399 1.055.399 1.416 0l3.098-3.433c.464-.513.043-1.267-.708-1.267Z">
+                                                                                            </path>
+                                                                                        </svg></span></div>
+                                                                            </button></div>
+                                                                    </li>
+                                                                </ul>
+                                                                <div class="Polaris-AlphaTabs__NewTab_ouedr">
+                                                                    <div class="Polaris-Box_375yx"><span
+                                                                            class=""><button id="create-new-view"
+                                                                                class="Polaris-AlphaTabs__Tab_375k2 Polaris-AlphaTabs__Tab--iconOnly_1etqr"
+                                                                                aria-disabled="false" type="button"
+                                                                                tabindex="0"
+                                                                                aria-describedby="PolarisTooltipContent36"
+                                                                                data-polaris-tooltip-activator="true">
+                                                                                <div class="Polaris-Inline_j8r4v"
+                                                                                    style="--pc-inline-align:center; --pc-inline-block-align:center; --pc-inline-wrap:nowrap; --pc-inline-gap-xs:var(--p-space-2);">
+                                                                                    <span
+                                                                                        class="Polaris-Text--root_yj4ah Polaris-Text--bodySm_nvqxj Polaris-Text--semibold_k1k0m"><span
+                                                                                            class="Polaris-Icon_yj27d"><span
+                                                                                                class="Polaris-Text--root_yj4ah Polaris-Text--visuallyHidden_yrtt6">Create
+                                                                                                new view</span><svg
+                                                                                                viewBox="0 0 20 20"
+                                                                                                class="Polaris-Icon__Svg_375hu"
+                                                                                                focusable="false"
+                                                                                                aria-hidden="true">
+                                                                                                <path
+                                                                                                    d="M10 4a1 1 0 0 0-1 1v4h-4a1 1 0 1 0 0 2h4v4a1 1 0 1 0 2 0v-4h4a1 1 0 1 0 0-2h-4v-4a1 1 0 0 0-1-1Z">
+                                                                                                </path>
+                                                                                            </svg></span></span></div>
+                                                                            </button></span></div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="Polaris-IndexFilters__ActionWrap_3efpv"><span class="">
+                                                <div style="transition: opacity 150ms var(--p-ease); opacity: 1;">
+                                                    <button class="Polaris-IndexFilters-FilterButton_f6p6d"
+                                                        aria-label="Search and filter collections" type="button"
+                                                        tabindex="0" aria-describedby="PolarisTooltipContent33"
+                                                        data-polaris-tooltip-activator="true">
+                                                        <div class="Polaris-Inline_j8r4v"
+                                                            style="--pc-inline-wrap:wrap; --pc-inline-gap-xs:var(--p-space-0);">
+                                                            <span
+                                                                class="Polaris-Icon_yj27d Polaris-Icon--colorBase_nqlaq Polaris-Icon--applyColor_2y25n"><span
+                                                                    class="Polaris-Text--root_yj4ah Polaris-Text--visuallyHidden_yrtt6"></span><svg
+                                                                    viewBox="0 0 20 20" class="Polaris-Icon__Svg_375hu"
+                                                                    focusable="false" aria-hidden="true">
+                                                                    <path
+                                                                        d="M8 12a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm9.707 4.293-4.82-4.82a5.968 5.968 0 0 0 1.113-3.473 6 6 0 0 0-12 0 6 6 0 0 0 6 6 5.968 5.968 0 0 0 3.473-1.113l4.82 4.82a.997.997 0 0 0 1.414 0 .999.999 0 0 0 0-1.414z">
+                                                                    </path>
+                                                                </svg></span><span
+                                                                class="Polaris-Icon_yj27d Polaris-Icon--colorBase_nqlaq Polaris-Icon--applyColor_2y25n"><span
+                                                                    class="Polaris-Text--root_yj4ah Polaris-Text--visuallyHidden_yrtt6"></span><svg
+                                                                    viewBox="0 0 20 20" class="Polaris-Icon__Svg_375hu"
+                                                                    focusable="false" aria-hidden="true">
+                                                                    <path
+                                                                        d="M2 6a1 1 0 0 1 1-1h14a1 1 0 1 1 0 2h-14a1 1 0 0 1-1-1zm3 4a1 1 0 0 1 1-1h8a1 1 0 1 1 0 2h-8a1 1 0 0 1-1-1zm3 3a1 1 0 1 0 0 2h4a1 1 0 1 0 0-2h-4z">
+                                                                    </path>
+                                                                </svg></span></div>
+                                                    </button></div>
+                                            </span>
+                                            <div><span class=""><button class="Polaris-IndexFilters-FilterButton_f6p6d"
+                                                        aria-label="Sort the results" type="button" tabindex="0"
+                                                        aria-describedby="PolarisTooltipContent34"
+                                                        data-polaris-tooltip-activator="true"
+                                                        aria-controls="Polarispopover20" aria-owns="Polarispopover20"
+                                                        aria-expanded="false"><span
+                                                            class="Polaris-Icon_yj27d Polaris-Icon--colorBase_nqlaq Polaris-Icon--applyColor_2y25n"><span
+                                                                class="Polaris-Text--root_yj4ah Polaris-Text--visuallyHidden_yrtt6"></span><svg
+                                                                viewBox="0 0 20 20" class="Polaris-Icon__Svg_375hu"
+                                                                focusable="false" aria-hidden="true">
+                                                                <path
+                                                                    d="M5.293 2.293a.997.997 0 0 1 1.414 0l3 3a1 1 0 0 1-1.414 1.414l-1.293-1.293v7.586a1 1 0 1 1-2 0v-7.586l-1.293 1.293a1 1 0 0 1-1.414-1.414l3-3zm7.707 4.707a1 1 0 0 1 2 0v7.585l1.293-1.292a.999.999 0 1 1 1.414 1.414l-3 3a.997.997 0 0 1-1.414 0l-3-3a.997.997 0 0 1 0-1.414.999.999 0 0 1 1.414 0l1.293 1.292v-7.585z">
+                                                                </path>
+                                                            </svg></span></button></span></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="Polaris-IndexTable_14ou9">
+                <div class="Polaris-IndexTable__IndexTableWrapper_osjdw">
+                    <div class="Polaris-IndexTable__StickyTable_1swiu" role="presentation">
+                        <div>
+                            <div></div>
+                            <div>
+                                <div class="Polaris-IndexTable__StickyTableHeader_1ytkn">
+                                    <div class="Polaris-IndexTable__StickyTableColumnHeader_3fyec">
+                                        <div class="Polaris-IndexTable__TableHeading_1e5bf"
+                                            data-index-table-sticky-heading="true" style="min-width: 94px;">
+                                            <div
+                                                class="Polaris-LegacyStack_eaeo0 Polaris-LegacyStack--spacingNone_1b3d3 Polaris-LegacyStack--alignmentCenter_1rtaw Polaris-LegacyStack--noWrap_vecks">
+                                                <div class="Polaris-LegacyStack__Item_yiyol">
+                                                    <div class="Polaris-IndexTable__FirstStickyHeaderElement_t5ww3">
+                                                        <div
+                                                            class="Polaris-IndexTable__ColumnHeaderCheckboxWrapper_wbe3v">
+                                                            <label
+                                                                class="Polaris-Choice_j5gzq Polaris-Choice--labelHidden_14tn9"
+                                                                for="PolarisCheckbox5"><span
+                                                                    class="Polaris-Choice__Control_1u8vs"><span
+                                                                        class="Polaris-Checkbox_1d6zr"><input
+                                                                            id="PolarisCheckbox5" type="checkbox"
+                                                                            class="Polaris-Checkbox__Input_30ock"
+                                                                            aria-invalid="false" role="checkbox"
+                                                                            aria-checked="false" value=""><span
+                                                                            class="Polaris-Checkbox__Backdrop_1x2i2"></span><span
+                                                                            class="Polaris-Checkbox__Icon_yj27d"><span
+                                                                                class="Polaris-Icon_yj27d"><span
+                                                                                    class="Polaris-Text--root_yj4ah Polaris-Text--visuallyHidden_yrtt6"></span><svg
+                                                                                    viewBox="0 0 20 20"
+                                                                                    class="Polaris-Icon__Svg_375hu"
+                                                                                    focusable="false"
+                                                                                    aria-hidden="true">
+                                                                                    <path
+                                                                                        d="M14.723 6.237a.94.94 0 0 1 .053 1.277l-5.366 6.193a.834.834 0 0 1-.611.293.83.83 0 0 1-.622-.264l-2.927-3.097a.94.94 0 0 1 0-1.278.82.82 0 0 1 1.207 0l2.297 2.43 4.763-5.498a.821.821 0 0 1 1.206-.056Z">
+                                                                                    </path>
+                                                                                </svg></span></span></span></span><span
+                                                                    class="Polaris-Choice__Label_2vd36"><span>Select all
+                                                                        collections</span></span></label></div>
+                                                    </div>
+                                                </div>
+                                                <div class="Polaris-LegacyStack__Item_yiyol">
+                                                    <div
+                                                        class="Polaris-IndexTable--stickyTableHeadingSecondScrolling_18frd">
+                                                        <span
+                                                            class="Polaris-Text--root_yj4ah Polaris-Text--visuallyHidden_yrtt6">Image</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="Polaris-IndexTable__StickyTableHeadings_c6d08">
+                                        <div class="Polaris-IndexTable__TableHeading_1e5bf Polaris-IndexTable__StickyTableHeading--second_7u33u"
+                                            data-index-table-sticky-heading="true" style="min-width: 40px;"><span
+                                                class="Polaris-Text--root_yj4ah Polaris-Text--visuallyHidden_yrtt6">Image</span>
+                                        </div>
+                                        <div class="Polaris-IndexTable__TableHeading_1e5bf"
+                                            data-index-table-sticky-heading="true" style="min-width: 230px;">
+                                            <div class="Polaris-Tooltip__TooltipContainer_mtgy1"><button
+                                                    class="Polaris-IndexTable__TableHeadingSortButton_tye5c"
+                                                    type="button" tabindex="0"
+                                                    aria-describedby="PolarisTooltipContent37"
+                                                    data-polaris-tooltip-activator="true"><span
+                                                        class="Polaris-IndexTable__TableHeadingSortIcon_1p5r5"><svg
+                                                            viewBox="0 0 20 20" focusable="false" aria-hidden="true"
+                                                            class="Polaris-IndexTable__TableHeadingSortSvg_kwp5r">
+                                                            <path
+                                                                d="M12.324 9h-4.648c-.563 0-.878-.603-.53-1.014l2.323-2.746a.708.708 0 0 1 1.062 0l2.323 2.746c.349.411.033 1.014-.53 1.014Z">
+                                                            </path>
+                                                            <path
+                                                                d="M7.676 11h4.648c.563 0 .879.603.53 1.014l-2.323 2.746a.708.708 0 0 1-1.062 0l-2.324-2.746c-.347-.411-.032-1.014.531-1.014Z"
+                                                                fill-opacity="0.5"></path>
+                                                        </svg></span><span class="">Title</span></button></div>
+                                        </div>
+                                        <div class="Polaris-IndexTable__TableHeading_1e5bf"
+                                            data-index-table-sticky-heading="true" style="min-width: 174px;">Products
+                                        </div>
+                                        <div class="Polaris-IndexTable__TableHeading_1e5bf"
+                                            data-index-table-sticky-heading="true" style="min-width: 294px;">Product
+                                            conditions</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="Polaris-IndexTable-ScrollContainer_lf5n1">
+                        <table
+                            class="Polaris-IndexTable__Table_2qj3m Polaris-IndexTable__Table--sticky_2zprc Polaris-IndexTable__Table--sortable_1ym25">
+                            <thead>
+                                <tr>
+                                    <th class="Polaris-IndexTable__TableHeading_1e5bf Polaris-IndexTable__TableHeading--sortable_47eqm Polaris-IndexTable__TableHeading--first_7e0t3"
+                                        data-index-table-heading="true">
+                                        <div class="Polaris-IndexTable__ColumnHeaderCheckboxWrapper_wbe3v"><label
+                                                class="Polaris-Choice_j5gzq Polaris-Choice--labelHidden_14tn9"
+                                                for="PolarisCheckbox4"><span class="Polaris-Choice__Control_1u8vs"><span
+                                                        class="Polaris-Checkbox_1d6zr"><input id="PolarisCheckbox4"
+                                                            type="checkbox" class="Polaris-Checkbox__Input_30ock"
+                                                            aria-invalid="false" role="checkbox" aria-checked="false"
+                                                            value=""><span
+                                                            class="Polaris-Checkbox__Backdrop_1x2i2"></span><span
+                                                            class="Polaris-Checkbox__Icon_yj27d"><span
+                                                                class="Polaris-Icon_yj27d"><span
+                                                                    class="Polaris-Text--root_yj4ah Polaris-Text--visuallyHidden_yrtt6"></span><svg
+                                                                    viewBox="0 0 20 20" class="Polaris-Icon__Svg_375hu"
+                                                                    focusable="false" aria-hidden="true">
+                                                                    <path
+                                                                        d="M14.723 6.237a.94.94 0 0 1 .053 1.277l-5.366 6.193a.834.834 0 0 1-.611.293.83.83 0 0 1-.622-.264l-2.927-3.097a.94.94 0 0 1 0-1.278.82.82 0 0 1 1.207 0l2.297 2.43 4.763-5.498a.821.821 0 0 1 1.206-.056Z">
+                                                                    </path>
+                                                                </svg></span></span></span></span><span
+                                                    class="Polaris-Choice__Label_2vd36"><span>Select all
+                                                        collections</span></span></label></div>
+                                    </th>
+                                    <th class="Polaris-IndexTable__TableHeading_1e5bf Polaris-IndexTable__TableHeading--sortable_47eqm Polaris-IndexTable__TableHeading--second_13zlr"
+                                        data-index-table-heading="true" style="left: 54px;"><span
+                                            class="Polaris-Text--root_yj4ah Polaris-Text--visuallyHidden_yrtt6">Image</span>
+                                    </th>
+                                    <th class="Polaris-IndexTable__TableHeading_1e5bf Polaris-IndexTable__TableHeading--sortable_47eqm"
+                                        data-index-table-heading="true">
+                                        <div class="Polaris-Tooltip__TooltipContainer_mtgy1"><button
+                                                class="Polaris-IndexTable__TableHeadingSortButton_tye5c" type="button"
+                                                tabindex="0" aria-describedby="PolarisTooltipContent35"
+                                                data-polaris-tooltip-activator="true"><span
+                                                    class="Polaris-IndexTable__TableHeadingSortIcon_1p5r5"><svg
+                                                        viewBox="0 0 20 20" focusable="false" aria-hidden="true"
+                                                        class="Polaris-IndexTable__TableHeadingSortSvg_kwp5r">
+                                                        <path
+                                                            d="M12.324 9h-4.648c-.563 0-.878-.603-.53-1.014l2.323-2.746a.708.708 0 0 1 1.062 0l2.323 2.746c.349.411.033 1.014-.53 1.014Z">
+                                                        </path>
+                                                        <path
+                                                            d="M7.676 11h4.648c.563 0 .879.603.53 1.014l-2.323 2.746a.708.708 0 0 1-1.062 0l-2.324-2.746c-.347-.411-.032-1.014.531-1.014Z"
+                                                            fill-opacity="0.5"></path>
+                                                    </svg></span><span class="">Title</span></button></div>
+                                    </th>
+                                    <th class="Polaris-IndexTable__TableHeading_1e5bf Polaris-IndexTable__TableHeading--sortable_47eqm"
+                                        data-index-table-heading="true">Products</th>
+                                    <th class="Polaris-IndexTable__TableHeading_1e5bf Polaris-IndexTable__TableHeading--sortable_47eqm Polaris-IndexTable__TableHeading--last_qqggd"
+                                        data-index-table-heading="true">Product conditions</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr class="Polaris-IndexTable__TableRow_1a85o">
+                                    <td
+                                        class="Polaris-IndexTable__TableCell_14vwd Polaris-IndexTable__TableCell--first_1h1n6">
+                                        <div class="Polaris-IndexTable-Checkbox__TableCellContentContainer_1pnud">
+                                            <div
+                                                class="Polaris-IndexTable-Checkbox__Wrapper_mkrm3 Polaris-IndexTable-Checkbox--expanded_cex59">
+                                                <label class="Polaris-Choice_j5gzq Polaris-Choice--labelHidden_14tn9"
+                                                    for="gid://shopify/Collection/442715537707"><span
+                                                        class="Polaris-Choice__Control_1u8vs"><span
+                                                            class="Polaris-Checkbox_1d6zr"><input
+                                                                id="gid://shopify/Collection/442715537707"
+                                                                type="checkbox" class="Polaris-Checkbox__Input_30ock"
+                                                                aria-invalid="false" role="checkbox"
+                                                                aria-checked="false" value=""><span
+                                                                class="Polaris-Checkbox__Backdrop_1x2i2"></span><span
+                                                                class="Polaris-Checkbox__Icon_yj27d"><span
+                                                                    class="Polaris-Icon_yj27d"><span
+                                                                        class="Polaris-Text--root_yj4ah Polaris-Text--visuallyHidden_yrtt6"></span><svg
+                                                                        viewBox="0 0 20 20"
+                                                                        class="Polaris-Icon__Svg_375hu"
+                                                                        focusable="false" aria-hidden="true">
+                                                                        <path
+                                                                            d="M14.723 6.237a.94.94 0 0 1 .053 1.277l-5.366 6.193a.834.834 0 0 1-.611.293.83.83 0 0 1-.622-.264l-2.927-3.097a.94.94 0 0 1 0-1.278.82.82 0 0 1 1.207 0l2.297 2.43 4.763-5.498a.821.821 0 0 1 1.206-.056Z">
+                                                                        </path>
+                                                                    </svg></span></span></span></span><span
+                                                        class="Polaris-Choice__Label_2vd36"><span>Select
+                                                            collection</span></span></label></div>
+                                        </div>
+                                    </td>
+                                    <td class="YHPbz Polaris-IndexTable__TableCell_14vwd"><span
+                                            class="Polaris-Thumbnail_15hj1 Polaris-Thumbnail--sizeSmall_7647q"><span
+                                                class="Polaris-Icon_yj27d"><span
+                                                    class="Polaris-Text--root_yj4ah Polaris-Text--visuallyHidden_yrtt6">Home
+                                                    page</span><svg viewBox="0 0 20 20" class="Polaris-Icon__Svg_375hu"
+                                                    focusable="false" aria-hidden="true">
+                                                    <path
+                                                        d="M2.5 1a1.5 1.5 0 0 0-1.5 1.5v15a1.5 1.5 0 0 0 1.5 1.5h15a1.5 1.5 0 0 0 1.5-1.5v-15a1.5 1.5 0 0 0-1.5-1.5h-15zm5 3.5c1.1 0 2 .9 2 2s-.9 2-2 2-2-.9-2-2 .9-2 2-2zm8.999 12.5h-13.002c-.41 0-.64-.46-.4-.79l3.553-4.051c.19-.21.52-.21.72-.01l1.63 1.851 3.06-4.781a.5.5 0 0 1 .84.02l4.039 7.011c.18.34-.06.75-.44.75z">
+                                                    </path>
+                                                </svg></span></span></td>
+                                    <td class="Polaris-IndexTable__TableCell_14vwd">
+                                        <div
+                                            class="Polaris-LegacyStack_eaeo0 Polaris-LegacyStack--vertical_uiuuj Polaris-LegacyStack--spacingExtraTight_gv6hw">
+                                            <div class="Polaris-LegacyStack__Item_yiyol"><a data-polaris-unstyled="true"
+                                                    data-primary-link="true" class="w2qOh"
+                                                    href="/store/a2a2ee-2/collections/442715537707"><span
+                                                        class="Polaris-Text--root_yj4ah Polaris-Text--bodyMd_jaf4s">Home
+                                                        page</span></a></div>
+                                        </div>
+                                    </td>
+                                    <td class="Polaris-IndexTable__TableCell_14vwd"><span
+                                            class="Polaris-Text--root_yj4ah Polaris-Text--bodyMd_jaf4s">0</span></td>
+                                    <td class="Polaris-IndexTable__TableCell_14vwd"></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <div></div>
+            </div>
+            <div
+                class="Polaris-IndexTable__ScrollBarContainer_1rt01 Polaris-IndexTable--scrollBarContainerHidden_1lwvs">
+                <div class="Polaris-IndexTable__ScrollBar_1du2f"
+                    style="--pc-index-table-scroll-bar-content-width:787px;">
+                    <div class="Polaris-IndexTable__ScrollBarContent_1iz36"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="Polaris-FooterHelp_10cj9">
+        <div class="Polaris-FooterHelp__Text_yj3uv">Learn more about <a
+                href="https://help.shopify.com/en/manual/products/collections?st_source=admin&amp;st_campaign=collections_footer&amp;utm_source=admin&amp;utm_campaign=collections_footer"
+                target="_blank" rel="noopener noreferrer" data-polaris-unstyled="true" class="Polaris-Link_yj5sy"
+                aria-label="Learn more about collections">collections</a></div>
+    </div>
+</div>

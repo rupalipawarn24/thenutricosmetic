@@ -54,6 +54,9 @@ import { AffiliatesFaqsComponent } from './views/footer-pages/affiliates-faqs/af
 import { GetInTouchComponent } from './views/footer-pages/get-in-touch/get-in-touch.component';
 import { NotfoundComponent } from './views/notfound/notfound.component';
 import { IwishComponent } from './views/iwish/iwish.component';
+import { CreateCollectionComponent } from './views/manual_collection/create-collection/create-collection.component';
+import { ShowCollectionsComponent } from './views/manual_collection/show-collections/show-collections.component';
+
 
 
 const APP_CONTAINERS = [
@@ -103,6 +106,8 @@ const APP_CONTAINERS = [
     GetInTouchComponent,
     NotfoundComponent,
     IwishComponent,
+    CreateCollectionComponent,
+    ShowCollectionsComponent,
   ],
   imports: [
     BrowserModule,
@@ -117,7 +122,8 @@ const APP_CONTAINERS = [
     ReactiveFormsModule,
     // ProductDetailsModule,
     FormsModule,
-    HttpClientModule
+    HttpClientModule,
+
   ],
   providers: [
     {

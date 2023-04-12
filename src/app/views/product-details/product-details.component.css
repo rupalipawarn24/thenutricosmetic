@@ -592,5 +592,16 @@ p.Cart__Taxes.Text--subdued{
     border-radius: 100%;
     background: currentColor;
 }
-
-
+ngb-rating {
+    color: #0f0f0f;
+    font-size: 30px;
+}
+.showrate{
+    font-size: 18px;
+}
+.reviewsLis {
+    margin-top: 10px !important;
+}
+.hrline {
+    margin-top: 0!important;
+}

@@ -1,0 +1,123 @@
+<div class="container">
+  <div class="card mx-auto d-flex justify-content-center col-12" style="width: 50rem;">
+    <div class="card-body">
+      <div class="title">
+        <label for="title">Title</label>
+        <input type="text" class="form-control" id="title" name="title"
+          placeholder="e.g. Summer collection, Under $100, Staff picks" autocomplete="off">
+      </div>
+      <div>
+        <label class="form-label" for="textAreaDescription">Description</label>
+        <textarea class="form-control" rows="4"></textarea>
+      </div>
+    </div>
+  </div>
+  <div class="card mx-auto d-flex justify-content-center col-12" style="width: 50rem;">
+    <div class="card-body">
+      <div>
+        <h6>Collection type</h6>
+      </div>
+      <div class="form-check">
+        <input type="radio" class="form-check-input" id="radio1" name="optradio" value="option1" checked>
+        <label class="form-check-label" for="radio1">Manual</label>
+        <div>
+          <p>Add products to this collection one by one.</p>
+        </div>
+      </div>
+      <div class="form-check">
+        <input type="radio" class="form-check-input" id="radio2" name="optradio" value="option2">
+        <label class="form-check-label" for="radio2">Automated</label>
+        <div>
+          <p>Existing and future products that match the conditions you set will automatically be added to this
+            collection.</p>
+        </div>
+
+      </div>
+    </div>
+  </div>
+  <div class="card mx-auto d-flex justify-content-center col-12" style="width: 50rem;">
+    <div class="card-body">
+      <div>
+        <h6>Image</h6>
+      </div>
+      <div class="control-section">
+        <div class="col-lg-9">
+          <div class="control_wrapper">
+            <div class="uploadtemplate">
+              <div id='dropArea'>
+                <span id='drop' class="droparea">
+                  <input #imageInput type="file" accept="image/*">
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div> 
+  <div class="card mx-auto d-flex justify-content-center col-12" style="width: 50rem;">
+    <div class="card-body">
+      <div>
+        <h5>Products</h5>
+      </div>
+      <br>
+        <div class="row">
+          <!-- <div class="mt-3 inputs">
+            <i class="fa fa-search"></i>
+            <input type="text" class="form-control " placeholder="Search Tasks...">
+          
+        </div> -->
+          <h6>Add Products</h6>
+          <div class="table-responsive">
+            <table class="table table-responsive table-hover">
+                
+              <thead>
+                <!-- <tr class="bg-light">
+                  <th ></th>
+                  <th ></th>
+                  <th ></th>
+                  
+                </tr> -->
+              </thead>
+          <tbody>
+            <tr>
+              <th scope="row"><input class="form-check-input checkprod" type="checkbox"></th>
+              <td><img src="https://cdn.shopify.com/s/files/1/0403/8685/5073/products/mauli-rituals-product_14_1_100_3b745.png?v=1676618613"
+                alt="3 Step Grow Strong Hair Range">
+                <span>
+                3 Step Grow Strong Hair Range
+              </span></td>
+            
+            </tr>
+            <tr>
+              <th scope="row"><input class="form-check-input checkprod" type="checkbox"></th>
+              <td><img src="https://cdn.shopify.com/s/files/1/0403/8685/5073/products/mauli-rituals-product_14_1_100_3b745.png?v=1676618613"
+                alt="3 Step Grow Strong Hair Range">
+                <span>
+                3 Step Grow Strong Hair Range
+              </span></td>
+            
+            </tr>
+            <tr>
+              <th scope="row"><input class="form-check-input checkprod" type="checkbox"></th>
+              <td><img src="https://cdn.shopify.com/s/files/1/0403/8685/5073/products/mauli-rituals-product_14_1_100_3b745.png?v=1676618613"
+                alt="3 Step Grow Strong Hair Range">
+                <span>
+                3 Step Grow Strong Hair Range
+              </span></td>
+            
+            </tr>
+            
+          </tbody>
+        </table>
+        </div>
+      </div>
+  </div>
+
+</div>
+<div class="justify-content-center col-6">
+            
+  <button type="button" class="create" >save</button>
+
+</div>
+</div>

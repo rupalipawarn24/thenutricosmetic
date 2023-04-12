@@ -34,10 +34,10 @@ export class BrandServiceService {
   addReview(data: addReview) {
     return this.http.post(' https://tncapi.tanajidinde.com/public/api/givereview', data);
   }
-  getReview(data:any){
-    return this.http.get(' https://tncapi.tanajidinde.com/public/api/getreviews', data);
+  getReview(id:number){
+    //return this.http.get(' https://tncapi.tanajidinde.com/public/api/getreviews', data);
 
-    // let endPoints = " https://tncapi.tanajidinde.com/public/api/getreviews?product_id"
-    // return this.http.get(`${endPoints}=${id}`);
+     let endPoints = "https://tncapi.tanajidinde.com/public/api/getreviews?product_id"
+     return this.http.get(`${endPoints}=${id}`);
   }
 }

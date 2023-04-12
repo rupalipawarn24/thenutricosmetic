@@ -1,76 +1,675 @@
-<aside class="NewsletterPopup" data-section-id="popup" data-section-type="newsletter-popup" data-section-settings="
-        {
-          &quot;apparitionDelay&quot;: 15,
-          &quot;showOnlyOnce&quot;: false
-        }
-      " aria-hidden="false">
-  <button class="NewsletterPopup__Close" data-action="close-popup" aria-label="Close"><svg class="Icon Icon--close"
-      role="presentation" viewBox="0 0 16 14">
-      <path d="M15 0L1 14m14 0L1 0" stroke="currentColor" fill="none" fill-rule="evenodd"></path>
-    </svg></button>
-  <h2 class="NewsletterPopup__Heading Heading u-h2">WHY, HELLO THERE</h2>
-  <div class="NewsletterPopup__Content">
-    <p>Want in on new arrivals, exclusive collabs, sales and more - Plus 15% off your first purchase when you subscribe?
-    </p>
-  </div>
-  <div class="discount-section">
-    <h2 class=""><span class="numric-style">
-        <p>15% OFF</p>
-      </span></h2>
-  </div>
-  <form method="post" action="/contact#newsletter-popup" id="newsletter-popup" accept-charset="UTF-8"
-    class="NewsletterPopup__Form"><input type="hidden" name="form_type" value="customer"><input type="hidden"
-      name="utf8" value="✓"><input type="hidden" name="contact[tags]" value="newsletter, Shopify">
-
-    <input type="email" name="contact[email]" class="Form__Input" required="required" aria-label="Enter your email"
-      placeholder="Enter your email">
-    <button class="Form__Submit Button Button--primary Button--full" type="submit">Subscribe</button>
-  </form>
-  <div class="discount-section">
-    <h2 class="">
-      <span class="discount_lable_3">
-        <p></p>
-        <p>To see how we may use your information, take a look at our <a href="/pages/privacy-policy" target="_blank"
-            title="Privacy Policy">Privacy Policy</a>. </p>
-        <p></p>
-      </span>
-    </h2>
-  </div>
-</aside>
-
-
-
-
-
-<div class="recommendation-modal__container" tabindex="-1" style="background-color: rgb(255, 255, 255);">
-  <div class="recommendation-modal__close-button-container">
-    <form action="/localization" method="POST"><input name="_method" type="hidden" value="PUT"><input name="source"
-        type="hidden" value="geolocation_recommendation"><input name="return_to" type="hidden" value="/"><input
-        name="country_code" type="hidden" value="IN"><button class="recommendation-modal__close-button"
-        type="submit"><svg aria-label="Dismiss" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"
-          style="height: 1em; width: 1em;">
-          <path
-            d="M11.414 10l6.293-6.293a.999.999 0 1 0-1.414-1.414L10 8.586 3.707 2.293a.999.999 0 1 0-1.414 1.414L8.586 10l-6.293 6.293a.999.999 0 1 0 1.414 1.414L10 11.414l6.293 6.293a.997.997 0 0 0 1.414 0 .999.999 0 0 0 0-1.414L11.414 10z"
-            fill="#333333"></path>
-        </svg></button></form>
-  </div>
-  <div class="recommendation-modal__content">
-    <div class="recommendation-modal__flag"><img src="https://cdn.shopify.com/static/images/flags/in.svg" width="75"
-        height="48"></div>
-    <h2 class="recommendation-modal__message" style="color: rgb(51, 51, 51);">Your location is set to <span
-        class="recommendation-modal__message--bold">India</span></h2>
-    <div class="recommendation-modal__benefits">
-      <ul>
-        <li style="color: rgb(51, 51, 51);">Shop in INR ₹</li>
-        <li style="color: rgb(51, 51, 51);">Get shipping options for India</li>
-      </ul>
+<div class="Polaris-LegacyCard__Section_1b1h1">
+  <div class="Polaris-FormLayout_1wntl">
+    <div class="Polaris-FormLayout__Item_yiyol">
+      <div class="">
+        <div class="Polaris-Labelled__LabelWrapper_bf6ys">
+          <div class="Polaris-Label_2vd36"><label id="collectionTitleTextFieldLabel" for="collectionTitleTextField"
+              class="Polaris-Label__Text_yj3uv">Title</label></div>
+        </div>
+        <div class="Polaris-Connected_wopc9">
+          <div class="Polaris-Connected__Item_yiyol Polaris-Connected__Item--primary_rmh5m">
+            <div class="Polaris-TextField_1spwi"><input name="title" id="collectionTitleTextField"
+                placeholder="e.g. Summer collection, Under $100, Staff picks" autocomplete="off"
+                class="Polaris-TextField__Input_30ock" type="text" aria-labelledby="collectionTitleTextFieldLabel"
+                aria-invalid="false" value="">
+              <div class="Polaris-TextField__Backdrop_1x2i2"></div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-    <form action="/localization" method="POST" class="recommendation-modal__form"><input name="_method" type="hidden"
-        value="PUT"><input name="source" type="hidden" value="geolocation_recommendation"><input name="return_to"
-        type="hidden" value="/"><input name="country_code" type="hidden" value="IN"><button
-        class="recommendation-modal__button" type="submit"
-        style="background-color: rgb(69, 69, 69); color: rgb(255, 255, 255);">Continue</button></form><button
-      class="recommendation-modal__button--minimal" type="button"
-      style="background-color: transparent; color: rgb(51, 51, 51);">Change country</button>
+    <div class="Polaris-FormLayout__Item_yiyol">
+      <div class="_kuW3"><span
+          class="Polaris-Text--root_yj4ah Polaris-Text--bodySm_nvqxj Polaris-Text--visuallyHidden_yrtt6">Rich text
+          editor</span>
+        <div class="">
+          <div class="Polaris-Labelled__LabelWrapper_bf6ys">
+            <div class="Polaris-Label_2vd36"><label id="collection-descriptionLabel" for="collection-description"
+                class="Polaris-Label__Text_yj3uv"><span
+                  class="Polaris-Text--root_yj4ah Polaris-Text--bodyMd_jaf4s Polaris-Text--regular_pjgr0">Description</span></label>
+            </div>
+          </div>
+          <div class="aZNJI">
+            <div class="loweh">
+              <div class="B4ihK" id="richtexteditor_toolbar-collection-description">
+                <div class="dTT1I">
+                  <div class="SrZCh">
+                    <div class="zz_wb">
+                      <div class="FD_Bu">
+                        <div>
+                          <div>
+                            <div class="Polaris-Tooltip__TooltipContainer_mtgy1">
+                              <div class="aQQcx"><button class="edsvs"
+                                  aria-label="Formatting options, Paragraph selected" aria-disabled="false"
+                                  type="button" aria-pressed="false" tabindex="0"
+                                  aria-describedby="PolarisTooltipContent38" data-polaris-tooltip-activator="true"
+                                  aria-controls="Polarispopover22" aria-owns="Polarispopover22"
+                                  aria-expanded="false">Paragraph<div class="vHqbd"><span
+                                      class="Polaris-Icon_yj27d Polaris-Icon--colorBase_nqlaq Polaris-Icon--applyColor_2y25n"><span
+                                        class="Polaris-Text--root_yj4ah Polaris-Text--visuallyHidden_yrtt6"></span><svg
+                                        viewBox="0 0 20 20" class="Polaris-Icon__Svg_375hu" focusable="false"
+                                        aria-hidden="true">
+                                        <path
+                                          d="M13.098 8h-6.196c-.751 0-1.172.754-.708 1.268l3.098 3.432c.36.399 1.055.399 1.416 0l3.098-3.433c.464-.513.043-1.267-.708-1.267Z">
+                                        </path>
+                                      </svg></span></div></button></div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="FD_Bu">
+                        <div>
+                          <div class="Polaris-Tooltip__TooltipContainer_mtgy1">
+                            <div class="aQQcx"><button class="edsvs mQNNA" aria-label="Bold" aria-disabled="false"
+                                type="button" aria-pressed="false" tabindex="0"
+                                aria-describedby="PolarisTooltipContent39" data-polaris-tooltip-activator="true">
+                                <div class="zJVR7"><svg xmlns="http://www.w3.org/2000/svg" fill="none"
+                                    viewBox="0 0 24 24" role="img" class="_Qtda" focusable="false" aria-hidden="true">
+                                    <path fill-rule="evenodd"
+                                      d="M8 5a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h4.5c2.481 0 4.5-1.165 4.5-4 0-1.698-.724-2.796-1.837-3.405C15.69 10.967 16 10.112 16 9c0-2.835-2.019-4-4.5-4H8Zm1 2v4h3c1.379 0 2-.857 2-2s-.621-2-2-2H9Zm0 6v4h4c1.379 0 2-.857 2-2s-.621-2-2-2H9Z"
+                                      clip-rule="evenodd"></path>
+                                  </svg></div>
+                              </button></div>
+                          </div>
+                        </div>
+                        <div>
+                          <div class="Polaris-Tooltip__TooltipContainer_mtgy1">
+                            <div class="aQQcx"><button class="edsvs mQNNA" aria-label="Italic" aria-disabled="false"
+                                type="button" aria-pressed="false" tabindex="0"
+                                aria-describedby="PolarisTooltipContent40" data-polaris-tooltip-activator="true">
+                                <div class="zJVR7"><svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg" role="img" class="_Qtda" focusable="false"
+                                    aria-hidden="true">
+                                    <path clip-rule="evenodd"
+                                      d="M9 6a1 1 0 0 1 1-1h6a1 1 0 1 1 0 2h-2.167l-1.666 10H14a1 1 0 1 1 0 2H8a1 1 0 1 1 0-2h2.167l1.666-10H10a1 1 0 0 1-1-1Z">
+                                    </path>
+                                  </svg></div>
+                              </button></div>
+                          </div>
+                        </div>
+                        <div>
+                          <div class="Polaris-Tooltip__TooltipContainer_mtgy1">
+                            <div class="aQQcx"><button class="edsvs mQNNA" aria-label="Underline" aria-disabled="false"
+                                type="button" aria-pressed="false" tabindex="0"
+                                aria-describedby="PolarisTooltipContent41" data-polaris-tooltip-activator="true">
+                                <div class="zJVR7"><svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg" role="img" class="_Qtda" focusable="false"
+                                    aria-hidden="true">
+                                    <path clip-rule="evenodd"
+                                      d="M9 5a1 1 0 0 1 1 1v5.5c0 1.343.556 2.5 2 2.5s2-1.157 2-2.5V6a1 1 0 1 1 2 0v5.657C16 13.804 14.469 16 12 16c-2.462 0-4-2.196-4-4.343V6a1 1 0 0 1 1-1ZM6 17a1 1 0 1 0 0 2h12a1 1 0 1 0 0-2H6Z">
+                                    </path>
+                                  </svg></div>
+                              </button></div>
+                          </div>
+                        </div>
+                        <div>
+                          <div>
+                            <div class="Polaris-Tooltip__TooltipContainer_mtgy1">
+                              <div class="aQQcx"><button class="edsvs mQNNA" aria-label="Color" aria-disabled="false"
+                                  type="button" aria-pressed="false" tabindex="0"
+                                  aria-describedby="PolarisTooltipContent42" data-polaris-tooltip-activator="true"
+                                  aria-controls="Polarispopover23" aria-owns="Polarispopover23" aria-expanded="false">
+                                  <div class="zJVR7"><svg xmlns="http://www.w3.org/2000/svg" fill="none"
+                                      viewBox="0 0 24 24" role="img" class="_Qtda" focusable="false" aria-hidden="true">
+                                      <path fill-rule="evenodd"
+                                        d="m14.445 14.442-.653-1.942h-3.584l-.653 1.942a.792.792 0 0 1-1.02.511c-.416-.152-.636-.627-.49-1.062l2.668-7.94C10.904 5.381 11.42 5 12 5s1.096.382 1.287.951l2.668 7.94c.146.435-.074.91-.49 1.062a.792.792 0 0 1-1.02-.511ZM12 7.165l1.232 3.668h-2.464L12 7.165ZM19 19v-2H5v2h14Z"
+                                        clip-rule="evenodd"></path>
+                                    </svg></div>
+                                  <div class="vHqbd"><span
+                                      class="Polaris-Icon_yj27d Polaris-Icon--colorBase_nqlaq Polaris-Icon--applyColor_2y25n"><span
+                                        class="Polaris-Text--root_yj4ah Polaris-Text--visuallyHidden_yrtt6"></span><svg
+                                        viewBox="0 0 20 20" class="Polaris-Icon__Svg_375hu" focusable="false"
+                                        aria-hidden="true">
+                                        <path
+                                          d="M13.098 8h-6.196c-.751 0-1.172.754-.708 1.268l3.098 3.432c.36.399 1.055.399 1.416 0l3.098-3.433c.464-.513.043-1.267-.708-1.267Z">
+                                        </path>
+                                      </svg></span></div>
+                                </button></div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="FD_Bu">
+                        <div>
+                          <div>
+                            <div class="Polaris-Tooltip__TooltipContainer_mtgy1">
+                              <div class="aQQcx"><button class="edsvs mQNNA" aria-label="Alignment"
+                                  aria-disabled="false" type="button" aria-pressed="false" tabindex="0"
+                                  aria-describedby="PolarisTooltipContent43" data-polaris-tooltip-activator="true"
+                                  aria-controls="Polarispopover24" aria-owns="Polarispopover24" aria-expanded="false">
+                                  <div class="zJVR7"><svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                      xmlns="http://www.w3.org/2000/svg" role="img" class="_Qtda" focusable="false"
+                                      aria-hidden="true">
+                                      <path clip-rule="evenodd"
+                                        d="M6 5a1 1 0 0 0 0 2h4a1 1 0 1 0 0-2H6Zm0 4a1 1 0 0 0 0 2h9a1 1 0 1 0 0-2H6Zm-1 5a1 1 0 0 1 1-1h7a1 1 0 1 1 0 2H6a1 1 0 0 1-1-1Zm1 3a1 1 0 1 0 0 2h12a1 1 0 1 0 0-2H6Z">
+                                      </path>
+                                    </svg></div>
+                                  <div class="vHqbd"><span
+                                      class="Polaris-Icon_yj27d Polaris-Icon--colorBase_nqlaq Polaris-Icon--applyColor_2y25n"><span
+                                        class="Polaris-Text--root_yj4ah Polaris-Text--visuallyHidden_yrtt6"></span><svg
+                                        viewBox="0 0 20 20" class="Polaris-Icon__Svg_375hu" focusable="false"
+                                        aria-hidden="true">
+                                        <path
+                                          d="M13.098 8h-6.196c-.751 0-1.172.754-.708 1.268l3.098 3.432c.36.399 1.055.399 1.416 0l3.098-3.433c.464-.513.043-1.267-.708-1.267Z">
+                                        </path>
+                                      </svg></span></div>
+                                </button></div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="ij2Rz">
+                      <div><button id="richtext_editor_toolbar_overflow_controls_activator-collection-description"
+                          class="edsvs mQNNA" aria-label="Additional controls" aria-disabled="false" type="button"
+                          aria-pressed="false" tabindex="0" aria-controls="Polarispopover26"
+                          aria-owns="Polarispopover26" aria-expanded="false">
+                          <div class="zJVR7"><svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                              xmlns="http://www.w3.org/2000/svg" role="img" class="_Qtda" focusable="false"
+                              aria-hidden="true">
+                              <path clip-rule="evenodd"
+                                d="M8 12a2 2 0 1 1-4.001-.001A2 2 0 0 1 8 12Zm6 0a2 2 0 1 1-4.001-.001A2 2 0 0 1 14 12Zm6 0a2 2 0 1 1-4.001-.001A2 2 0 0 1 20 12Z">
+                              </path>
+                            </svg></div>
+                        </button></div>
+                    </div>
+                  </div>
+                  <div class="oXPgd">
+                    <div>
+                      <div class="Polaris-Tooltip__TooltipContainer_mtgy1">
+                        <div class="aQQcx"><button class="edsvs mQNNA B1Gi5" aria-label="Show HTML" type="button"
+                            aria-pressed="false" tabindex="0" aria-describedby="PolarisTooltipContent66"
+                            data-polaris-tooltip-activator="true">
+                            <div class="zJVR7"><svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg" role="img" class="_Qtda" focusable="false"
+                                aria-hidden="true">
+                                <path
+                                  d="M13.98 7.196a1 1 0 0 0-1.96-.392l-2 10a1 1 0 1 0 1.96.392l2-10ZM8.8 8.4a1 1 0 0 1-.2 1.4L5.667 12 8.6 14.2a1 1 0 0 1-1.2 1.6l-4-3a1 1 0 0 1 0-1.6l4-3a1 1 0 0 1 1.4.2ZM15.2 15.6a1 1 0 0 1 .2-1.4l2.933-2.2L15.4 9.8a1 1 0 1 1 1.2-1.6l4 3a1 1 0 0 1 0 1.6l-4 3a1 1 0 0 1-1.4-.2Z">
+                                </path>
+                              </svg></div>
+                          </button></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="K047L" style="display: none;">
+                  <div class="FD_Bu">
+                    <div>
+                      <div>
+                        <div class="Polaris-Tooltip__TooltipContainer_mtgy1">
+                          <div class="aQQcx"><button class="edsvs" aria-label="Formatting options, Paragraph selected"
+                              aria-disabled="false" type="button" aria-pressed="false" tabindex="0"
+                              aria-describedby="PolarisTooltipContent52" data-polaris-tooltip-activator="true"
+                              aria-controls="Polarispopover27" aria-owns="Polarispopover27"
+                              aria-expanded="false">Paragraph<div class="vHqbd"><span
+                                  class="Polaris-Icon_yj27d Polaris-Icon--colorBase_nqlaq Polaris-Icon--applyColor_2y25n"><span
+                                    class="Polaris-Text--root_yj4ah Polaris-Text--visuallyHidden_yrtt6"></span><svg
+                                    viewBox="0 0 20 20" class="Polaris-Icon__Svg_375hu" focusable="false"
+                                    aria-hidden="true">
+                                    <path
+                                      d="M13.098 8h-6.196c-.751 0-1.172.754-.708 1.268l3.098 3.432c.36.399 1.055.399 1.416 0l3.098-3.433c.464-.513.043-1.267-.708-1.267Z">
+                                    </path>
+                                  </svg></span></div></button></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="FD_Bu">
+                    <div>
+                      <div class="Polaris-Tooltip__TooltipContainer_mtgy1">
+                        <div class="aQQcx"><button class="edsvs mQNNA" aria-label="Bold" aria-disabled="false"
+                            type="button" aria-pressed="false" tabindex="0" aria-describedby="PolarisTooltipContent53"
+                            data-polaris-tooltip-activator="true">
+                            <div class="zJVR7"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                role="img" class="_Qtda" focusable="false" aria-hidden="true">
+                                <path fill-rule="evenodd"
+                                  d="M8 5a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h4.5c2.481 0 4.5-1.165 4.5-4 0-1.698-.724-2.796-1.837-3.405C15.69 10.967 16 10.112 16 9c0-2.835-2.019-4-4.5-4H8Zm1 2v4h3c1.379 0 2-.857 2-2s-.621-2-2-2H9Zm0 6v4h4c1.379 0 2-.857 2-2s-.621-2-2-2H9Z"
+                                  clip-rule="evenodd"></path>
+                              </svg></div>
+                          </button></div>
+                      </div>
+                    </div>
+                    <div>
+                      <div class="Polaris-Tooltip__TooltipContainer_mtgy1">
+                        <div class="aQQcx"><button class="edsvs mQNNA" aria-label="Italic" aria-disabled="false"
+                            type="button" aria-pressed="false" tabindex="0" aria-describedby="PolarisTooltipContent54"
+                            data-polaris-tooltip-activator="true">
+                            <div class="zJVR7"><svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg" role="img" class="_Qtda" focusable="false"
+                                aria-hidden="true">
+                                <path clip-rule="evenodd"
+                                  d="M9 6a1 1 0 0 1 1-1h6a1 1 0 1 1 0 2h-2.167l-1.666 10H14a1 1 0 1 1 0 2H8a1 1 0 1 1 0-2h2.167l1.666-10H10a1 1 0 0 1-1-1Z">
+                                </path>
+                              </svg></div>
+                          </button></div>
+                      </div>
+                    </div>
+                    <div>
+                      <div class="Polaris-Tooltip__TooltipContainer_mtgy1">
+                        <div class="aQQcx"><button class="edsvs mQNNA" aria-label="Underline" aria-disabled="false"
+                            type="button" aria-pressed="false" tabindex="0" aria-describedby="PolarisTooltipContent55"
+                            data-polaris-tooltip-activator="true">
+                            <div class="zJVR7"><svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg" role="img" class="_Qtda" focusable="false"
+                                aria-hidden="true">
+                                <path clip-rule="evenodd"
+                                  d="M9 5a1 1 0 0 1 1 1v5.5c0 1.343.556 2.5 2 2.5s2-1.157 2-2.5V6a1 1 0 1 1 2 0v5.657C16 13.804 14.469 16 12 16c-2.462 0-4-2.196-4-4.343V6a1 1 0 0 1 1-1ZM6 17a1 1 0 1 0 0 2h12a1 1 0 1 0 0-2H6Z">
+                                </path>
+                              </svg></div>
+                          </button></div>
+                      </div>
+                    </div>
+                    <div>
+                      <div>
+                        <div class="Polaris-Tooltip__TooltipContainer_mtgy1">
+                          <div class="aQQcx"><button class="edsvs mQNNA" aria-label="Color" aria-disabled="false"
+                              type="button" aria-pressed="false" tabindex="0" aria-describedby="PolarisTooltipContent56"
+                              data-polaris-tooltip-activator="true" aria-controls="Polarispopover28"
+                              aria-owns="Polarispopover28" aria-expanded="false">
+                              <div class="zJVR7"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                  role="img" class="_Qtda" focusable="false" aria-hidden="true">
+                                  <path fill-rule="evenodd"
+                                    d="m14.445 14.442-.653-1.942h-3.584l-.653 1.942a.792.792 0 0 1-1.02.511c-.416-.152-.636-.627-.49-1.062l2.668-7.94C10.904 5.381 11.42 5 12 5s1.096.382 1.287.951l2.668 7.94c.146.435-.074.91-.49 1.062a.792.792 0 0 1-1.02-.511ZM12 7.165l1.232 3.668h-2.464L12 7.165ZM19 19v-2H5v2h14Z"
+                                    clip-rule="evenodd"></path>
+                                </svg></div>
+                              <div class="vHqbd"><span
+                                  class="Polaris-Icon_yj27d Polaris-Icon--colorBase_nqlaq Polaris-Icon--applyColor_2y25n"><span
+                                    class="Polaris-Text--root_yj4ah Polaris-Text--visuallyHidden_yrtt6"></span><svg
+                                    viewBox="0 0 20 20" class="Polaris-Icon__Svg_375hu" focusable="false"
+                                    aria-hidden="true">
+                                    <path
+                                      d="M13.098 8h-6.196c-.751 0-1.172.754-.708 1.268l3.098 3.432c.36.399 1.055.399 1.416 0l3.098-3.433c.464-.513.043-1.267-.708-1.267Z">
+                                    </path>
+                                  </svg></span></div>
+                            </button></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="FD_Bu">
+                    <div>
+                      <div>
+                        <div class="Polaris-Tooltip__TooltipContainer_mtgy1">
+                          <div class="aQQcx"><button class="edsvs mQNNA" aria-label="Alignment" aria-disabled="false"
+                              type="button" aria-pressed="false" tabindex="0" aria-describedby="PolarisTooltipContent57"
+                              data-polaris-tooltip-activator="true" aria-controls="Polarispopover29"
+                              aria-owns="Polarispopover29" aria-expanded="false">
+                              <div class="zJVR7"><svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                  xmlns="http://www.w3.org/2000/svg" role="img" class="_Qtda" focusable="false"
+                                  aria-hidden="true">
+                                  <path clip-rule="evenodd"
+                                    d="M6 5a1 1 0 0 0 0 2h4a1 1 0 1 0 0-2H6Zm0 4a1 1 0 0 0 0 2h9a1 1 0 1 0 0-2H6Zm-1 5a1 1 0 0 1 1-1h7a1 1 0 1 1 0 2H6a1 1 0 0 1-1-1Zm1 3a1 1 0 1 0 0 2h12a1 1 0 1 0 0-2H6Z">
+                                  </path>
+                                </svg></div>
+                              <div class="vHqbd"><span
+                                  class="Polaris-Icon_yj27d Polaris-Icon--colorBase_nqlaq Polaris-Icon--applyColor_2y25n"><span
+                                    class="Polaris-Text--root_yj4ah Polaris-Text--visuallyHidden_yrtt6"></span><svg
+                                    viewBox="0 0 20 20" class="Polaris-Icon__Svg_375hu" focusable="false"
+                                    aria-hidden="true">
+                                    <path
+                                      d="M13.098 8h-6.196c-.751 0-1.172.754-.708 1.268l3.098 3.432c.36.399 1.055.399 1.416 0l3.098-3.433c.464-.513.043-1.267-.708-1.267Z">
+                                    </path>
+                                  </svg></span></div>
+                            </button></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="FD_Bu RYFE6">
+                    <div>
+                      <div class="aQQcx"><button class="edsvs mQNNA bxKmO" aria-label="Link - Select text"
+                          aria-disabled="true" type="button" aria-pressed="false" tabindex="-1">
+                          <div class="zJVR7 TQ3ll"><svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                              xmlns="http://www.w3.org/2000/svg" role="img" class="_Qtda" focusable="false"
+                              aria-hidden="true">
+                              <path clip-rule="evenodd"
+                                d="M8.968 19a3.943 3.943 0 0 1-2.807-1.163 3.972 3.972 0 0 1 0-5.612l1.72-1.719a.874.874 0 1 1 1.237 1.238l-1.72 1.718a2.222 2.222 0 0 0 0 3.138c.841.839 2.302.838 3.139 0l1.72-1.719a.875.875 0 1 1 1.238 1.238l-1.72 1.718A3.94 3.94 0 0 1 8.968 19Zm6.534-5.25a.874.874 0 0 1-.619-1.494l1.72-1.718a2.222 2.222 0 0 0 0-3.138c-.84-.839-2.302-.837-3.138 0l-1.72 1.719a.875.875 0 1 1-1.239-1.238l1.72-1.718A3.94 3.94 0 0 1 15.034 5c1.06 0 2.058.413 2.807 1.163a3.973 3.973 0 0 1 0 5.612l-1.72 1.719a.873.873 0 0 1-.618.256Zm-5.252.875a.874.874 0 0 1-.619-1.494l3.501-3.5a.875.875 0 1 1 1.238 1.238l-3.5 3.5a.874.874 0 0 1-.62.256Z">
+                              </path>
+                            </svg></div>
+                        </button></div>
+                    </div>
+                    <div>
+                      <div class="Polaris-Tooltip__TooltipContainer_mtgy1">
+                        <div class="aQQcx"><button class="edsvs mQNNA" aria-label="Insert image" aria-disabled="false"
+                            type="button" aria-pressed="false" tabindex="0" aria-describedby="PolarisTooltipContent58"
+                            data-polaris-tooltip-activator="true">
+                            <div class="zJVR7"><svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg" role="img" class="_Qtda" focusable="false"
+                                aria-hidden="true">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                  d="M5 6.5A1.5 1.5 0 0 1 6.5 5h11A1.5 1.5 0 0 1 19 6.5v11a1.5 1.5 0 0 1-1.5 1.5h-11A1.5 1.5 0 0 1 5 17.5v-11Zm5 2a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0Zm6.508 8.535h-9c-.319 0-.64-.548-.453-.805l2.217-3.078a.388.388 0 0 1 .56-.008l1.176 1.89s2.337-3.623 2.5-3.856c.164-.233.528-.241.676 0l2.793 5.161c.14.265-.173.696-.469.696Z">
+                                </path>
+                              </svg></div>
+                          </button></div>
+                      </div>
+                    </div>
+                    <div>
+                      <div class="Polaris-Tooltip__TooltipContainer_mtgy1">
+                        <div class="aQQcx"><button class="edsvs mQNNA" aria-label="Insert video" aria-disabled="false"
+                            type="button" aria-pressed="false" tabindex="0" aria-describedby="PolarisTooltipContent59"
+                            data-polaris-tooltip-activator="true">
+                            <div class="zJVR7"><svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg" role="img" class="_Qtda" focusable="false"
+                                aria-hidden="true">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                  d="M12 20a8 8 0 1 0 0-16 8 8 0 0 0 0 16Zm-2-5.578V9.401a.4.4 0 0 1 .598-.348l4.394 2.511a.4.4 0 0 1 0 .695l-4.394 2.51a.4.4 0 0 1-.598-.347Z">
+                                </path>
+                              </svg></div>
+                          </button></div>
+                      </div>
+                    </div>
+                    <div>
+                      <div>
+                        <div class="Polaris-Tooltip__TooltipContainer_mtgy1">
+                          <div class="aQQcx"><button class="edsvs mQNNA" aria-label="Insert table" aria-disabled="false"
+                              type="button" aria-pressed="false" tabindex="0" aria-describedby="PolarisTooltipContent60"
+                              data-polaris-tooltip-activator="true" aria-controls="Polarispopover30"
+                              aria-owns="Polarispopover30" aria-expanded="false">
+                              <div class="zJVR7"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                  role="img" class="_Qtda" focusable="false" aria-hidden="true">
+                                  <path fill-rule="evenodd"
+                                    d="M7 12v5h4v-5H7Zm0-2h4V7H7v3Zm6 2v5h4v-5h-4Zm4-2h-4V7h4v3Zm.5-5h-11A1.5 1.5 0 0 0 5 6.5v11A1.5 1.5 0 0 0 6.5 19h11a1.5 1.5 0 0 0 1.5-1.5v-11A1.5 1.5 0 0 0 17.5 5Z"
+                                    clip-rule="evenodd"></path>
+                                </svg></div>
+                              <div class="vHqbd"><span
+                                  class="Polaris-Icon_yj27d Polaris-Icon--colorBase_nqlaq Polaris-Icon--applyColor_2y25n"><span
+                                    class="Polaris-Text--root_yj4ah Polaris-Text--visuallyHidden_yrtt6"></span><svg
+                                    viewBox="0 0 20 20" class="Polaris-Icon__Svg_375hu" focusable="false"
+                                    aria-hidden="true">
+                                    <path
+                                      d="M13.098 8h-6.196c-.751 0-1.172.754-.708 1.268l3.098 3.432c.36.399 1.055.399 1.416 0l3.098-3.433c.464-.513.043-1.267-.708-1.267Z">
+                                    </path>
+                                  </svg></span></div>
+                            </button></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="FD_Bu">
+                    <div>
+                      <div class="Polaris-Tooltip__TooltipContainer_mtgy1">
+                        <div class="aQQcx"><button class="edsvs mQNNA" aria-label="Bulleted list" aria-disabled="false"
+                            type="button" aria-pressed="false" tabindex="0" aria-describedby="PolarisTooltipContent61"
+                            data-polaris-tooltip-activator="true">
+                            <div class="zJVR7"><svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg" role="img" class="_Qtda" focusable="false"
+                                aria-hidden="true">
+                                <path clip-rule="evenodd"
+                                  d="M6 8a1 1 0 1 0 0-2 1 1 0 0 0 0 2Zm4-2a1 1 0 0 0 0 2h8a1 1 0 1 0 0-2h-8Zm-4 7a1 1 0 1 0 0-2 1 1 0 0 0 0 2Zm4-2a1 1 0 1 0 0 2h8a1 1 0 1 0 0-2h-8Zm-3 6a1 1 0 1 1-2 0 1 1 0 0 1 2 0Zm2 0a1 1 0 0 1 1-1h8a1 1 0 1 1 0 2h-8a1 1 0 0 1-1-1Z">
+                                </path>
+                              </svg></div>
+                          </button></div>
+                      </div>
+                    </div>
+                    <div>
+                      <div class="Polaris-Tooltip__TooltipContainer_mtgy1">
+                        <div class="aQQcx"><button class="edsvs mQNNA" aria-label="Numbered list" aria-disabled="false"
+                            type="button" aria-pressed="false" tabindex="0" aria-describedby="PolarisTooltipContent62"
+                            data-polaris-tooltip-activator="true">
+                            <div class="zJVR7"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                role="img" class="_Qtda" focusable="false" aria-hidden="true">
+                                <path
+                                  d="M9 7a1 1 0 0 1 1-1h8a1 1 0 1 1 0 2h-8a1 1 0 0 1-1-1Zm0 5a1 1 0 0 1 1-1h8a1 1 0 1 1 0 2h-8a1 1 0 0 1-1-1Zm1 4a1 1 0 1 0 0 2h8a1 1 0 1 0 0-2h-8Z"
+                                  clip-rule="evenodd"></path>
+                                <path
+                                  d="M7.122 7.734a.113.113 0 0 0-.114-.113h-.465V5.084a.113.113 0 0 0-.113-.113h-.78a.113.113 0 0 0-.102.066.771.771 0 0 1-.633.448.113.113 0 0 0-.1.113v.793a.113.113 0 0 0 .116.113 1.17 1.17 0 0 0 .48-.12v1.237h-.47a.113.113 0 0 0-.113.113v.686c0 .063.05.114.113.114h2.067a.114.114 0 0 0 .114-.114v-.686Zm.07 5.055a.113.113 0 0 0-.113-.114h-.98l.294-.259c.448-.396.776-.744.776-1.298v-.037a1.03 1.03 0 0 0-.339-.789c-.224-.2-.55-.313-.96-.313-.431 0-.76.138-.989.366a1.37 1.37 0 0 0-.378.846.113.113 0 0 0 .101.124l.83.084a.113.113 0 0 0 .124-.1.655.655 0 0 1 .093-.29.213.213 0 0 1 .187-.104c.084 0 .13.023.155.05.026.028.049.078.049.168v.028c0 .106-.056.23-.173.38-.117.147-.28.306-.472.484l-.905.835a.114.114 0 0 0-.037.083v.541c0 .063.051.114.114.114h2.51a.114.114 0 0 0 .113-.114v-.685Zm-.159 4.157a.82.82 0 0 0-.233-.179.79.79 0 0 0 .186-.163.812.812 0 0 0 .18-.53v-.014a.929.929 0 0 0-.355-.763c-.226-.177-.546-.264-.925-.264-.417 0-.739.12-.964.319a1.102 1.102 0 0 0-.367.744.113.113 0 0 0 .113.123h.798a.113.113 0 0 0 .113-.103c.007-.074.03-.114.063-.138.036-.028.102-.051.22-.051.09 0 .14.024.169.052.028.028.05.075.05.152v.014c0 .095-.027.149-.064.182-.04.035-.112.063-.243.063h-.308a.113.113 0 0 0-.113.114v.634c0 .063.05.113.113.113h.317c.137 0 .208.03.245.064.036.033.062.09.062.197v.037c0 .1-.028.157-.063.19-.036.034-.098.06-.202.06-.143 0-.213-.038-.25-.077-.04-.04-.061-.102-.067-.182a.113.113 0 0 0-.113-.104h-.81a.113.113 0 0 0-.114.121c.022.308.123.598.352.81.228.212.568.33 1.04.33.434 0 .78-.106 1.018-.307.24-.203.359-.49.359-.823v-.037a.851.851 0 0 0-.207-.584Z">
+                                </path>
+                              </svg></div>
+                          </button></div>
+                      </div>
+                    </div>
+                    <div>
+                      <div class="Polaris-Tooltip__TooltipContainer_mtgy1">
+                        <div class="aQQcx"><button class="edsvs mQNNA" aria-label="Outdent" aria-disabled="false"
+                            type="button" aria-pressed="false" tabindex="0" aria-describedby="PolarisTooltipContent63"
+                            data-polaris-tooltip-activator="true">
+                            <div class="zJVR7"><svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg" role="img" class="_Qtda" focusable="false"
+                                aria-hidden="true">
+                                <path clip-rule="evenodd"
+                                  d="M5 6a1 1 0 0 1 1-1h12a1 1 0 1 1 0 2H6a1 1 0 0 1-1-1Zm7 8a1 1 0 0 1 1-1h5a1 1 0 1 1 0 2h-5a1 1 0 0 1-1-1Zm1-5a1 1 0 1 0 0 2h5a1 1 0 1 0 0-2h-5Zm-8 9a1 1 0 0 1 1-1h12a1 1 0 1 1 0 2H6a1 1 0 0 1-1-1Zm4.04-8.9c.41-.262.96.02.96.493v4.814c0 .473-.55.755-.96.493l-3.765-2.408a.579.579 0 0 1 0-.985L9.04 9.1Z">
+                                </path>
+                              </svg></div>
+                          </button></div>
+                      </div>
+                    </div>
+                    <div>
+                      <div class="Polaris-Tooltip__TooltipContainer_mtgy1">
+                        <div class="aQQcx"><button class="edsvs mQNNA" aria-label="Indent" aria-disabled="false"
+                            type="button" aria-pressed="false" tabindex="0" aria-describedby="PolarisTooltipContent64"
+                            data-polaris-tooltip-activator="true">
+                            <div class="zJVR7"><svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg" role="img" class="_Qtda" focusable="false"
+                                aria-hidden="true">
+                                <path clip-rule="evenodd"
+                                  d="M5 6a1 1 0 0 1 1-1h12a1 1 0 1 1 0 2H6a1 1 0 0 1-1-1Zm7 8a1 1 0 0 1 1-1h5a1 1 0 1 1 0 2h-5a1 1 0 0 1-1-1Zm1-5a1 1 0 1 0 0 2h5a1 1 0 1 0 0-2h-5Zm-8 9a1 1 0 0 1 1-1h12a1 1 0 1 1 0 2H6a1 1 0 0 1-1-1Zm.96-3.1c-.41.262-.96-.02-.96-.493V9.593c0-.473.55-.755.96-.493l3.765 2.408a.579.579 0 0 1 0 .985L5.96 14.9Z">
+                                </path>
+                              </svg></div>
+                          </button></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="FD_Bu">
+                    <div>
+                      <div class="Polaris-Tooltip__TooltipContainer_mtgy1">
+                        <div class="aQQcx"><button class="edsvs mQNNA" aria-label="Clear formatting"
+                            aria-disabled="false" type="button" aria-pressed="false" tabindex="0"
+                            aria-describedby="PolarisTooltipContent65" data-polaris-tooltip-activator="true">
+                            <div class="zJVR7"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" role="img"
+                                class="_Qtda" focusable="false" aria-hidden="true">
+                                <path d="m12.293 13.707.707.707L14.414 13 7 5.586 5.586 7l.707.707z"></path>
+                                <path
+                                  d="M16 10a6 6 0 1 0-12 0 6 6 0 0 0 12 0zM6 10c0-2.21 1.79-4 4-4s4 1.79 4 4-1.79 4-4 4-4-1.79-4-4z">
+                                </path>
+                              </svg></div>
+                          </button></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="HE4NW" id="richtexteditor_text_area-collection-description">
+              <div id="collection-description_parent">
+                <div id="collection-description_iframecontainer"><iframe id="collection-description_ifr" frameborder="0"
+                    allowtransparency="true"
+                    title="Rich Text Area. Press ALT-F9 for menu. Press ALT-F10 for toolbar. Press ALT-0 for help"
+                    src="javascript:&quot;&quot;"
+                    style="width: 100%; height: 150px; display: block; min-height: 150px;"></iframe></div>
+              </div><textarea id="collection-description" class="QSS6o" aria-hidden="true"
+                style="display: none;">&lt;!----&gt;</textarea>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+<div class="Polaris-LegacyCard_l5l93">
+  <div class="Polaris-LegacyCard__Header_z4uwg">
+    <h2 class="Polaris-Text--root_yj4ah Polaris-Text--headingMd_lwjt4">Collection type</h2>
+  </div>
+  <div class="Polaris-LegacyCard__Section_1b1h1">
+    <fieldset class="Polaris-AlphaStack_1x5dy Polaris-AlphaStack--fieldsetReset_1w49p" aria-invalid="false"
+      style="--pc-stack-order:column; --pc-stack-gap-xs:var(--p-space-4); --pc-stack-gap-md:var(--p-space-0);">
+      <ul class="Polaris-AlphaStack_1x5dy Polaris-AlphaStack--listReset_1gz07"
+        style="--pc-stack-order:column; --pc-stack-gap-xs:var(--p-space-4); --pc-stack-gap-md:var(--p-space-0);">
+        <li>
+          <div class="Polaris-Bleed_2ppoe"
+            style="--pc-bleed-margin-block-end-xs:var(--p-space-1); --pc-bleed-margin-block-end-md:var(--p-space-0);">
+            <div><label class="Polaris-Choice_j5gzq" for="PolarisRadioButton3"><span
+                  class="Polaris-Choice__Control_1u8vs"><span class="Polaris-RadioButton_bsatr"><input
+                      id="PolarisRadioButton3" name="PolarisChoiceList1" type="radio"
+                      class="Polaris-RadioButton__Input_30ock" aria-describedby="PolarisRadioButton3HelpText"
+                      value="manualCollection"><span
+                      class="Polaris-RadioButton__Backdrop_1x2i2"></span></span></span><span
+                  class="Polaris-Choice__Label_2vd36"><span>Manual</span></span></label>
+              <div class="Polaris-Choice__Descriptions_pp5ln">
+                <div class="Polaris-Choice__HelpText_8qj1a" id="PolarisRadioButton3HelpText"><span
+                    class="Polaris-Text--root_yj4ah Polaris-Text--subdued_17vaa">Add products to this collection one by
+                    one. Learn more about <a
+                      href="https://help.shopify.com/en/manual/products/collections/manual-shopify-collection"
+                      target="_blank" rel="noopener noreferrer" data-polaris-unstyled="true"
+                      class="Polaris-Link_yj5sy">manual collections</a>.</span></div>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="Polaris-Bleed_2ppoe"
+            style="--pc-bleed-margin-block-end-xs:var(--p-space-1); --pc-bleed-margin-block-end-md:var(--p-space-0);">
+            <div><label class="Polaris-Choice_j5gzq" for="PolarisRadioButton4"><span
+                  class="Polaris-Choice__Control_1u8vs"><span class="Polaris-RadioButton_bsatr"><input
+                      id="PolarisRadioButton4" name="PolarisChoiceList1" type="radio"
+                      class="Polaris-RadioButton__Input_30ock" aria-describedby="PolarisRadioButton4HelpText"
+                      value="smartCollection" checked=""><span
+                      class="Polaris-RadioButton__Backdrop_1x2i2"></span></span></span><span
+                  class="Polaris-Choice__Label_2vd36"><span>Automated</span></span></label>
+              <div class="Polaris-Choice__Descriptions_pp5ln">
+                <div class="Polaris-Choice__HelpText_8qj1a" id="PolarisRadioButton4HelpText"><span
+                    class="Polaris-Text--root_yj4ah Polaris-Text--subdued_17vaa">Existing and future products that match
+                    the conditions you set will automatically be added to this collection. Learn more about <a
+                      href="https://help.shopify.com/en/manual/products/collections/automated-shopify-collection"
+                      target="_blank" rel="noopener noreferrer" data-polaris-unstyled="true"
+                      class="Polaris-Link_yj5sy">automated collections</a>.</span></div>
+              </div>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </fieldset>
+  </div>
+</div>
+
+
+
+
+
+<div class="Polaris-LegacyCard_l5l93">
+  <header class="Mu9nI">
+    <div class="Polaris-LegacyStack_eaeo0 Polaris-LegacyStack--alignmentBaseline_aupj5">
+      <div class="Polaris-LegacyStack__Item_yiyol Polaris-LegacyStack__Item--fill_vpuzt">
+        <h2 class="Polaris-Text--root_yj4ah Polaris-Text--headingMd_lwjt4">Image</h2>
+      </div>
+    </div>
+  </header>
+  <div class="Polaris-LegacyCard__Section_1b1h1">
+    <div class="Polaris-Labelled--hidden_riqie">
+      <div class="Polaris-Labelled__LabelWrapper_bf6ys">
+        <div class="Polaris-Label_2vd36"><label id="PolarisDropZone2Label" for="PolarisDropZone2"
+            class="Polaris-Label__Text_yj3uv">Upload image</label></div>
+      </div>
+      <div class="Polaris-DropZone_1ehhx Polaris-DropZone--hasOutline_1z0fh Polaris-DropZone--sizeLarge_61dxo"
+        aria-disabled="false"><span
+          class="Polaris-Text--root_yj4ah Polaris-Text--bodySm_nvqxj Polaris-Text--visuallyHidden_yrtt6"><input
+            id="PolarisDropZone2" accept="image/*" type="file" autocomplete="off"></span>
+        <div class="Polaris-DropZone__Container_13mbo">
+          <div class="_Yc9l">
+            <div class="Polaris-DropZone-FileUpload_1fbjx Polaris-DropZone-FileUpload--large_2qh0r">
+              <div class="Polaris-AlphaStack_1x5dy"
+                style="--pc-stack-inline-align:center; --pc-stack-order:column; --pc-stack-gap-xs:var(--p-space-2);">
+                <div class="Polaris-DropZone-FileUpload__Action_r96cs">Add image</div>
+                <p class="Polaris-Text--root_yj4ah Polaris-Text--bodySm_nvqxj Polaris-Text--subdued_17vaa">or drop an
+                  image to upload</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="Polaris-LegacyCard_l5l93">
+  <div class="Polaris-LegacyCard__Header_z4uwg">
+    <h2 class="Polaris-Text--root_yj4ah Polaris-Text--headingMd_lwjt4">Products</h2>
+  </div>
+  <div class="Polaris-LegacyCard__Section_1b1h1">
+    <div class="Polaris-LegacyStack_eaeo0 Polaris-LegacyStack--distributionFill_1c1lq">
+      <div class="Polaris-LegacyStack__Item_yiyol">
+        <div class="Polaris-Labelled--hidden_riqie">
+          <div class="Polaris-Labelled__LabelWrapper_bf6ys">
+            <div class="Polaris-Label_2vd36"><label id="PolarisTextField2Label" for="PolarisTextField2"
+                class="Polaris-Label__Text_yj3uv">Search products</label></div>
+          </div>
+          <div class="Polaris-Connected_wopc9">
+            <div class="Polaris-Connected__Item_yiyol Polaris-Connected__Item--primary_rmh5m">
+              <div class="Polaris-TextField_1spwi">
+                <div class="Polaris-TextField__Prefix_10fbz" id="PolarisTextField2-Prefix"><span
+                    class="Polaris-Icon_yj27d Polaris-Icon--colorSubdued_113xs Polaris-Icon--applyColor_2y25n"><span
+                      class="Polaris-Text--root_yj4ah Polaris-Text--visuallyHidden_yrtt6"></span><svg
+                      viewBox="0 0 20 20" class="Polaris-Icon__Svg_375hu" focusable="false" aria-hidden="true">
+                      <path
+                        d="M8 12a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm9.707 4.293-4.82-4.82a5.968 5.968 0 0 0 1.113-3.473 6 6 0 0 0-12 0 6 6 0 0 0 6 6 5.968 5.968 0 0 0 3.473-1.113l4.82 4.82a.997.997 0 0 0 1.414 0 .999.999 0 0 0 0-1.414z">
+                      </path>
+                    </svg></span></div><input id="PolarisTextField2" placeholder="Search products" autocomplete="off"
+                  class="Polaris-TextField__Input_30ock" type="text"
+                  aria-labelledby="PolarisTextField2Label PolarisTextField2-Prefix" aria-invalid="false" value="">
+                <div class="Polaris-TextField__Backdrop_1x2i2"></div>
+              </div>
+            </div>
+            <div class="Polaris-Connected__Item_yiyol">
+              <div><button class="Polaris-Button_r99lw" aria-label="Browse products" type="button"><span
+                    class="Polaris-Button__Content_xd1mk"><span
+                      class="Polaris-Button__Text_yj3uv">Browse</span></span></button></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="Polaris-LegacyStack__Item_yiyol">
+        <div class="Polaris-LegacyStack_eaeo0 Polaris-LegacyStack--alignmentCenter_1rtaw">
+          <div class="Polaris-LegacyStack__Item_yiyol Polaris-LegacyStack__Item--fill_vpuzt">
+            <div class="Polaris-Labelled--hidden_riqie">
+              <div class="Polaris-Labelled__LabelWrapper_bf6ys">
+                <div class="Polaris-Label_2vd36"><label id="PolarisSelect5Label" for="PolarisSelect5"
+                    class="Polaris-Label__Text_yj3uv">Sort:</label></div>
+              </div>
+              <div class="Polaris-Select_ss8pm"><select id="PolarisSelect5" class="Polaris-Select__Input_30ock"
+                  aria-invalid="false">
+                  <option value="BEST_SELLING">Best selling</option>
+                  <option value="ALPHA_ASC">Product title A-Z</option>
+                  <option value="ALPHA_DESC">Product title Z-A</option>
+                  <option value="PRICE_DESC">Highest price</option>
+                  <option value="PRICE_ASC">Lowest price</option>
+                  <option value="CREATED_DESC">Newest</option>
+                  <option value="CREATED">Oldest</option>
+                  <option value="MANUAL">Manually</option>
+                </select>
+                <div class="Polaris-Select__Content_xd1mk" aria-hidden="true">
+                  <div class="Polaris-Box_375yx" style="--pc-box-padding-inline-end-xs:var(--p-space-1);"><span
+                      class="Polaris-Text--root_yj4ah Polaris-Text--block_32woz Polaris-Text--subdued_17vaa Polaris-Text--truncate_4qxon">Sort:</span>
+                  </div><span class="Polaris-Select__SelectedOption_azu52">Best selling</span><span
+                    class="Polaris-Select__Icon_yj27d"><span class="Polaris-Icon_yj27d"><span
+                        class="Polaris-Text--root_yj4ah Polaris-Text--visuallyHidden_yrtt6"></span><svg
+                        viewBox="0 0 20 20" class="Polaris-Icon__Svg_375hu" focusable="false" aria-hidden="true">
+                        <path
+                          d="M7.676 9h4.648c.563 0 .879-.603.53-1.014l-2.323-2.746a.708.708 0 0 0-1.062 0l-2.324 2.746c-.347.411-.032 1.014.531 1.014Zm4.648 2h-4.648c-.563 0-.878.603-.53 1.014l2.323 2.746c.27.32.792.32 1.062 0l2.323-2.746c.349-.411.033-1.014-.53-1.014Z">
+                        </path>
+                      </svg></span></span>
+                </div>
+                <div class="Polaris-Select__Backdrop_1x2i2"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="glf61">
+    <div
+      class="Polaris-LegacyStack_eaeo0 Polaris-LegacyStack--vertical_uiuuj Polaris-LegacyStack--alignmentCenter_1rtaw">
+      <div class="Polaris-LegacyStack__Item_yiyol"><img class="d01Eh"
+          src="https://cdn.shopify.com/shopifycloud/web/assets/v1/833d5270ee5c71c0.svg" alt="No Products"></div>
+      <div class="Polaris-LegacyStack__Item_yiyol">
+        <p class="dFlqd">There are no products in this collection.</p>
+        <p class="dFlqd">Search or browse to add products.</p>
+      </div>
+    </div>
   </div>
 </div>

@@ -287,13 +287,16 @@
                                                     <div class="col-md-12 mt-3">
                                                         <span>Rating</span>
                                                         <div class="rating review-sec">
-                                                            <div class="stars">
+                                                            <!-- <div class="stars">
+                                                                <span class="fa fa-star-o"></span>
+                                                                <img class="img-fluid" alt="" width="18"/>
                                                                 <span class="fa fa-star-o"></span>
                                                                 <span class="fa fa-star-o"></span>
                                                                 <span class="fa fa-star-o"></span>
                                                                 <span class="fa fa-star-o"></span>
-                                                                <span class="fa fa-star-o"></span>
-                                                            </div>
+                                                            </div> -->
+                                                            <ngb-rating [max]="5" [(rate)]="starRating" [readonly]="false"></ngb-rating>
+
                                                         </div>
                                                     </div>
                                                     <div class="col-md-12 mt-3">
@@ -308,7 +311,7 @@
                                                     </div>
                                                     <div class="col-md-12 mt-3">
                                                         <button type="button"
-                                                            class="shop-now-btn float-end m-0" (click)="submitReview(reviewForm.value)">SUBMIT</button>
+                                                            class="shop-now-btn float-end m-0" (click)="submitReview(reviewForm)">SUBMIT</button>
                                                     </div>
                                                 </form>
 
@@ -336,39 +339,36 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="row w-100 m-0">
+                                    <div class="row w-100 m-0" *ngFor="let review of reviewData; let i=index">
                                         <div class="col-md-12 p-0">
                                             <div class="reviewsLis">
-                                                <span class="float-start reviewtitle">Sebastiane</span>
-                                                <span class="float-end">08/26/2021</span>
+                                                <span class="float-start reviewtitle">{{review.customer_name}}</span>
+                                                <!-- <span class="float-end">08/26/2021</span> -->
                                             </div>
                                         </div>
-                                        <div class="col-md-12 p-0">
+                                        <!-- <div class="col-md-12 p-0">
                                             <span class="text-muted">Germany</span>
-                                        </div>
+                                        </div> -->
                                         <div class="col-md-12 p-0 mt-3">
                                             <div class="rating">
                                                 <div class="stars">
+
+                                            <ngb-rating [max]="5" [(rate)]="review.ratings" [readonly]="true" class="showrate"></ngb-rating>
+                                                    <!-- <span  class="fa fa-star-o"></span>
                                                     <span class="fa fa-star-o"></span>
                                                     <span class="fa fa-star-o"></span>
                                                     <span class="fa fa-star-o"></span>
-                                                    <span class="fa fa-star-o"></span>
-                                                    <span class="fa fa-star-o"></span>
+                                                    <span class="fa fa-star-o"></span> -->
                                                     <span class="mx-2 reviewtitle"
-                                                        style="font-size: 15px !important;">Helped my
-                                                        skin</span>
+                                                        style="font-size: 15px !important;">{{review.comment_title}}</span>
                                                 </div>
                                             </div>
                                         </div>
                                         <div class="col-md-12 p-0">
-                                            <p>Contains good stuff that i am using daily in my care routine. Now these
-                                                capsules help my skin from within
-                                                <br><br>
-                                                Skin Meister Komplex <br>
-                                                Anti Aging Complex Enriched With Q10 & Hyaluronic Acid
+                                            <p>{{review.comment}}
                                             </p>
                                         </div>
-                                        <div class="col-md-12 p-0">
+                                        <!-- <div class="col-md-12 p-0">
                                             <div class="rating float-start reviewShare">
                                                 <div class="stars">
                                                     <span class="fa fa-share-square-o"></span>
@@ -384,11 +384,13 @@
                                                     <span class="mx-2">0</span>
                                                 </div>
                                             </div>
-                                        </div>
+                                        </div> -->
+                                        <hr class="mt-5 hrline">
+
                                     </div>
-                                    <hr class="my-5">
                                     
                                 </div>
+
                             </div>
                         </ng-template>
                     </ngb-panel>

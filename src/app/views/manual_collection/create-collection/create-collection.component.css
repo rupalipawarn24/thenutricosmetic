@@ -1,0 +1,59 @@
+.container{
+
+    padding-left: 10px;
+    
+    margin-top: 50px;
+    margin-bottom: 20px;
+  }
+  .title{
+    margin-bottom: 20px;
+
+  }
+  
+  .card{
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  .uploadtemplate #dropArea {
+    min-height: 50px;
+    margin: 15px 0;
+    position: relative;
+}
+
+.uploadtemplate #drop {
+    padding: 3% 30% 3%;
+    display: inherit;
+    border: 1px dashed #c3c3cc
+}
+.inputs{
+
+  position: relative;
+
+ }
+img {
+       
+  height: 13%;
+  width: 13%; 
+  padding-left: 10px;
+  padding-right: 20px;
+}
+.checkprod{
+margin-top: 50px;
+}
+.create{
+ 
+  color: #fff;
+  background-color: green;
+  cursor: pointer;
+  display: inline-flex;
+  justify-content: center;
+  line-height: 1;
+  margin: 0;
+  min-height: 2.25rem;
+  min-width: 2.25rem;
+  text-align: center;
+  text-decoration: none;
+  padding: 14px 28px!important;
+  border-width: 0;
+  border-radius: 12px;
+}

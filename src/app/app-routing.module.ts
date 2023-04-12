@@ -30,6 +30,8 @@ import { AboutUsComponent } from './views/footer-pages/about-us/about-us.compone
 import { AffiliatesFaqsComponent } from './views/footer-pages/affiliates-faqs/affiliates-faqs.component';
 import { GetInTouchComponent } from './views/footer-pages/get-in-touch/get-in-touch.component';
 import { IwishComponent } from './views/iwish/iwish.component';
+import { CreateCollectionComponent } from './views/manual_collection/create-collection/create-collection.component';
+import { ShowCollectionsComponent } from './views/manual_collection/show-collections/show-collections.component';
 const routes: Routes = [
   {
     path: '',
@@ -203,7 +205,8 @@ const routes: Routes = [
       {
         path: 'iwish',
         component: IwishComponent
-      },
+      }
+      
       
       
     ]
