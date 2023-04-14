@@ -9,15 +9,31 @@
 	</div>
 	
 </div>
-<!-- <div class="col-12 col-lg-9">
+<div class="row">
+<div class="col-12 col-lg-9">
     <section class="newin__Wrapper my-5">
         <div class="container-xl">
-            <div class="row m-0 mb-5 product-catalog" >
-                <div [class]="catlogLayout" *ngFor="let brand of brandData; let i=index">
-                    <a  class="card">
-                        <h2 class="title">{{brand.vendor}}</h2>
-                        <div class="image">
-                            <img class="img-fluid"  src="{{brand.images[0].src}}" alt="" [routerLink]="['/product-details']">
+            <div class="row m-0 mb-5 product-catalog">
+                <div [class]="catlogLayout" *ngFor="let wish of wishlistData; let i=index">
+                    <a class="card">
+                        <div class="aspect-w-1 aspect-h-1">
+                            <div class="flex bg-almost-white absolute left-0 top-0 justify-center items-center">
+                                <div class="flex justify-center relative w-full h-full m-56 m:m-40 ms:m-24">
+                                    <span class="spandemo">
+                                        <img class="demoimg"
+                                            [routerLink]="['/product-details/'+ wish.product_id]"
+                                            src="{{wish.src}}"
+                                            decoding="async" data-nimg="fill" class="mix-blend-multiply"
+                                            style="position: absolute; inset: 0px; box-sizing: border-box; padding: 0px; border: none; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%; object-fit: contain; object-position: center center;"></span>
+                                </div>
+                                <div class="favourite">
+                                    <img class="img-fluid"
+                                        src="assets/images/close3.png"
+                                        alt="" width="18"
+                                        (click)="deleteToWishlist(wish.wishlist_id)"
+                                         />
+                                </div>
+                            </div>
                         </div>
                         <div class="popup_btn_addtocart">
                             <form action="" method="post" enctype="">
@@ -26,41 +42,71 @@
                                 </button>
                             </form>
                         </div>
-                        <p class="description">{{brand.title}}</p>
-                        <div class="description mb-0">
-                            <ul class="list-unstyled d-flex star-ul mb-2">
-                                <li><img class="img-fluid" src="assets/images/star-outline.png" alt=""
-                                        width="16" />
-                                </li>
-                                <li><img class="img-fluid" src="assets/images/star-outline.png" alt=""
-                                        width="16" />
-                                </li>
-                                <li><img class="img-fluid" src="assets/images/star-outline.png" alt=""
-                                        width="16" />
-                                </li>
-                                <li><img class="img-fluid" src="assets/images/star-outline.png" alt=""
-                                        width="16" />
-                                </li>
-                                <li><img class="img-fluid" src="assets/images/star-outline.png" alt=""
-                                        width="16" />
-                                </li>
-                            </ul>
-                        </div>
+                        <h2 class="title">{{wish.vendor}}</h2>
+                        <p class="description">{{wish.title}}</p>
                         
-                        <div class="favourite">
-                            <img class="img-fluid" src="assets/images/star-solid.png"
-                                alt="" width="18" *ngIf="addedToWishlist && productId ===brand.product_id" />
-                                <img class="img-fluid" src="assets/images/star-outline.png"
-                                alt="" width="18" *ngIf="productId !== brand.product_id" (click)="handleAddToWishlist(brand.variants[0].variant_id,brand.product_id)" />
-                                
-                        </div>
-
                         <div class="price mb-3">
                             <span class="new-price">₴2,344.68</span>
                         </div>
                     </a>
                 </div>
+                
             </div>
         </div>
     </section>
+</div>
+
+<div class="no-results-favourite-panel" *ngIf="noresults">
+    <div class="labletext">You have no items in your Favourites
+    </div>
+    <div>
+    <a class="start" href="/">Start shopping</a></div>
+    </div>
+</div>
+
+<!-- <div class="favourite-grid">
+<div class="favourite-card"  *ngFor="let wish of wishlistData; let i=index">
+
+
+    <div class="aspect-w-1 aspect-h-1">
+        <div class="flex bg-almost-white absolute left-0 top-0 justify-center items-center">
+            <div class="flex justify-center relative w-full h-full m-56 m:m-40 ms:m-24">
+                <span class="spandemo">
+                    <img class="demoimg"
+                        [routerLink]="['/product-details/'+ wish.product_id]"
+                        src="{{wish.src}}"
+                        decoding="async" data-nimg="fill" class="mix-blend-multiply"
+                        style="position: absolute; inset: 0px; box-sizing: border-box; padding: 0px; border: none; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%; object-fit: contain; object-position: center center;"></span>
+            </div>
+            <div class="favourite">
+                <img class="img-fluid"
+                    src="assets/images/close3.png"
+                    alt="" width="18"
+                    (click)="deleteToWishlist(wish.wishlist_id)"
+                     />
+            </div>
+        </div>
+    </div>
+    <div class="popup_btn_addtocart">
+        <form action="" method="post" enctype="">
+            <button class="tdcart" type="submit" name="add" data-add-to-cart="">
+                Add to cart
+            </button>
+        </form>
+    </div>
+  
+  <div>
+    <h2 class="title">{{wish.vendor}}</h2>
+    <p class="description">{{wish.title}}</p>
+    <div class="description mb-0">
+        <ngb-rating [max]="5" [readonly]="false"></ngb-rating>
+    </div>
+    <div class="price mb-3">
+        <span class="new-price">₴2,344.68</span>
+    </div>
+  </div>
+
+</div>
 </div> -->
+
+

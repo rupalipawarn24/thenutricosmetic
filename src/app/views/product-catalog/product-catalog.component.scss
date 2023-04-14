@@ -3,7 +3,216 @@
     padding-left: 0.25rem !important;
     margin: 0 !important;
 }
-
+.title{
+    letter-spacing: .1em
+}
 .checked {
     color: gold !important;
+}
+@media (max-width: 2000px){
+.t\:col-span-4 {
+    grid-column: span 4/span 4;
+}
+}
+.w-full {
+    width: 100%;
+}
+
+.relative {
+    position: relative;
+}
+@media (max-width: 2000px){
+.t\:col-span-4 {
+    grid-column: span 4/span 4;
+}
+}
+.overflow-hidden {
+    overflow: hidden;
+}
+.bottom-0 {
+    bottom: 0;
+}
+
+.top-25 {
+    top: 25px;
+}
+.absolute {
+    position: absolute;
+}
+a {
+    color: inherit;
+    text-decoration: inherit;
+}
+.inline-block {
+    display: inline-block;
+}
+
+.z-20 {
+    z-index: 20;
+}
+.left-0 {
+    left: 0;
+}
+.focus\:outline-none:focus, .outline-none {
+    outline: 2px solid transparent;
+    outline-offset: 2px;
+}
+
+.w-full {
+    width: 100%;
+}
+.aspect-h-1 {
+    --tw-aspect-h: 1;
+}
+
+.aspect-w-1 {
+    --tw-aspect-w: 1;
+}
+.aspect-w-1, .aspect-w-16, .aspect-w-4 {
+    position: relative;
+    padding-bottom: calc(var(--tw-aspect-h) / var(--tw-aspect-w) * 100%);
+}
+.items-center {
+    align-items: center;
+}
+.flex {
+    display: flex;
+}
+
+.left-0 {
+    left: 0;
+}
+.top-0 {
+    top: 0;
+}
+.absolute {
+    position: absolute;
+}
+.bg-almost-white {
+    --tw-bg-opacity: 1;
+    background-color: rgba(248,248,248,var(--tw-bg-opacity));
+}
+
+.justify-center {
+    justify-content: center;
+}
+.aspect-w-16>*, .aspect-w-1>*, .aspect-w-4>* {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+.justify-center {
+    justify-content: center;
+}
+.w-full {
+    width: 100%;
+}
+.h-full {
+    height: 100%;
+}
+.flex {
+    display: flex;
+}
+.m-56 {
+    margin: 56px;
+}
+.relative {
+    position: relative;
+}
+.spandemo {
+    box-sizing: border-box;
+    display: block;
+    overflow: hidden;
+    width: initial;
+    height: initial;
+    background: none;
+    opacity: 1;
+    border: 0px;
+    margin: 0px;
+    padding: 0px;
+    position: absolute;
+    inset: 0px;
+}
+.demoimg {
+    position: absolute;
+    inset: 0px;
+    box-sizing: border-box;
+    padding: 0px;
+    border: none;
+    margin: auto;
+    display: block;
+    width: 0px;
+    height: 0px;
+    min-width: 100%;
+    max-width: 100%;
+    min-height: 100%;
+    max-height: 100%;
+    object-fit: contain;
+    object-position: center center;
+    
+}
+.mix-blend-multiply {
+    mix-blend-mode: multiply;
+}
+.focus\:outline-none:focus, .outline-none {
+    outline: 2px solid transparent;
+    outline-offset: 2px;
+}
+
+.justify-center {
+    justify-content: center;
+}
+.items-center {
+    align-items: center;
+}
+.w-40 {
+    width: 40px;
+}
+.h-40 {
+    height: 40px;
+}
+.inline-flex {
+    display: inline-flex;
+}
+.z-20 {
+    z-index: 20;
+}
+.right-8 {
+    right: 8px;
+}
+.top-8 {
+    top: 8px;
+}
+.absolute {
+    position: absolute;
+}
+.items-center {
+    align-items: center;
+}
+.grid-cols-12 {
+    grid-template-columns: repeat(12,minmax(0,1fr));
+}
+.w-full {
+    width: 100%;
+}
+
+.grid {
+    display: grid;
+}
+@media (max-width: 1500px){
+.t\:gap-24 {
+    gap: 24px;
+}
+}
+@media (max-width: 1500){
+.t\:gap-24 {
+    gap: 24px;
+}}
+.demoimg {
+    overflow-clip-margin: content-box;
+    overflow: clip;
 }

@@ -1,0 +1,22 @@
+.ulicons{
+margin: 0;
+padding: 0;
+list-style: none;
+display: inline-flex;
+flex-direction: row;
+gap: 32px;
+margin-top: 56px;
+}
+
+.icon-button{
+color: inherit;
+text-decoration: inherit;
+position: relative;
+display: inline-flex;
+height: 40px;
+width: 40px;
+align-items: center;
+justify-content: center;
+outline: 2px solid transparent;
+outline-offset: 2px;
+}

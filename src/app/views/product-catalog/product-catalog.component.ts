@@ -21,7 +21,7 @@ export class ProductCatalogComponent implements OnInit {
   star_clicked: boolean = false;
   @Input() isDisabled: boolean = false;
 
-
+  starRating=0;
 
   catlogLayout = [
     "mt-3", "col-12", "col-md-3", "card-slider"
@@ -83,7 +83,7 @@ export class ProductCatalogComponent implements OnInit {
     this.brandService.getbrandlistById(this.brandId)
       .subscribe((data: any) => {
         this.brandData=data;
-        console.log(this.brandData);
+       // console.log(this.brandData);
       });
   }
 
@@ -112,10 +112,6 @@ export class ProductCatalogComponent implements OnInit {
      // console.log("remove");
 
     }
-
-    
-    
-    
 
   }
 

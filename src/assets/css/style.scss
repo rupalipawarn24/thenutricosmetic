@@ -842,7 +842,7 @@ ul.main-nav>li ul.sub-menu-lists>li>a:hover {
     font-size: 14px;
     line-height: 24px;
     font-weight: 400;
-    letter-spacing: 0;
+    letter-spacing: 0.1em;
 }
 
 .card-slider .card .title:hover {
@@ -878,6 +878,7 @@ ul.main-nav>li ul.sub-menu-lists>li>a:hover {
     margin: 7px 10px 5px 10px;
     font-size: 14px;
     opacity: 0.8;
+    letter-spacing: 0.1em;
 }
 
 .card-slider .card .sold-out {
@@ -908,6 +909,14 @@ ul.main-nav>li ul.sub-menu-lists>li>a:hover {
     font-weight: bold;
     text-transform: uppercase;
     color: white;
+}
+.p{
+   
+    letter-spacing: .08em;
+    line-height: 170%;
+    font-size: 14px;
+
+
 }
 
 .card-slider .card .price {

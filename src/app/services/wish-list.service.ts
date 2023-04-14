@@ -37,8 +37,9 @@ export class WishListService {
   }
 
   removeFromWishlist(data:deletewishlist) {
-    let endPoints = "/deletewishlist"
-    return this.http.post(environment.apiUrl + endPoints, data);
+     let endPoints = "/deletewishlist"
+     return this.http.post(environment.apiUrl + endPoints, data);
+    console.log(data);
   }
 
 }

@@ -23,7 +23,7 @@ export class AccountServiceService {
   }
 
   userSignUp(user: signUp){
-    this.http.post(environment.apiUrl+'/processregistration',user,{observe:'response'})
+    this.http.post('https://tncapi.tanajidinde.com/public/api/processregistration',user,{observe:'response'})
     .subscribe((result)=>{
      if(result){
        localStorage.setItem('user',JSON.stringify(result.body));

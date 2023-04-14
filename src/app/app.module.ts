@@ -56,8 +56,24 @@ import { NotfoundComponent } from './views/notfound/notfound.component';
 import { IwishComponent } from './views/iwish/iwish.component';
 import { CreateCollectionComponent } from './views/manual_collection/create-collection/create-collection.component';
 import { ShowCollectionsComponent } from './views/manual_collection/show-collections/show-collections.component';
+import {NgcCookieConsentConfig} from 'ngx-cookieconsent';
+import {NgcCookieConsentModule} from 'ngx-cookieconsent';
 
-
+const cookieConfig:NgcCookieConsentConfig = {
+  cookie: {
+    domain: 'localhost' // or 'your.domain.com' // it is mandatory to set a domain, for cookies to work properly (see https://goo.gl/S2Hy2A)
+  },
+  palette: {
+    popup: {
+      background: '#000'
+    },
+    button: {
+      background: '#f1d600'
+    }
+  },
+  theme: 'edgeless',
+  type: 'opt-out'
+};
 
 const APP_CONTAINERS = [
   DefaultLayoutComponent
@@ -123,7 +139,7 @@ const APP_CONTAINERS = [
     // ProductDetailsModule,
     FormsModule,
     HttpClientModule,
-
+    NgcCookieConsentModule.forRoot(cookieConfig),
   ],
   providers: [
     {
