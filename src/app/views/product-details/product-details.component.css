@@ -50,6 +50,10 @@ img {
 .preview-thumbnail.nav-tabs li:last-of-type {
     margin-right: 0;
 }
+.mr{
+    margin-top: 5px;
+    margin-bottom: 1rem;
+}
 
 .tab-content {
     overflow: hidden;

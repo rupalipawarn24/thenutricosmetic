@@ -42,8 +42,8 @@ export class IwishComponent implements OnInit {
 
   getWishList() {
     let user = localStorage.getItem('user');
-    // let customer_id = user && JSON.parse(user).data[0].id;
-    let customer_id=1;
+    let customer_id = user && JSON.parse(user).data[0].id;
+    
     let getwishData: getwishlist = {
       customer_id,
     }
