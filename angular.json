@@ -34,7 +34,6 @@
               "node_modules/bootstrap/dist/css/bootstrap.min.css",
               "node_modules/cookieconsent/build/cookieconsent.min.css",
               "node_modules/bootstrap-icons/font/bootstrap-icons.css",
-              "node_modules/font-awesome/css/font-awesome.css",
               "node_modules/@fortawesome/fontawesome-free/css/all.css"
               
 
@@ -116,7 +115,6 @@
               "node_modules/bootstrap/dist/css/bootstrap.min.css",
               "node_modules/cookieconsent/build/cookieconsent.min.css",
               "node_modules/bootstrap-icons/font/bootstrap-icons.css",
-              "node_modules/font-awesome/css/font-awesome.css",
               "node_modules/@fortawesome/fontawesome-free/css/all.css"
 
 

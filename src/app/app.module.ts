@@ -1,5 +1,5 @@
 import { NgModule } from '@angular/core';
-import { LocationStrategy, HashLocationStrategy, CommonModule } from '@angular/common';
+import { LocationStrategy, HashLocationStrategy } from '@angular/common';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
@@ -58,6 +58,11 @@ import { CreateCollectionComponent } from './views/manual_collection/create-coll
 import { ShowCollectionsComponent } from './views/manual_collection/show-collections/show-collections.component';
 import {NgcCookieConsentConfig} from 'ngx-cookieconsent';
 import {NgcCookieConsentModule} from 'ngx-cookieconsent';
+import { CommonModule } from '@angular/common';
+import { ScrollTopComponent } from './scroll-top/scroll-top.component';
+
+
+
 
 const cookieConfig:NgcCookieConsentConfig = {
   cookie: {
@@ -124,8 +129,10 @@ const APP_CONTAINERS = [
     IwishComponent,
     CreateCollectionComponent,
     ShowCollectionsComponent,
+    ScrollTopComponent,
   ],
   imports: [
+    CommonModule,
     BrowserModule,
     BrowserAnimationsModule,
     AppRoutingModule,

@@ -44,7 +44,7 @@
                     <div class="brands-content-floating" style="top: 0px; bottom: unset;">
                         <div>
 
-                            <input type="text" placeholder="Search..." class="right">
+                            <input type="text" placeholder="Search With alphaate..." [(ngModel)]="searchText" (ngModelChange)="filterList()" class="right">
                         </div>
                         <div id="shopify-section-brand_advertisement" class="shopify-section">
                             <div class="advertisement-container brands" style="width: 255.46px;"><a href=""
@@ -60,8 +60,11 @@
                         <div class="brand-names"><a href="/collections/cidrani">Cidrani</a><a
                                 href="/collections/complete-me">Complete Me</a></div>
                     </div> -->
-                    <div class="brands-alphabetical" *ngFor="let brand of brands; let i=index">
+
+                  
+                    <div class="brands-alphabetical" *ngFor="let brand of brands; let i=index ">
                         <div class="brand-alphabet">{{brand[1].alphaate}}</div>
+
 
                         <div class="brand-names">
 
@@ -70,6 +73,7 @@
                         </div>
 
                     </div>
+                    
                     <!-- <div class="brands-alphabetical">
                         <div class="brand-alphabet" data-scroll-spy="C">C</div>
                         <div class="brand-names"><a href="/collections/cidrani">Cidrani</a><a
