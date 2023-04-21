@@ -27,7 +27,7 @@ export class AccountServiceService {
     .subscribe((result)=>{
      if(result){
        localStorage.setItem('user',JSON.stringify(result.body));
-       this.router.navigate(['/']);
+       this.router.navigate(['/login']);
      }
      
     })
@@ -62,9 +62,10 @@ export class AccountServiceService {
     return this.http.post('https://tncapi.tanajidinde.com/public/api/addshippingaddress', data);
   }
  
-  getAddressList(data:getAddress){
-  
-    return this.http.post('https://tncapi.tanajidinde.com/public/api/getalladdress', data);
+  getAddressList(id:number){
+      
+    let endPoints = "https://tncapi.tanajidinde.com/public/api/getalladdress?customer_id";
+    return this.http.get(`${endPoints}=${id}`);
 
   }
   

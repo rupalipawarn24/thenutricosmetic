@@ -567,10 +567,16 @@ ul.main-nav>li ul.sub-menu-lists>li>a:hover {
 }
 
 .nutri_text_image h2 {
-    font-size: 24px;
-    font-weight: 500;
-    text-transform: uppercase;
+    // font-size: 24px;
+    // font-weight: 500;
+    // text-transform: uppercase;
     letter-spacing: .2em;
+    font-size: 28px;
+    margin-bottom: 0;
+    z-index: 1;
+    font-weight: 500;
+    margin-top: 0;
+    line-height: 1.2;
 }
 
 .shop-now-btn {
@@ -1108,7 +1114,12 @@ button.tdcart {
 p {
     letter-spacing: .08em;
     line-height: 170%;
-    font-size: 14px;
+    font-size: 15px;
+    margin-top: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 1.8;
+   
 }
 .banner_blog_heading .read_more a {
     font-size: 14px;

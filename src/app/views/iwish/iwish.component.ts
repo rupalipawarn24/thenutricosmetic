@@ -47,8 +47,9 @@ export class IwishComponent implements OnInit {
     let getwishData: getwishlist = {
       customer_id,
     }
+    console.log(customer_id)
 
-    this.wish.getWishlist(getwishData).subscribe((result) => {
+    this.wish.getWishlist(customer_id).subscribe((result) => {
       this.res=result;
       this.wishlistData=this.res.data;
       

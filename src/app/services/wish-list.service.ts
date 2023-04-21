@@ -31,9 +31,12 @@ export class WishListService {
     return this.http.post(environment.apiUrl + endPoints, data)
   }
 
-  getWishlist(data:getwishlist) {
-    let endPoints = "/getwishlist"
-    return this.http.post(environment.apiUrl + endPoints, data)
+  getWishlist(id:number) {
+    
+    let endPoints = "https://tncapi.tanajidinde.com/public/api/getwishlist?customer_id"
+    //return this.http.get(environment.apiUrl + endPoints, data)
+    return this.http.get(`${endPoints}=${id}`);
+
   }
 
   removeFromWishlist(data:deletewishlist) {

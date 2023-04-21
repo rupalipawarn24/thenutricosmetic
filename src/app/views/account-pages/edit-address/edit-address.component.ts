@@ -62,6 +62,9 @@ export class EditAddressComponent implements OnInit {
           this.router.navigate(['/edit-address'])
         }, 4000);
 
+        this.getAddressList()
+
+
       }
     })
 
@@ -93,7 +96,7 @@ export class EditAddressComponent implements OnInit {
       customers_id,
     }
 
-    this.user.getAddressList(getaddressData).subscribe((result) => {
+    this.user.getAddressList(customers_id).subscribe((result) => {
       this.res = result;
       this.addressList = this.res.data;
       // console.log(this.addressList);
@@ -132,7 +135,7 @@ export class EditAddressComponent implements OnInit {
       customers_id,
     }
 
-    this.user.getAddressList(getaddressData).subscribe((result) => {
+    this.user.getAddressList(customers_id).subscribe((result) => {
       this.res = result;
       this.addressList = this.res.data;
 
