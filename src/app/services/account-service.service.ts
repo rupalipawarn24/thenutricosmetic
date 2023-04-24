@@ -23,11 +23,18 @@ export class AccountServiceService {
   }
 
   userSignUp(user: signUp){
-    this.http.post('https://tncapi.tanajidinde.com/public/api/processregistration',user,{observe:'response'})
+    
+    this.http.post('https://tncapi.tanajidinde.com/api/customers',user,{observe:'response'})
     .subscribe((result)=>{
      if(result){
        localStorage.setItem('user',JSON.stringify(result.body));
        this.router.navigate(['/login']);
+       
+     }
+     else
+     {
+      console.error();
+    
      }
      
     })
@@ -38,14 +45,16 @@ export class AccountServiceService {
    }
    
    userLogin(data:login){
-    this.http.post(environment.apiUrl+'/processlogin',data,{observe:'response'})
+    this.http.post('https://tncapi.tanajidinde.com/api/login',data,{observe:'response'})
     .subscribe((result)=>{
       this.res = result;
-         if(this.res.body.success === '1'){
+         if(this.res.body.success == '1')
+         {
           localStorage.setItem('user',JSON.stringify(result.body));
            this.router.navigate(['/account']);
           this.invalidUserAuth.emit(false)
-        }else{
+        }else
+        {
           this.invalidUserAuth.emit(true)
         }
     })

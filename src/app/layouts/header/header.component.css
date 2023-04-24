@@ -35,3 +35,28 @@ header {
 .about_banner {
   position: relative;
 }
+
+@media (min-width:200px) and (max-width:700px) {
+  .tnclogo {
+      margin: 20px;
+  }
+
+  .txcenter{
+    justify-content: center !important;
+  }
+
+  .ic-menu{
+    margin-top: 30px;
+  }
+
+  .Header__Wrapper .select2-box {
+    margin: 0 0rem 0 0 !important;
+  }
+  .select2-container{
+    width: auto !important;
+  }
+
+  .AnnouncementBar__Wrapper p {
+    font-size: 11px !important;
+  }
+}

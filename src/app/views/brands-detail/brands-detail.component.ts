@@ -34,7 +34,7 @@ export class BrandsDetailComponent implements OnInit {
   }
 
   filterList() {
-    debugger
+    
     this.filteredItems = this.brandtemp.filter((brands) => {
       let temp: Brands = brands[1];
       return temp.alphaate.toUpperCase().startsWith(this.searchText.toUpperCase())
@@ -46,12 +46,12 @@ export class BrandsDetailComponent implements OnInit {
   }
 
   retrieveBrands(): void {
-    debugger
+    
     this.brandService.getAll()
 
       .subscribe(
         (data): any => {
-          debugger
+          
           console.log('data====', data)
           this.brandtemp = data
           this.brands = data.reduce((r: any, e: any) => {

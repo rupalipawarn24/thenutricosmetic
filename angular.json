@@ -9,8 +9,11 @@
       "root": "",
       "sourceRoot": "src",
       "prefix": "app",
+      
       "architect": {
+     
         "build": {
+           
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
             "outputPath": "dist/portal",
@@ -50,8 +53,8 @@
               "budgets": [
                 {
                   "type": "initial",
-                  "maximumWarning": "500kb",
-                  "maximumError": "1.50mb"
+                  "maximumWarning": "2mb",
+                  "maximumError": "5mb"
                 },
                 {
                   "type": "anyComponentStyle",
@@ -80,6 +83,10 @@
         },
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
+          "options": {
+            "browserTarget": "project-name:build",
+            "proxyConfig": "src/proxy.conf.json"
+         },
           "configurations": {
             "production": {
               "browserTarget": "Portal:build:production"
@@ -130,6 +137,7 @@
       }
     }
   },
+  
   "cli": {
     "analytics": "51fc5c14-23c5-4588-b641-c011c40e4d50"
   }

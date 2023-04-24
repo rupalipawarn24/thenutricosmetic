@@ -149,3 +149,16 @@
 .NewsletterPopup .discount-section p {
     margin: 0;
 }
+
+.slick-prev {
+    display: none !important;
+}
+
+.slick-next {
+    display: none !important;
+}
+
+
+.slick-arrow {
+    display: none !important;
+}
