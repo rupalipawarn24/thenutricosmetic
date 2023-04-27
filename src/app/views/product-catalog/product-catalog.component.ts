@@ -20,6 +20,9 @@ export class ProductCatalogComponent implements OnInit {
   productId:number=0;
   star_clicked: boolean = false;
   @Input() isDisabled: boolean = false;
+  recentData:any;
+  isexist :boolean=false;
+
 
   starRating=0;
 
@@ -47,6 +50,7 @@ export class ProductCatalogComponent implements OnInit {
   ngOnInit(): void {
     this.brandId=this.route.snapshot.params['id'];
     this.getbrandListById();
+    this.getrecentProduct();
   }
   changeLayout(data: any) {
     if (data == 'small') {
@@ -114,6 +118,17 @@ export class ProductCatalogComponent implements OnInit {
     }
 
   }
+  getrecentProduct(){
+    let data1 = sessionStorage.getItem('recentlyProduct'); 
+    if (data1) 
+    {
+      this.isexist = true;
+    }
+    let recent = sessionStorage.getItem('recentlyProduct');
+    this.recentData = recent && JSON.parse(recent);
+    this.recentData =this.recentData.slice(Math.max(this.recentData.length - 4, 0));
+  }
+
 
 
 }

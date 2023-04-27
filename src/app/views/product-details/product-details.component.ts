@@ -24,6 +24,7 @@ export class ProductDetailsComponent implements OnInit {
 
   displaystyle: boolean = false;
   productId: any;
+  recentData:any;
   productData: any;
   imageData: any;
   addreview!: FormGroup;
@@ -64,6 +65,7 @@ export class ProductDetailsComponent implements OnInit {
     this.productId = this.route.snapshot.params['id'];
     this.getproductListById();
     this.getReviewList();
+   // this.getrecentProduct();
   }
 
   openScrollableContent(longContent: any) {
@@ -74,6 +76,7 @@ export class ProductDetailsComponent implements OnInit {
     this.brandService.getproductlistById(this.productId)
       .subscribe((data: any) => {
         this.productData = data;
+        //console.log(this.productData);
         this.imageData = data[0].images;
         this.variantId = data[0].variants[0].variant_id;
         this.imageData.forEach((element: any) => {
@@ -84,17 +87,32 @@ export class ProductDetailsComponent implements OnInit {
           })
         });
 
+        let isexist = false;
         let dataObj = [];
-        let data1    =   sessionStorage.getItem('recentlyProduct'); //get existing item in localstorage
-        if(data1) //check if it exists or not empty
-        {       
-            dataObj =   JSON.parse(data1); //parse string
+        let data1 = sessionStorage.getItem('recentlyProduct'); //get existing item in localstorage
+        if (data1) //check if it exists or not empty
+        {
+          dataObj = JSON.parse(data1); //parse string
         }
-        dataObj.push(this.productData);
-        sessionStorage.setItem("recentlyProduct",JSON.stringify(dataObj));
+
+        dataObj.forEach((element: any) => {
+          if (element.product_id == this.productId) {
+            isexist = true;
+          }
+        });
+
+        if (!isexist) 
+        {
+          let newproduct = Object.assign({}, ...this.productData);
+          dataObj.push(newproduct);
+          sessionStorage.setItem("recentlyProduct", JSON.stringify(dataObj));
+
+        }
       });
+      this.getrecentProduct();
+
   }
-  
+
   submitReview(reviewForm: NgForm) {
 
     let user = localStorage.getItem('user');
@@ -127,7 +145,11 @@ export class ProductDetailsComponent implements OnInit {
       this.reviewData = this.res.data;
     });
   }
-   
 
+  getrecentProduct(){
+    let recent = sessionStorage.getItem('recentlyProduct');
+   this.recentData = recent && JSON.parse(recent);
+    this.recentData =this.recentData.slice(Math.max(this.recentData.length - 4, 0))
+  }
 
 }

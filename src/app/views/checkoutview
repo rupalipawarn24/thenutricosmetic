@@ -1,151 +1,97 @@
-<div class="w-full grid grid-cols-12 d:gap-40 t:gap-24 m:gap-16">
-  <div class="d:col-span-4 t:col-span-4 ts:col-span-6 relative rounded-t-4 overflow-hidden w-full group" *ngFor="let brand of brandData; let i=index">
-      <h2 class="text-14 text-white leading-150 tracking-10 text-center h-25 flex items-center justify-center"></h2>
-      <div class="aspect-w-1 aspect-h-1">
-          <div class="flex bg-almost-white absolute left-0 top-0 justify-center items-center">
-              <div class="flex justify-center relative w-full h-full m-56 m:m-40 ms:m-24">
-                  <span class="spandemo">
-                      <img class="demoimg"
-                          [routerLink]="['/product-details/'+ brand.product_id]"
-                          src="{{brand.images[0].src}}"
-                          decoding="async" data-nimg="fill" class="mix-blend-multiply"
-                          sizes="(max-width: 1024px) 50vw, 33vw"
-                          style="position: absolute; inset: 0px; box-sizing: border-box; padding: 0px; border: none; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%; object-fit: contain; object-position: center center;">
-                        </span>
-              </div>
-              <!-- <button type="button" data-id="icon-button"
-            class="absolute z-20 top-8 right-8 m:top-0 m:right-0 inline-flex items-center justify-center w-40 h-40 outline-none"><svg
-              class="text-mid-grey fill-current inline-block" width="24" height="24" viewBox="0 0 24 24">
-              <path
-                d="M7.67849 4.00004C6.47646 4.00004 5.28087 4.47238 4.36969 5.42053C2.54728 7.31678 2.54205 10.3603 4.36234 12.258L11.6536 19.8608C11.8301 20.0464 12.1655 20.0464 12.342 19.8608C14.7742 17.33 17.201 14.7962 19.6332 12.2653C21.4556 10.369 21.4556 7.32417 19.6332 5.42789C17.8108 3.53161 14.8306 3.53156 13.0082 5.42789L12.0015 6.46565L10.9948 5.42053C10.0123 4.3943 8.79504 3.99507 7.67854 4.00004H7.67849ZM7.67849 4.92741C8.62574 4.92741 9.57797 5.31001 10.3137 6.07557L11.6609 7.48133C11.8374 7.66687 12.1728 7.66687 12.3493 7.48133L13.6891 6.08293C15.1606 4.55179 17.4807 4.55182 18.9522 6.08293C20.4236 7.61404 20.4236 10.0865 18.9522 11.6176C16.6356 14.0282 14.318 16.4421 12.0014 18.8525L5.0507 11.6103C3.58026 10.0773 3.57927 7.60664 5.0507 6.07557C5.7864 5.31002 6.73124 4.92741 7.67849 4.92741V4.92741Z">
-              </path>
-            </svg></button> -->
-            <img class="img-fluid"
-                                            [src]="brand.onWishlist ? 'assets/images/star-solid.png' : 'assets/images/star-outline.png'"
-                                            alt="" width="18"
-                                            (click)="handleAddToWishlist(brand,brand.variants[0].variant_id,brand.product_id)" />
-
-
-          </div>
-      </div>
-      <div>
-          <div class="mt-16 text-16 tracking-10 leading-130 uppercase text-dark-grey">Theodore Alexander</div>
-          <div class="font-bold text-16 leading-130 tracking-8 text-almost-black">Impressions Writing Desk</div>
-          <div data-id="price" class=""><span class="text-almost-black text-16 tracking-8 leading-170">£2,860</span>
-          </div>
-      </div>
+<a href="javascript:void(0);" class="card">
+  <h2 class="title">Okoko Cosmetiques</h2>
+  <div class="image">
+    <img class="img-fluid" src="assets/images/product-2.png" alt="">
   </div>
-</div>
-
-<div class="favourite-grid">
-<div class="favourite-card"  *ngFor="let wish of wishlistData; let i=index">
-<div class="relative">
-  <div class="main_div">
-    <div class="bg-almost-white">
-      <div class="img_div">
-        <span class="imgspan">
-        <span class="img_span">
-            <img
-              alt="" aria-hidden="true"
-              class="img1"
-              [routerLink]="['/product-details/'+ wish.product_id]"
-              src="{{wish.src}}"
-              ></span>
-              <img
-            alt="Image 1"
-            [routerLink]="['/product-details/'+ wish.product_id]"
-            src="{{wish.src}}"
-            decoding="async"  class="img2"></span>
-      </div>
-      <div class="favourite">
-        <img class="img-fluid"
-            src="assets/images/close3.png"
-            alt="" width="18"
-            (click)="deleteToWishlist(wish.wishlist_id)"
-             />
-    </div>
-      <div
-        class="demo1">
-      </div>
-      <div
-        class="demo1">
-      </div>
-    </div>
+  <div class="popup_btn_addtocart">
+    <form action="" method="post" enctype="">
+      <button class="tdcart" type="submit" name="add" data-add-to-cart="">
+        Add to cart
+      </button>
+    </form>
   </div>
-  <div>
-    <h2 class="title">{{wish.vendor}}</h2>
-    <p class="description">{{wish.title}}</p>
-    <div class="description mb-0">
-        <ngb-rating [max]="5" [readonly]="false"></ngb-rating>
-    </div>
-    <div class="price mb-3">
-        <span class="new-price">₴2,344.68</span>
-    </div>
+  <p class="description">La Boue De Beaute Black Label Brightening, Anti-Aging Face Mask</p>
+  <div class="description mb-0">
+    <ul class="list-unstyled d-flex star-ul mb-2">
+      <li><img class="img-fluid" src="assets/images/star-outline.png" alt="" width="16" /></li>
+      <li><img class="img-fluid" src="assets/images/star-outline.png" alt="" width="16" /></li>
+      <li><img class="img-fluid" src="assets/images/star-outline.png" alt="" width="16" /></li>
+      <li><img class="img-fluid" src="assets/images/star-outline.png" alt="" width="16" /></li>
+      <li><img class="img-fluid" src="assets/images/star-outline.png" alt="" width="16" /></li>
+    </ul>
   </div>
-</div>
-</div>
-</div>
 
-<div class="col-span-12">
-  <ul class="inline-flex flex-row gap-32 m:gap-16 d:mt-56 t:mt-56 m:mt-48">
-    <li><a data-id="icon-button"
-        class="outline-none relative group inline-flex items-center justify-center w-40 h-40 inline-block"
-        target="_blank" href="https://www.facebook.com/LuxDecoUK"><svg
-          class="text-white group-hover:text-light-grey fill-current inline-block" width="24" height="24"
-          viewBox="0 0 24 24">
-          <path
-            d="M15.608 3.00375L14.2249 3C11.5302 3 9.78878 4.73871 9.78878 7.42982V9.47227H7.37715C7.16875 9.47227 7 9.63668 7 9.83949V12.7988C7 13.0016 7.16895 13.1658 7.37715 13.1658H9.78878V20.633C9.78878 20.8358 9.95753 21 10.1659 21H13.3124C13.5208 21 13.6896 20.8356 13.6896 20.633V13.1658H16.5093C16.7177 13.1658 16.8865 13.0016 16.8865 12.7988L16.8876 9.83949C16.8876 9.74211 16.8478 9.64886 16.7772 9.57994C16.7066 9.51103 16.6103 9.47227 16.5103 9.47227H13.6896V7.74086C13.6896 6.90868 13.8933 6.48622 15.0073 6.48622L16.623 6.48566C16.8312 6.48566 17 6.32124 17 6.11863V3.37077C17 3.16835 15.816 3.00412 15.608 3.00375Z">
-          </path>
-        </svg><span
-          class="block absolute z-10 pointer-events-none top-0 bottom-0 left-0 right-0 hidden shadow-inset-almost-white-2"></span></a>
-    </li>
-    <li><a data-id="icon-button"
-        class="outline-none relative group inline-flex items-center justify-center w-40 h-40 inline-block"
-        target="_blank" href="https://www.twitter.com/Luxdeco"><svg
-          class="text-white group-hover:text-light-grey fill-current inline-block" width="24" height="24"
-          viewBox="0 0 24 24">
-          <path
-            d="M19.4727 7.01992C19.9421 6.60292 20.2951 6.08117 20.4941 5.49895C20.551 5.33281 20.3578 5.18894 20.1973 5.27796C19.6046 5.60675 18.9662 5.85318 18.2998 6.01088C18.2613 6.02007 18.2215 6.02466 18.1814 6.02466C18.0598 6.02466 17.9421 5.98257 17.849 5.90607C17.1401 5.32178 16.2282 5 15.2814 5C14.8716 5 14.458 5.05973 14.052 5.17752C12.7937 5.54237 11.8228 6.51299 11.518 7.71034C11.4038 8.15933 11.3729 8.609 11.4261 9.04639C11.4321 9.0967 11.4068 9.13173 11.3912 9.14815C11.3635 9.17698 11.3246 9.19358 11.284 9.19358C8.51582 8.95364 6.03195 7.71293 4.27645 5.69915C4.18709 5.59641 4.01523 5.60904 3.94386 5.72339C3.60016 6.27506 3.41848 6.90581 3.41848 7.5477C3.41848 8.5313 3.84129 9.45839 4.57544 10.1343C4.26669 10.0658 3.96782 9.95797 3.69014 9.81371C3.55575 9.74399 3.3906 9.83381 3.38869 9.97744C3.36965 11.4387 4.28468 12.7391 5.65538 13.3246C5.62774 13.3251 5.60011 13.3254 5.57247 13.3254C5.35523 13.3254 5.1351 13.306 4.91865 13.2671C4.76738 13.2403 4.6403 13.3743 4.68723 13.5113C5.13227 14.8103 6.32817 15.7676 7.7595 15.9848C6.5717 16.7304 5.18829 17.1237 3.74867 17.1237L3.29994 17.1235C3.16144 17.1235 3.04443 17.2078 3.00943 17.3331C2.97472 17.4563 3.03854 17.5865 3.15659 17.6507C4.7788 18.5335 6.62931 19 8.50857 19C10.1536 19 11.6924 18.6949 13.0822 18.0927C14.3564 17.5409 15.4823 16.752 16.4288 15.748C17.3106 14.8127 17.9999 13.7331 18.478 12.5389C18.9336 11.4009 19.1745 10.1862 19.1745 9.02686V8.9715C19.1745 8.78537 19.2645 8.61021 19.4217 8.49081C20.0178 8.03815 20.5371 7.50543 20.9647 6.90736C21.0777 6.74954 20.8996 6.55152 20.7138 6.62854C20.3138 6.79445 19.8987 6.92528 19.4727 7.01992Z">
-          </path>
-        </svg><span
-          class="block absolute z-10 pointer-events-none top-0 bottom-0 left-0 right-0 hidden shadow-inset-almost-white-2"></span></a>
-    </li>
-    <li><a data-id="icon-button"
-        class="outline-none relative group inline-flex items-center justify-center w-40 h-40 inline-block"
-        target="_blank" href="https://www.pinterest.com/luxdeco/"><svg
-          class="text-white group-hover:text-light-grey fill-current inline-block" width="24" height="24"
-          viewBox="0 0 24 24">
-          <path
-            d="M17.1843 4.84453C15.9582 3.6551 14.2614 3 12.4065 3C9.57306 3 7.83036 4.17371 6.86737 5.15827C5.68056 6.37162 5 7.98272 5 9.57854C5 11.5822 5.82936 13.1201 7.21822 13.6922C7.31146 13.7308 7.40528 13.7503 7.49726 13.7503C7.79026 13.7503 8.02241 13.5566 8.10284 13.2458C8.14972 13.0675 8.25836 12.6277 8.30559 12.4367C8.4067 12.0597 8.32501 11.8783 8.10451 11.6157C7.70282 11.1354 7.51576 10.5675 7.51576 9.8283C7.51576 7.63276 9.13356 5.29934 12.132 5.29934C14.5112 5.29934 15.9891 6.66579 15.9891 8.86539C15.9891 10.2534 15.6932 11.5389 15.1558 12.4851C14.7824 13.1426 14.1257 13.9264 13.1176 13.9264C12.6817 13.9264 12.2901 13.7454 12.043 13.4299C11.8096 13.1317 11.7327 12.7464 11.8266 12.3449C11.9326 11.8913 12.0772 11.4181 12.2172 10.9606C12.4724 10.1251 12.7137 9.33593 12.7137 8.70632C12.7137 7.62939 12.0585 6.90579 11.0835 6.90579C9.84446 6.90579 8.87372 8.17755 8.87372 9.80107C8.87372 10.5973 9.08312 11.1928 9.17792 11.4215C9.02182 12.0898 8.09411 16.0632 7.91814 16.8125C7.8164 17.2499 7.20346 20.7044 8.21798 20.9799C9.35785 21.2894 10.3767 17.9249 10.4804 17.5447C10.5645 17.2355 10.8586 16.0663 11.0388 15.3476C11.5891 15.8832 12.4751 16.2453 13.3372 16.2453C14.9624 16.2453 16.424 15.5062 17.4527 14.1644C18.4505 12.8629 19 11.0489 19 9.0568C19 7.49941 18.3382 5.96407 17.1843 4.84453Z">
-          </path>
-        </svg><span
-          class="block absolute z-10 pointer-events-none top-0 bottom-0 left-0 right-0 hidden shadow-inset-almost-white-2"></span></a>
-    </li>
-    <li><a data-id="icon-button"
-        class="outline-none relative group inline-flex items-center justify-center w-40 h-40 inline-block"
-        target="_blank" href="https://www.instagram.com/luxdeco/"><svg
-          class="text-white group-hover:text-light-grey fill-current inline-block" width="24" height="24"
-          viewBox="0 0 24 24">
-          <path fill-rule="evenodd" clip-rule="evenodd"
-            d="M16.0325 3H7.96724C5.22831 3 3 5.22841 3 7.96735V16.0327C3 18.7717 5.22831 21 7.96724 21H16.0325C18.7717 21 21 18.7716 21 16.0327V7.96735C21.0001 5.22841 18.7717 3 16.0325 3ZM7.5 12.0001C7.5 9.51871 9.51866 7.5 12 7.5C14.4813 7.5 16.5 9.51871 16.5 12.0001C16.5 14.4814 14.4813 16.5 12 16.5C9.51866 16.5 7.5 14.4814 7.5 12.0001ZM9.04932 12C9.04932 13.6269 10.373 14.9504 11.9998 14.9504C13.6267 14.9504 14.9504 13.6269 14.9504 12C14.9504 10.373 13.6268 9.0494 11.9998 9.0494C10.3729 9.0494 9.04932 10.373 9.04932 12ZM16.7053 5.70438C16.9141 5.49472 17.2044 5.37506 17.5 5.37506C17.7966 5.37506 18.087 5.49472 18.2957 5.70438C18.5053 5.91302 18.625 6.20347 18.625 6.50006C18.625 6.79563 18.5053 7.08608 18.2957 7.29574C18.086 7.50438 17.7966 7.62506 17.5 7.62506C17.2044 7.62506 16.914 7.50438 16.7053 7.29574C16.4957 7.08608 16.375 6.79573 16.375 6.50006C16.375 6.20347 16.4956 5.91302 16.7053 5.70438Z">
-          </path>
-        </svg><span
-          class="block absolute z-10 pointer-events-none top-0 bottom-0 left-0 right-0 hidden shadow-inset-almost-white-2"></span></a>
-    </li>
-    <li><a data-id="icon-button"
-        class="outline-none relative group inline-flex items-center justify-center w-40 h-40 inline-block"
-        target="_blank" href="https://www.youtube.com/user/LuxDecoTV"><svg
-          class="text-white group-hover:text-light-grey fill-current inline-block" width="24" height="24"
-          viewBox="0 0 24 24">
-          <path fill-rule="evenodd" clip-rule="evenodd"
-            d="M16.1581 6C18.4491 6 19.6487 6.29845 20.2984 7.03011C20.9512 7.76502 21 8.89068 21 10.524V13.476C21 15.3477 20.6884 16.4288 19.958 17.0909C19.2458 17.7366 18.1449 18 16.1581 18H7.84177C3.7488 18 3 16.4766 3 13.476V10.524C3 8.97522 3 7.85616 3.6311 7.09667C4.27841 6.3177 5.49834 6 7.84177 6H16.1581ZM10.7795 14.2772L14.5559 12.4076C14.7478 12.3127 14.8679 12.1245 14.8677 11.9193C14.8674 11.7143 14.7467 11.5264 14.5546 11.4319L10.7782 9.57434C10.5983 9.48578 10.3825 9.4926 10.2091 9.59238C10.0357 9.69216 9.92993 9.87037 9.92993 10.0624V13.7897C9.92993 13.9821 10.036 14.1605 10.2097 14.2602C10.302 14.3132 10.4062 14.3398 10.5106 14.3398C10.6028 14.3398 10.6951 14.319 10.7795 14.2772Z">
-          </path>
-        </svg><span
-          class="block absolute z-10 pointer-events-none top-0 bottom-0 left-0 right-0 hidden shadow-inset-almost-white-2"></span></a>
-    </li>
-    <li><a data-id="icon-button"
-        target="_blank" href="https://open.spotify.com/user/vu9jvk5v98cl9l76sr1yz79ei"><span
-          class="block absolute z-10 pointer-events-none top-0 bottom-0 left-0 right-0 hidden shadow-inset-almost-white-2"></span></a>
-    </li>
-  </ul>
-</div>
+  <!-- <div class="sold-out">On Sale
+  </div> -->
+ 
+  <div class="favourite"><img class="img-fluid" src="assets/images/star-outline.png" alt="" width="18" />
+  </div>
+
+  <div class="price mb-3">
+    <span class="new-price">₴2,344.68</span>
+  </div>
+</a>
+<a href="javascript:void(0);" class="card">
+  <h2 class="title">Okoko Cosmetiques</h2>
+  <div class="image">
+    <img class="img-fluid" src="assets/images/product-3.png" alt="">
+  </div>
+  <div class="popup_btn_addtocart">
+    <form action="" method="post" enctype="">
+      <button class="tdcart" type="submit" name="add" data-add-to-cart="">
+        Add to cart
+      </button>
+    </form>
+  </div>
+  <p class="description">La Boue De Beaute Black Label Brightening, Anti-Aging Face Mask</p>
+  <div class="description mb-0">
+    <ul class="list-unstyled d-flex star-ul mb-2">
+      <li><img class="img-fluid" src="assets/images/star-outline.png" alt="" width="16" /></li>
+      <li><img class="img-fluid" src="assets/images/star-outline.png" alt="" width="16" /></li>
+      <li><img class="img-fluid" src="assets/images/star-outline.png" alt="" width="16" /></li>
+      <li><img class="img-fluid" src="assets/images/star-outline.png" alt="" width="16" /></li>
+      <li><img class="img-fluid" src="assets/images/star-outline.png" alt="" width="16" /></li>
+    </ul>
+  </div>
+
+  <!--  -->
+ 
+  <div class="favourite"><img class="img-fluid" src="assets/images/star-outline.png" alt="" width="18" />
+  </div>
+
+  <div class="price mb-3">
+    <span class="new-price">₴2,344.68</span>
+  </div>
+</a>
+<a href="javascript:void(0);" class="card">
+  <h2 class="title">Okoko Cosmetiques</h2>
+  <div class="image">
+    <img class="img-fluid" src="assets/images/product-4.png" alt="">
+  </div>
+  <div class="popup_btn_addtocart">
+    <form action="" method="post" enctype="">
+      <button class="tdcart" type="submit" name="add" data-add-to-cart="">
+        Add to cart
+      </button>
+    </form>
+  </div>
+  <p class="description">La Boue De Beaute Black Label Brightening, Anti-Aging Face Mask</p>
+  <div class="description mb-0">
+    <ul class="list-unstyled d-flex star-ul mb-2">
+      <li><img class="img-fluid" src="assets/images/star-outline.png" alt="" width="16" /></li>
+      <li><img class="img-fluid" src="assets/images/star-outline.png" alt="" width="16" /></li>
+      <li><img class="img-fluid" src="assets/images/star-outline.png" alt="" width="16" /></li>
+      <li><img class="img-fluid" src="assets/images/star-outline.png" alt="" width="16" /></li>
+      <li><img class="img-fluid" src="assets/images/star-outline.png" alt="" width="16" /></li>
+    </ul>
+  </div>
+
+  <!--   -->
+ 
+  <div class="favourite"><img class="img-fluid" src="assets/images/star-outline.png" alt="" width="18" />
+  </div>
+
+  <div class="price mb-3">
+    <span class="new-price">₴2,344.68</span>
+  </div>
+</a>

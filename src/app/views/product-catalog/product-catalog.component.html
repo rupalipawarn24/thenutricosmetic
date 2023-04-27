@@ -303,9 +303,8 @@
    
           
         </div>
-        <hr>
         
-        <div class="row">
+        <div class="row" *ngIf="isexist">
             <!-- <section class="newin__Wrapper my-5">
                 <div class="container-xl">
                     <div class="row m-0 mb-4 text-center">
@@ -570,8 +569,8 @@
                     </div>
                 </div>
             </section> -->
-        
-            <section id="new-in-banner" class="newin__Wrapper mb-5">
+            <hr>
+            <section id="new-in-banner" class="newin__Wrapper mb-5" >
                 <div class="container-xl">
                   <div class="row m-0 mb-4 text-center">
                     <h2 class="section-Heading">RECENTLY VIEWED</h2>
@@ -579,10 +578,10 @@
                   </div>
                   <div class="row m-0 mb-5">
                     <div class="card-slider">
-                      <a href="javascript:void(0);" class="card">
-                        <h2 class="title">Okoko Cosmetiques</h2>
+                      <a href="javascript:void(0);" class="card" *ngFor="let recent of recentData; let i=index">
+                        <h2 class="title">{{recent.vendor}}</h2>
                         <div class="image">
-                          <img class="img-fluid" src="assets/images/product-1.png" alt="">
+                          <img class="img-fluid" src="{{recent.images[0].src}}" alt="">
                         </div>
                         <div class="popup_btn_addtocart">
                           <form action="" method="post" enctype="">
@@ -591,7 +590,7 @@
                             </button>
                           </form>
                         </div>
-                        <p class="description">La Boue De Beaute Black Label Brightening, Anti-Aging Face Mask</p>
+                        <p class="description">{{recent.title}}</p>
                         <div class="description mb-0">
                           <ul class="list-unstyled d-flex star-ul mb-2">
                             <li><img class="img-fluid" src="assets/images/star-outline.png" alt="" width="16" /></li>
@@ -612,103 +611,7 @@
                         </div>
                       </a>
               
-                      <a href="javascript:void(0);" class="card">
-                        <h2 class="title">Okoko Cosmetiques</h2>
-                        <div class="image">
-                          <img class="img-fluid" src="assets/images/product-2.png" alt="">
-                        </div>
-                        <div class="popup_btn_addtocart">
-                          <form action="" method="post" enctype="">
-                            <button class="tdcart" type="submit" name="add" data-add-to-cart="">
-                              Add to cart
-                            </button>
-                          </form>
-                        </div>
-                        <p class="description">La Boue De Beaute Black Label Brightening, Anti-Aging Face Mask</p>
-                        <div class="description mb-0">
-                          <ul class="list-unstyled d-flex star-ul mb-2">
-                            <li><img class="img-fluid" src="assets/images/star-outline.png" alt="" width="16" /></li>
-                            <li><img class="img-fluid" src="assets/images/star-outline.png" alt="" width="16" /></li>
-                            <li><img class="img-fluid" src="assets/images/star-outline.png" alt="" width="16" /></li>
-                            <li><img class="img-fluid" src="assets/images/star-outline.png" alt="" width="16" /></li>
-                            <li><img class="img-fluid" src="assets/images/star-outline.png" alt="" width="16" /></li>
-                          </ul>
-                        </div>
-              
-                        <!-- <div class="sold-out">On Sale
-                        </div> -->
-                       
-                        <div class="favourite"><img class="img-fluid" src="assets/images/star-outline.png" alt="" width="18" />
-                        </div>
-              
-                        <div class="price mb-3">
-                          <span class="new-price">₴2,344.68</span>
-                        </div>
-                      </a>
-                      <a href="javascript:void(0);" class="card">
-                        <h2 class="title">Okoko Cosmetiques</h2>
-                        <div class="image">
-                          <img class="img-fluid" src="assets/images/product-3.png" alt="">
-                        </div>
-                        <div class="popup_btn_addtocart">
-                          <form action="" method="post" enctype="">
-                            <button class="tdcart" type="submit" name="add" data-add-to-cart="">
-                              Add to cart
-                            </button>
-                          </form>
-                        </div>
-                        <p class="description">La Boue De Beaute Black Label Brightening, Anti-Aging Face Mask</p>
-                        <div class="description mb-0">
-                          <ul class="list-unstyled d-flex star-ul mb-2">
-                            <li><img class="img-fluid" src="assets/images/star-outline.png" alt="" width="16" /></li>
-                            <li><img class="img-fluid" src="assets/images/star-outline.png" alt="" width="16" /></li>
-                            <li><img class="img-fluid" src="assets/images/star-outline.png" alt="" width="16" /></li>
-                            <li><img class="img-fluid" src="assets/images/star-outline.png" alt="" width="16" /></li>
-                            <li><img class="img-fluid" src="assets/images/star-outline.png" alt="" width="16" /></li>
-                          </ul>
-                        </div>
-              
-                        <!--  -->
-                       
-                        <div class="favourite"><img class="img-fluid" src="assets/images/star-outline.png" alt="" width="18" />
-                        </div>
-              
-                        <div class="price mb-3">
-                          <span class="new-price">₴2,344.68</span>
-                        </div>
-                      </a>
-                      <a href="javascript:void(0);" class="card">
-                        <h2 class="title">Okoko Cosmetiques</h2>
-                        <div class="image">
-                          <img class="img-fluid" src="assets/images/product-4.png" alt="">
-                        </div>
-                        <div class="popup_btn_addtocart">
-                          <form action="" method="post" enctype="">
-                            <button class="tdcart" type="submit" name="add" data-add-to-cart="">
-                              Add to cart
-                            </button>
-                          </form>
-                        </div>
-                        <p class="description">La Boue De Beaute Black Label Brightening, Anti-Aging Face Mask</p>
-                        <div class="description mb-0">
-                          <ul class="list-unstyled d-flex star-ul mb-2">
-                            <li><img class="img-fluid" src="assets/images/star-outline.png" alt="" width="16" /></li>
-                            <li><img class="img-fluid" src="assets/images/star-outline.png" alt="" width="16" /></li>
-                            <li><img class="img-fluid" src="assets/images/star-outline.png" alt="" width="16" /></li>
-                            <li><img class="img-fluid" src="assets/images/star-outline.png" alt="" width="16" /></li>
-                            <li><img class="img-fluid" src="assets/images/star-outline.png" alt="" width="16" /></li>
-                          </ul>
-                        </div>
-              
-                        <!--   -->
-                       
-                        <div class="favourite"><img class="img-fluid" src="assets/images/star-outline.png" alt="" width="18" />
-                        </div>
-              
-                        <div class="price mb-3">
-                          <span class="new-price">₴2,344.68</span>
-                        </div>
-                      </a>
+                      
                     </div>
                   </div>
                   <div class="row m-0">
