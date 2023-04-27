@@ -16,18 +16,22 @@ export class ProductDetailsComponent implements OnInit {
   galleryOptions: NgxGalleryOptions[];
   galleryImages: NgxGalleryImage[];
   res: any;
+  //recentList: any[];
+  recentList: any[] = [];
+
+
   constructor(private modalService: NgbModal, private route: ActivatedRoute, private brandService: BrandServiceService) { }
 
   displaystyle: boolean = false;
   productId: any;
   productData: any;
-  imageData:any;
+  imageData: any;
   addreview!: FormGroup;
-  variantId:any;
-  reviewData:any;
-  reviewValuedata:any;
-  starRating = 0; 
-  
+  variantId: any;
+  reviewData: any;
+  reviewValuedata: any;
+  starRating = 0;
+
 
   ngOnInit(): void {
     this.galleryOptions = [
@@ -55,31 +59,6 @@ export class ProductDetailsComponent implements OnInit {
     ];
 
     this.galleryImages = [
-      // {
-      //   small: 'assets/images/product-1.png',
-      //   medium: 'assets/images/product-1.png',
-      //   big: 'assets/images/product-1.png'
-      // },
-      // {
-      //   small: 'assets/images/product-2.png',
-      //   medium: 'assets/images/product-2.png',
-      //   big: 'assets/images/product-2.png'
-      // },
-      // {
-      //   small: 'assets/images/product-3.png',
-      //   medium: 'assets/images/product-3.png',
-      //   big: 'assets/images/product-3.png'
-      // },
-      // {
-      //   small: 'assets/images/product-4.png',
-      //   medium: 'assets/images/product-4.png',
-      //   big: 'assets/images/product-4.png'
-      // },
-      // {
-      //   small: 'assets/images/product-5.png',
-      //   medium: 'assets/images/product-5.png',
-      //   big: 'assets/images/product-5.png'
-      // }
     ];
 
     this.productId = this.route.snapshot.params['id'];
@@ -90,47 +69,43 @@ export class ProductDetailsComponent implements OnInit {
   openScrollableContent(longContent: any) {
     this.modalService.open(longContent, { scrollable: true });
   }
+
   getproductListById() {
     this.brandService.getproductlistById(this.productId)
       .subscribe((data: any) => {
         this.productData = data;
-        this.imageData=data[0].images;
+        this.imageData = data[0].images;
+        this.variantId = data[0].variants[0].variant_id;
+        this.imageData.forEach((element: any) => {
+          this.galleryImages.push({
+            small: element.src,
+            medium: element.src,
+            big: element.src
+          })
+        });
 
-        // console.log(this.productData);
-         this.variantId=data[0].variants[0].variant_id;
-
-
-         //console.log(this.variantId);
-        
-        this.imageData.forEach( (element: any) => {
-         // console.log(element.src);
-          
-            this.galleryImages.push({ small:element.src,
-               medium:element.src,
-               big:element.src})
-
-
-      });
-
-     // console.log(this.galleryImages);
-
-
+        let dataObj = [];
+        let data1    =   sessionStorage.getItem('recentlyProduct'); //get existing item in localstorage
+        if(data1) //check if it exists or not empty
+        {       
+            dataObj =   JSON.parse(data1); //parse string
+        }
+        dataObj.push(this.productData);
+        sessionStorage.setItem("recentlyProduct",JSON.stringify(dataObj));
       });
   }
-  close() {
-
-  }
-  submitReview(reviewForm:NgForm) {
+  
+  submitReview(reviewForm: NgForm) {
 
     let user = localStorage.getItem('user');
     let customer_id = user && JSON.parse(user).data[0].id;
 
-    this.reviewValuedata=reviewForm.value;
+    this.reviewValuedata = reviewForm.value;
 
 
-    let product_id=this.productId;
-     let variant_id=this.variantId;
-     let ratings=this.starRating;
+    let product_id = this.productId;
+    let variant_id = this.variantId;
+    let ratings = this.starRating;
 
     let addreview: addReview = {
       product_id,
@@ -139,28 +114,20 @@ export class ProductDetailsComponent implements OnInit {
       ratings,
       ...this.reviewValuedata
     }
-
-
-     this.brandService.addReview(addreview).subscribe((result) => {
+    this.brandService.addReview(addreview).subscribe((result) => {
       this.getReviewList();
-   
     })
     reviewForm.resetForm();
-
-
   }
 
-  getReviewList() {   
-    let product_id  = this.productId;
+  getReviewList() {
+    let product_id = this.productId;
     this.brandService.getReview(product_id).subscribe((result) => {
       this.res = result;
       this.reviewData = this.res.data;
-      
-       console.log(this.reviewData);
-      //  console.log(result);
-       
     });
   }
+   
 
 
 }

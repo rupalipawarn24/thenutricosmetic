@@ -68,12 +68,12 @@ export class AccountServiceService {
   }
 
   addAddress(data: addadress) {
-    return this.http.post('https://tncapi.tanajidinde.com/public/api/addshippingaddress', data);
+    return this.http.post('https://tncapi.tanajidinde.com/api/shippingAddress', data);
   }
  
   getAddressList(id:number){
       
-    let endPoints = "https://tncapi.tanajidinde.com/public/api/getalladdress?customer_id";
+    let endPoints = "https://tncapi.tanajidinde.com/public/api/shippingAddress?customer_id";
     return this.http.get(`${endPoints}=${id}`);
 
   }

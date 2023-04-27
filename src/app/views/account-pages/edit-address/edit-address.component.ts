@@ -44,13 +44,15 @@ export class EditAddressComponent implements OnInit {
   }
 
   addAddress(data: any) {
+
     let user = localStorage.getItem('user');
-    let customer_id = user && JSON.parse(user).data[0].id;
+    let customer_id = user && JSON.parse(user).data.id;
 
     let addressData: addadress = {
       customer_id,
       ...data
     }
+    console.log("hi",customer_id);
 
     this.user.addAddress(addressData).subscribe((result) => {
       if (result) {
