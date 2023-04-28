@@ -60,6 +60,10 @@ import {NgcCookieConsentConfig} from 'ngx-cookieconsent';
 import {NgcCookieConsentModule} from 'ngx-cookieconsent';
 import { CommonModule } from '@angular/common';
 import { ScrollTopComponent } from './scroll-top/scroll-top.component';
+import { ForgotPasswordComponent } from './views/account-pages/forgot-password/forgot-password.component';
+import { OtpverifyComponent } from './views/account-pages/otpverify/otpverify.component';
+import { NgOtpInputModule } from 'ng-otp-input';
+import { RestpasswordComponent } from './views/account-pages/restpassword/restpassword.component';
 
 
 
@@ -130,6 +134,9 @@ const APP_CONTAINERS = [
     CreateCollectionComponent,
     ShowCollectionsComponent,
     ScrollTopComponent,
+    ForgotPasswordComponent,
+    OtpverifyComponent,
+    RestpasswordComponent,
   ],
   imports: [
     CommonModule,
@@ -146,6 +153,7 @@ const APP_CONTAINERS = [
     // ProductDetailsModule,
     FormsModule,
     HttpClientModule,
+    NgOtpInputModule,
     NgcCookieConsentModule.forRoot(cookieConfig),
   ],
   providers: [

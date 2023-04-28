@@ -3,7 +3,7 @@ import { EventEmitter, Injectable } from '@angular/core';
 import { Router } from '@angular/router';
 import { catchError } from 'rxjs/operators';
 import { environment } from 'src/environments/environment';
-import { addadress, deleteAddress, editadress, getAddress, login, signUp } from '../models/user';
+import { addadress, deleteAddress, editadress, getAddress, login, otpdata, resetpwd, signUp } from '../models/user';
 
 
 @Injectable({
@@ -11,6 +11,9 @@ import { addadress, deleteAddress, editadress, getAddress, login, signUp } from 
 })
 export class AccountServiceService {
   invalidUserAuth= new EventEmitter<boolean>(false)
+  invalidemailAuth= new EventEmitter<boolean>(false)
+  invalidmsg= new EventEmitter<string>()
+
   res : any;
 
 
@@ -90,6 +93,55 @@ export class AccountServiceService {
     return this.http.post('https://tncapi.tanajidinde.com/public/api/updateshippingaddress', data);
 
   }
+
+  restPassword(data:resetpwd){
+    this.http.post('https://tncapi.tanajidinde.com/api/forgotPassword?email',data,{observe:'response'})
+    .subscribe((result)=>{
+      this.res = result;
+         if(this.res.body.success == '1')
+         {
+          // localStorage.setItem('user',JSON.stringify(result.body));
+           this.router.navigate(['/otpverify']);
+          this.invalidemailAuth.emit(false)
+        }else
+        {
+          this.invalidemailAuth.emit(true)
+        }
+        console.log(this.res);
+    })
+
+  }
+  otpverify(data:any){
+    sessionStorage.setItem('otp',JSON.stringify(data));
+
+    this.http.post('https://tncapi.tanajidinde.com/api/OTPVerificationForForgotPassword',data,{observe:'response'})
+    .subscribe((result)=>{
+      this.res = result;
+         if(this.res.body.success == '1')
+         {
+           this.router.navigate(['/rest_password']);
+          this.invalidUserAuth.emit(false)
+        }else
+        {
+          this.invalidUserAuth.emit(true)
+          this.invalidmsg.emit(this.res.body.message)
+        }
+       
+    })
+
+  }
+  saverestpwd(data:any){
+    this.http.post('https://tncapi.tanajidinde.com/api/resetPassword',data,{observe:'response'})
+    .subscribe((result)=>{
+      this.res = result;
+         if(this.res.body.success == '1')
+         {
+           this.router.navigate(['/login']);
+        }
+       
+    })
+  }
+
   
  
 }

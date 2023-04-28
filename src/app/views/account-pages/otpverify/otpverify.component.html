@@ -1,0 +1,22 @@
+<div class="d-flex justify-content-center align-items-center container">
+    <div class="card py-5 px-3">
+        <h5 class=""><b>Please enter the One-Time Password to verify your account</b></h5>
+        <span class="mobile-text">A one-Time Password has been sent to email</span>
+        <div class="d-flex flex-row mt-5">
+            <!-- <input type="text" class="form-control" autofocus="">
+            <input type="text" class="form-control">
+            <input type="text" class="form-control">
+            <input type="text" class="form-control"> -->
+            <ng-otp-input class="form-control" #ngOtpInput (onInputChange)="onOtpChange($event)" *ngIf="showOtpComponent" [config]="config"></ng-otp-input>
+        </div>
+        <p class="font-weight-bold text-danger cursor" *ngIf="authError">{{msgError}}</p>
+
+        <div class="text-center mt-5">
+            <!-- <span class="d-block mobile-text">Don't receive the code?</span>-->
+            <button type="submit" class="btn btn-danger btn-lg float-right" (click)="validate()">Validete</button>
+            &nbsp;&nbsp;&nbsp;<span class="font-weight-bold text-danger cursor" routerLink="../reset-password-request">Resend</span> 
+
+
+        </div>
+    </div>
+</div>

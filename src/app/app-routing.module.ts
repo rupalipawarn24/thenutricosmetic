@@ -32,6 +32,9 @@ import { GetInTouchComponent } from './views/footer-pages/get-in-touch/get-in-to
 import { IwishComponent } from './views/iwish/iwish.component';
 import { CreateCollectionComponent } from './views/manual_collection/create-collection/create-collection.component';
 import { ShowCollectionsComponent } from './views/manual_collection/show-collections/show-collections.component';
+import { ForgotPasswordComponent } from './views/account-pages/forgot-password/forgot-password.component';
+import { OtpverifyComponent } from './views/account-pages/otpverify/otpverify.component';
+import { RestpasswordComponent } from './views/account-pages/restpassword/restpassword.component';
 const routes: Routes = [
   {
     path: '',
@@ -205,7 +208,20 @@ const routes: Routes = [
       {
         path: 'iwish',
         component: IwishComponent
+      },
+      {
+        path: 'reset-password-request',
+        component: ForgotPasswordComponent
+      },
+      {
+        path: 'otpverify',
+        component: OtpverifyComponent
+      },
+      {
+        path: 'rest_password',
+        component: RestpasswordComponent
       }
+      
       
       
       

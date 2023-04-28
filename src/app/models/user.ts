@@ -9,8 +9,17 @@ export interface signUp {
       email: string;
       password: string;
 }
+export interface resetpwd {
+
+      email: string;
+}
+export interface otpdata {
+      customer_id: number;
+      otp: number;
+      
+}
+
 export interface addadress {
-      customer_id: number
       first_name: string
       last_name: string
       company: string
