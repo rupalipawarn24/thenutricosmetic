@@ -27,21 +27,21 @@ export class WishListService {
   // }
 
   addToWishlist(data:addwishlist) {
-    let endPoints = "/addwishlist"
-    return this.http.post(environment.apiUrl + endPoints, data)
+    let endPoints = "https://tncapi.tanajidinde.com/api/wishlist";
+      return this.http.post(endPoints, data)
   }
 
   getWishlist(id:number) {
     
-    let endPoints = "https://tncapi.tanajidinde.com/public/api/getwishlist?customer_id"
+    let endPoints = "https://tncapi.tanajidinde.com/api/wishlist?id"
     //return this.http.get(environment.apiUrl + endPoints, data)
     return this.http.get(`${endPoints}=${id}`);
 
   }
 
   removeFromWishlist(data:deletewishlist) {
-     let endPoints = "/deletewishlist"
-     return this.http.post(environment.apiUrl + endPoints, data);
+     let endPoints = "https://tncapi.tanajidinde.com/api/wishlist"
+     return this.http.post(endPoints, data);
     console.log(data);
   }
 

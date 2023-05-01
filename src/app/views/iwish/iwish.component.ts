@@ -42,7 +42,7 @@ export class IwishComponent implements OnInit {
 
   getWishList() {
     let user = localStorage.getItem('user');
-    let customer_id = user && JSON.parse(user).data[0].id;
+    let customer_id = user && JSON.parse(user).data.id;
     
     let getwishData: getwishlist = {
       customer_id,
@@ -56,6 +56,7 @@ export class IwishComponent implements OnInit {
       console.log(this.wishlistData);
     });
   }
+
   deleteToWishlist(wishlist_id:deletewishlist){
     // this.wishlistid=id;
       console.log(wishlist_id);

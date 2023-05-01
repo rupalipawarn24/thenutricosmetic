@@ -97,23 +97,28 @@ export class ProductCatalogComponent implements OnInit {
 
     if (!brand.onWishlist) {
       let user = localStorage.getItem('user');
-      let customer_id = user && JSON.parse(user).data[0].id;
+      let customer_id = user && JSON.parse(user).data.id;
   
       let wishlistData: addwishlist = {
         product_id,
         variant_id,
         customer_id
       }
-      this.wishlistService.addToWishlist(wishlistData).subscribe(() => {
+      this.wishlistService.addToWishlist(wishlistData).subscribe((result) => {
     
         this.productId= product_id;
+        console.log(result);
       })
       brand.onWishlist = !brand.onWishlist;      
 
     }
     else{
-      brand.onWishlist = true;
-     // console.log("remove");
+       brand.onWishlist = false;
+      //  this.wishlistService.removeFromWishlist(wishlistData).subscribe(() => {
+    
+      //   this.productId= product_id;
+      // })
+      console.log("remove");
 
     }
 
