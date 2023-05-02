@@ -283,7 +283,7 @@
                                     </div>
                                     <div class="popup_btn_addtocart">
                                         <form action="" method="post" enctype="">
-                                            <button class="tdcart" type="submit" name="add" data-add-to-cart="">
+                                            <button class="tdcart" type="submit" name="add" data-add-to-cart="" (click)="handleAddToCart(brand.variants[0].variant_id,brand.product_id)">
                                                 Add to cart
                                             </button>
                                         </form>

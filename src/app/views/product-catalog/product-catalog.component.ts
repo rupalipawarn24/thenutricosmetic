@@ -6,6 +6,8 @@ import { ActivatedRoute } from '@angular/router';
 import { BrandServiceService } from 'src/app/services/brand-service.service';
 import { WishListService } from 'src/app/services/wish-list.service';
 import { addwishlist } from 'src/app/models/wishlist';
+import { CartService } from 'src/app/services/cart.service';
+import { addcart } from 'src/app/models/cart';
 @Component({
   selector: 'app-product-catalog',
   templateUrl: './product-catalog.component.html',
@@ -46,7 +48,8 @@ export class ProductCatalogComponent implements OnInit {
     private modalService: NgbModal,
     private route:ActivatedRoute,
     private brandService: BrandServiceService,
-    private wishlistService: WishListService
+    private wishlistService: WishListService,
+    private cartservice: CartService
 
   ) { }
 
@@ -54,6 +57,8 @@ export class ProductCatalogComponent implements OnInit {
     this.brandId=this.route.snapshot.params['id'];
     this.getbrandListById();
     this.getrecentProduct();
+    this.getcartlist();
+   
   }
   changeLayout(data: any) {
     if (data == 'small') {
@@ -92,8 +97,33 @@ export class ProductCatalogComponent implements OnInit {
         this.brandData=data;
         this.brandName=this.brandData[0].vendor;
 
-       console.log(this.brandData);
+      // console.log(this.brandData);
       });
+  }
+
+  handleAddToCart(variant_id:number,product_id:number) {
+    let user = localStorage.getItem('user');
+    let customer_id = user && JSON.parse(user).data.id;
+    let session_id  =1;
+    let quantity =1;
+
+    let cartData: addcart = {
+      product_id,
+      variant_id,
+      customer_id,
+      quantity,
+      session_id  
+    }
+   
+    // sessionStorage.setItem("cartdata", JSON.stringify(cartData));
+   // console.log(cartData);
+
+
+    this.cartservice.addProductToCart(cartData).subscribe((result) => {
+      // this.msg.sendMsg(this.productItem)
+      console.log(result);
+
+    })
   }
 
   handleAddToWishlist(brand:any,variant_id:number,product_id:number) {
@@ -112,7 +142,7 @@ export class ProductCatalogComponent implements OnInit {
       this.wishlistService.addToWishlist(wishlistData).subscribe((result) => {
     
         this.productId= product_id;
-        console.log(result);
+        //console.log(result);
       })
       brand.onWishlist = !brand.onWishlist;      
 
@@ -136,9 +166,19 @@ export class ProductCatalogComponent implements OnInit {
     }
     let recent = sessionStorage.getItem('recentlyProduct');
     this.recentData = recent && JSON.parse(recent);
+    if (data1) 
+    {
     this.recentData =this.recentData.slice(Math.max(this.recentData.length - 4, 0));
+    }
+    sessionStorage.clear();
   }
+  getcartlist(){
+    let id:any;
+    this.cartservice.getProductToCart(id).subscribe((result) => {
 
+    })
+    
+  }
 
 
 }
