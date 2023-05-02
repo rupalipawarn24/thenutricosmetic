@@ -1,4 +1,6 @@
 import { Component, Input, OnInit } from '@angular/core';
+import { NgForm } from '@angular/forms';
+import { AccountServiceService } from 'src/app/services/account-service.service';
 
 @Component({
   selector: 'app-footer',
@@ -7,10 +9,21 @@ import { Component, Input, OnInit } from '@angular/core';
 })
 export class FooterComponent implements OnInit {
 
-  constructor() { }
+  constructor(private user: AccountServiceService) { }
 
   ngOnInit(): void {
   }
+  addSubscribe(data: NgForm){
+ 
 
+     this.user.addsubscribe(data.form.value).subscribe((result) => {
+     if (result) {
+      console.log(result);
+
+     }
+   })
+   data.reset();
+
+   }
 
 }

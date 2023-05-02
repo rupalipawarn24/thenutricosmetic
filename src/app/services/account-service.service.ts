@@ -141,6 +141,10 @@ export class AccountServiceService {
        
     })
   }
+  addsubscribe(data:any){
+    return this.http.post('https://tncapi.tanajidinde.com/api/subscription', data);
+
+  }
 
   
  

@@ -64,6 +64,7 @@ import { ForgotPasswordComponent } from './views/account-pages/forgot-password/f
 import { OtpverifyComponent } from './views/account-pages/otpverify/otpverify.component';
 import { NgOtpInputModule } from 'ng-otp-input';
 import { RestpasswordComponent } from './views/account-pages/restpassword/restpassword.component';
+import { HomeModule } from './views/home/home.module';
 
 
 
@@ -150,6 +151,7 @@ const APP_CONTAINERS = [
     NgbDropdownModule,
     NgxSliderModule,
     ReactiveFormsModule,
+    HomeModule,
     // ProductDetailsModule,
     FormsModule,
     HttpClientModule,

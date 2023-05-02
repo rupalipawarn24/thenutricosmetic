@@ -12,6 +12,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     CommonModule,
     BrowserAnimationsModule,
     ProductDetailsRoutingModule,
+    
     // NgxGalleryModule,
     // NgbModule
 

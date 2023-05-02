@@ -2,7 +2,7 @@
     <div class="container-fliud">
         <div class="row pb-5">
             <div class="col-5 mx-auto text-center">
-                <h2 class="section-Heading">INGENIOUS</h2>
+                <h2 class="section-Heading">{{brandName}}</h2>
                 <p class="m-0 mt-4" style="font-size: 14px;">
                     Unique And Pure
                 </p>
@@ -56,7 +56,7 @@
                                 <input mdbCheckbox class="form-check-input" type="checkbox" value="Brand_Partner"
                                     id="flexCheckDefault" />
                                 <label class="form-check-label" for="flexCheckDefault">
-                                    Ingenious
+                                    {{brandName}}
                                 </label>
                                 <label class="form-check-label float-end" for="flexCheckDefault">
                                     (9)
@@ -260,18 +260,21 @@
                                         <img class="img-fluid" src="{{brand.images[0].src}}" alt=""
                                              [routerLink]="['/product-details/'+ brand.product_id]">
                                     </div> -->
-                                    <div class="aspect-w-1 aspect-h-1">
+          
+                                    <div class="aspect-w-1 aspect-h-1"  >
                                         <div class="flex bg-almost-white absolute left-0 top-0 justify-center items-center">
-                                            <div class="flex justify-center relative w-full h-full m-56 m:m-40 ms:m-24">
+                                            <div class="flex justify-center relative w-full h-full m-56 m:m-40 ms:m-24" >
                                                 <span class="spandemo">
                                                     <img class="demoimg"
                                                         [routerLink]="['/product-details/'+ brand.product_id]"
                                                         src="{{brand.images[0].src}}"
                                                         decoding="async" data-nimg="fill" class="mix-blend-multiply"
-                                                        style="position: absolute; inset: 0px; box-sizing: border-box; padding: 0px; border: none; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%; object-fit: contain; object-position: center center;"></span>
+                                                        style="position: absolute; inset: 0px; box-sizing: border-box; padding: 0px; border: none; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%; object-fit: contain; object-position: center center;">
+                                                    </span>
                                             </div>
-                                            <div class="favourite">
-                                                <img class="img-fluid"
+                                            <div class="favourite" [routerLink]="thirdLinkEnabled ? 'third' : null"
+                                            [routerLinkActive]="thirdLinkEnabled ? 'is_active' : 'is_disabled'">
+                                                <img class="img-fluid" 
                                                     [src]="brand.onWishlist ? 'assets/images/star-solid.png' : 'assets/images/star-outline.png'"
                                                     alt="" width="18"
                                                     (click)="handleAddToWishlist(brand,brand.variants[0].variant_id,brand.product_id)" />
@@ -286,7 +289,7 @@
                                         </form>
                                     </div>
                                     <h2 class="title">{{brand.vendor}}</h2>
-                                    <p class="description">{{brand.title}}</p>
+                                    <p class="description" [routerLink]="['/product-details/'+ brand.product_id]">{{brand.title}}</p>
                                     <div class="description mb-0">
                                         <ngb-rating [max]="5" [readonly]="false"></ngb-rating>
                                     </div>

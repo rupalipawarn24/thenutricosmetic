@@ -135,15 +135,16 @@
                         </div>
 
                         <div class="col-12 col-md-12 col-lg-3 mb-3">
-                                <form>
+                                <form #subcribeData="ngForm" (ngSubmit)="addSubscribe(subcribeData)">
+                                        <input  type="text" class="form-control"  style="display: none;" name="submitted_from" value="footer" ngModel="footer">
                                         <h5>BE THE FIRST TO KNOW</h5>
                                         <p>Subscribe to receive updates, access to exclusive deals, and so much more!
                                         </p>
                                         <div class="">
                                                 <label for="newsletter1" class="visually-hidden">Email address</label>
                                                 <input id="newsletter1" type="text" class="form-control"
-                                                        placeholder="Enter your email address">
-                                                <button class="shop-now-btn mt-3" type="button">Subscribe</button>
+                                                        placeholder="Enter your email address" name="email_id" ngModel>
+                                                <button class="shop-now-btn mt-3">Subscribe</button>
                                         </div>
                                 </form>
                         </div>

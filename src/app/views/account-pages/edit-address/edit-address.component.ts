@@ -52,7 +52,6 @@ export class EditAddressComponent implements OnInit {
       customer_id,
       ...data
     }
-    console.log("hi",customer_id);
 
     this.user.addAddress(addressData).subscribe((result) => {
       if (result) {

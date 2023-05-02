@@ -22,6 +22,9 @@ export class ProductCatalogComponent implements OnInit {
   @Input() isDisabled: boolean = false;
   recentData:any;
   isexist :boolean=false;
+  brandName:any;
+  thirdLinkEnabled: boolean = false;
+
 
 
   starRating=0;
@@ -87,7 +90,9 @@ export class ProductCatalogComponent implements OnInit {
     this.brandService.getbrandlistById(this.brandId)
       .subscribe((data: any) => {
         this.brandData=data;
-       // console.log(this.brandData);
+        this.brandName=this.brandData[0].vendor;
+
+       console.log(this.brandData);
       });
   }
 

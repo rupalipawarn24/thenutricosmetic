@@ -1,6 +1,7 @@
 import { Component, OnInit, OnDestroy } from '@angular/core';
 import { NgcCookieConsentService, NgcInitializationErrorEvent, NgcInitializingEvent, NgcNoCookieLawEvent, NgcStatusChangeEvent } from 'ngx-cookieconsent';
 import { Subscription }   from 'rxjs';
+import { UtilsService } from './utils.service';
 
 
 
@@ -23,14 +24,19 @@ export class AppComponent implements OnInit, OnDestroy {
    private statusChangeSubscription!: Subscription;
    private revokeChoiceSubscription!: Subscription;
    private noCookieLawSubscription!: Subscription;
+   poppyVisible:any
  
-   constructor(private ccService: NgcCookieConsentService){}
+   constructor(private ccService: NgcCookieConsentService,private utils: UtilsService){}
  
    ngOnInit() {
+
+    this.utils.openPopupObservable.subscribe(isActive=>{
+      this.poppyVisible = isActive
+   });
      // subscribe to cookieconsent observables to react to main events
      this.popupOpenSubscription = this.ccService.popupOpen$.subscribe(
        () => {
-         // you can use this.ccService.getConfig() to do stuff...
+           //this.ccService.getConfig() ;
        });
  
      this.popupCloseSubscription = this.ccService.popupClose$.subscribe(
